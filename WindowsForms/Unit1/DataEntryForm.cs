@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace WindowsForms.Unit1
 {
-    public partial class DataEntryApplication : Form
+    public partial class DataEntryForm : Form
     {
-        public DataEntryApplication()
+        public DataEntryForm()
         {
             InitializeComponent();
+        }
+
+        private void messageLabel_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
