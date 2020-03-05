@@ -1,6 +1,6 @@
-﻿namespace WindowsForms
+﻿namespace WindowsForms.Unit1
 {
-    partial class WelcomeForm
+    partial class DataEntryApplication
     {
         /// <summary>
         /// Required designer variable.
@@ -28,26 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // WelcomeForm
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Red;
-            this.ClientSize = new System.Drawing.Size(1168, 598);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.Name = "WelcomeForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Shamial\'s Welcome Form";
-            this.Load += new System.EventHandler(this.WelcomeForm_Load);
-            this.ResumeLayout(false);
-
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Text = "DataEntryApplication";
         }
 
         #endregion
     }
 }
-

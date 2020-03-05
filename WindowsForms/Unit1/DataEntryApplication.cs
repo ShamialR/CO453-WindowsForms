@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsForms
+namespace WindowsForms.Unit1
 {
-    public partial class WelcomeForm : Form
+    public partial class DataEntryApplication : Form
     {
-        public WelcomeForm()
+        public DataEntryApplication()
         {
             InitializeComponent();
-        }
-
-        private void WelcomeForm_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
