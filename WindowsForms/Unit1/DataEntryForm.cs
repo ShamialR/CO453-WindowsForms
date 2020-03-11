@@ -29,7 +29,7 @@ namespace WindowsForms.Unit1
 
         private void messageButton_Click(object sender, EventArgs e)
         {
-            messageLabel.Text = "Hi " + firstNameText.Text + " " + lastNameText.Text + "\nHappy Programming";
+            messageLabel.Text = "Hi " + firstNameText.Text + " " + lastNameText.Text + " from " + townNameText.Text + "\nHappy Programming";
         }
 
         private void lastNameLabel_Click(object sender, EventArgs e)
@@ -39,7 +39,10 @@ namespace WindowsForms.Unit1
 
         private void clearButton_Click(object sender, EventArgs e)
         {
-            messageLabel.Text = " ";
+            messageLabel.Text = "";
+            firstNameText.Text = "";
+            lastNameText.Text = "";
+            townNameText.Text = "";
         }
 
         private void toUpperButton_Click(object sender, EventArgs e)
@@ -50,6 +53,16 @@ namespace WindowsForms.Unit1
         private void toLowerButton_Click(object sender, EventArgs e)
         {
             messageLabel.Text = messageLabel.Text.ToLower(); 
+        }
+
+        private void changeMessageButton_Click(object sender, EventArgs e)
+        {
+            this.BackColor = Color.Red;
+            firstNameText.BackColor = Color.LightBlue;
+            lastNameText.BackColor = Color.LightBlue;
+            townNameText.BackColor = Color.LightBlue;
+
+            messageLabel.Text = "Get on with it " + firstNameText.Text + ".";
         }
     }
 }
