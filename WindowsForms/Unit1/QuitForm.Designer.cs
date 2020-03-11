@@ -39,9 +39,9 @@
             this.thanksCalculatorButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
             this.thanksCalculatorButton.Location = new System.Drawing.Point(28, 19);
             this.thanksCalculatorButton.Name = "thanksCalculatorButton";
-            this.thanksCalculatorButton.Size = new System.Drawing.Size(462, 31);
+            this.thanksCalculatorButton.Size = new System.Drawing.Size(451, 31);
             this.thanksCalculatorButton.TabIndex = 0;
-            this.thanksCalculatorButton.Text = "Thank You For Using The Calculator!";
+            this.thanksCalculatorButton.Text = "Thank You For Using My Calculator!";
             // 
             // clickToExitButton
             // 

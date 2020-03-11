@@ -40,6 +40,9 @@
             this.multiplicationButton = new System.Windows.Forms.Button();
             this.divisionButton = new System.Windows.Forms.Button();
             this.quitButton = new System.Windows.Forms.Button();
+            this.averageButton = new System.Windows.Forms.Button();
+            this.powerButton = new System.Windows.Forms.Button();
+            this.clearButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // firstNumberText
@@ -147,7 +150,7 @@
             // 
             // quitButton
             // 
-            this.quitButton.Location = new System.Drawing.Point(72, 216);
+            this.quitButton.Location = new System.Drawing.Point(12, 258);
             this.quitButton.Name = "quitButton";
             this.quitButton.Size = new System.Drawing.Size(75, 23);
             this.quitButton.TabIndex = 11;
@@ -155,12 +158,45 @@
             this.quitButton.UseVisualStyleBackColor = true;
             this.quitButton.Click += new System.EventHandler(this.quitButton_Click);
             // 
+            // averageButton
+            // 
+            this.averageButton.Location = new System.Drawing.Point(203, 216);
+            this.averageButton.Name = "averageButton";
+            this.averageButton.Size = new System.Drawing.Size(75, 23);
+            this.averageButton.TabIndex = 12;
+            this.averageButton.Text = "Average";
+            this.averageButton.UseVisualStyleBackColor = true;
+            this.averageButton.Click += new System.EventHandler(this.averageButton_Click);
+            // 
+            // powerButton
+            // 
+            this.powerButton.Location = new System.Drawing.Point(298, 216);
+            this.powerButton.Name = "powerButton";
+            this.powerButton.Size = new System.Drawing.Size(75, 23);
+            this.powerButton.TabIndex = 13;
+            this.powerButton.Text = "Power";
+            this.powerButton.UseVisualStyleBackColor = true;
+            this.powerButton.Click += new System.EventHandler(this.powerButton_Click);
+            // 
+            // clearButton
+            // 
+            this.clearButton.Location = new System.Drawing.Point(101, 216);
+            this.clearButton.Name = "clearButton";
+            this.clearButton.Size = new System.Drawing.Size(75, 23);
+            this.clearButton.TabIndex = 14;
+            this.clearButton.Text = "Clear";
+            this.clearButton.UseVisualStyleBackColor = true;
+            this.clearButton.Click += new System.EventHandler(this.Clearbutton_Click);
+            // 
             // CalculatorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Orange;
             this.ClientSize = new System.Drawing.Size(510, 293);
+            this.Controls.Add(this.clearButton);
+            this.Controls.Add(this.powerButton);
+            this.Controls.Add(this.averageButton);
             this.Controls.Add(this.quitButton);
             this.Controls.Add(this.divisionButton);
             this.Controls.Add(this.multiplicationButton);
@@ -196,5 +232,8 @@
         private System.Windows.Forms.Button multiplicationButton;
         private System.Windows.Forms.Button divisionButton;
         private System.Windows.Forms.Button quitButton;
+        private System.Windows.Forms.Button averageButton;
+        private System.Windows.Forms.Button powerButton;
+        private System.Windows.Forms.Button clearButton;
     }
 }

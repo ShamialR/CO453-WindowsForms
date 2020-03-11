@@ -59,6 +59,29 @@ namespace WindowsForms.Unit1
             SplashScreen.ShowDialog(); // show the splash screen
         }
 
+        private void powerButton_Click(object sender, EventArgs e)
+        {
+            number1 = Convert.ToDouble(firstNumberText.Text);
+            number2 = Convert.ToDouble(secondNumberText.Text);
+            result = Math.Pow(number1, number2);
+            resultAnswerLabel.Text = result.ToString();
+        }
+
+        private void averageButton_Click(object sender, EventArgs e)
+        {
+            number1 = Convert.ToDouble(firstNumberText.Text);
+            number2 = Convert.ToDouble(secondNumberText.Text);
+            result = (number1 + number2) / 2;
+            resultAnswerLabel.Text = result.ToString();
+        }
+
+        private void Clearbutton_Click(object sender, EventArgs e)
+        {
+            resultAnswerLabel.Text = "";
+            firstNumberText.Text = "";
+            secondNumberText.Text = "";
+        }
+
         public CalculatorForm()
         {
             InitializeComponent();
