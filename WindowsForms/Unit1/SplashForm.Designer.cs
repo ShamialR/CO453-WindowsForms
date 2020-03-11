@@ -1,6 +1,6 @@
 ﻿namespace WindowsForms.Unit1
 {
-    partial class SplachForm
+    partial class SplashForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,29 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SplashForm));
+            this.clickForCalcLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label1
+            // clickForCalcLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label1.Location = new System.Drawing.Point(129, 25);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(204, 24);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Click To Use Calculator";
+            this.clickForCalcLabel.AutoSize = true;
+            this.clickForCalcLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.clickForCalcLabel.Location = new System.Drawing.Point(92, 36);
+            this.clickForCalcLabel.Name = "clickForCalcLabel";
+            this.clickForCalcLabel.Size = new System.Drawing.Size(204, 24);
+            this.clickForCalcLabel.TabIndex = 0;
+            this.clickForCalcLabel.Text = "Click To Use Calculator";
             // 
-            // SplachForm
+            // SplashForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label1);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(397, 450);
+            this.Controls.Add(this.clickForCalcLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "SplachForm";
+            this.Name = "SplashForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "SplachForm";
+            this.Text = "SplashForm";
+            this.Click += new System.EventHandler(this.SplashForm_Click);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -58,6 +62,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label clickForCalcLabel;
     }
 }

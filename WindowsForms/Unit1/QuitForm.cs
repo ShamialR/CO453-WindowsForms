@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace WindowsForms.Unit1
 {
-    public partial class SplachForm : Form
+    public partial class QuitForm : Form
     {
-        public SplachForm()
+        public QuitForm()
         {
             InitializeComponent();
+        }
+
+        private void QuitForm_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

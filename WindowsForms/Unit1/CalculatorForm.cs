@@ -53,6 +53,12 @@ namespace WindowsForms.Unit1
             }
         }
 
+        private void CalculatorForm_Load(object sender, EventArgs e)
+        {
+            SplashForm SplashScreen = new SplashForm(); // create new SScreen form object
+            SplashScreen.ShowDialog(); // show the splash screen
+        }
+
         public CalculatorForm()
         {
             InitializeComponent();
@@ -60,7 +66,8 @@ namespace WindowsForms.Unit1
 
         private void quitButton_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            QuitForm QuitScreen = new QuitForm();
+            QuitScreen.ShowDialog();
         }
     }
 }

@@ -58,11 +58,17 @@
     <Compile Include="Unit1\DataEntryForm.Designer.cs">
       <DependentUpon>DataEntryForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Unit1\SplachForm.cs">
+    <Compile Include="Unit1\QuitForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Unit1\SplachForm.Designer.cs">
-      <DependentUpon>SplachForm.cs</DependentUpon>
+    <Compile Include="Unit1\QuitForm.Designer.cs">
+      <DependentUpon>QuitForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Unit1\SplashForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Unit1\SplashForm.Designer.cs">
+      <DependentUpon>SplashForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Unit1\WelcomeForm.cs">
       <SubType>Form</SubType>
@@ -78,8 +84,11 @@
     <EmbeddedResource Include="Unit1\DataEntryForm.resx">
       <DependentUpon>DataEntryForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Unit1\SplachForm.resx">
-      <DependentUpon>SplachForm.cs</DependentUpon>
+    <EmbeddedResource Include="Unit1\QuitForm.resx">
+      <DependentUpon>QuitForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Unit1\SplashForm.resx">
+      <DependentUpon>SplashForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Unit1\WelcomeForm.resx">
       <DependentUpon>WelcomeForm.cs</DependentUpon>
