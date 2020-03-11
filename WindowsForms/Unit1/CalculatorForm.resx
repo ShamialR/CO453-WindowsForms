@@ -117,4 +117,42 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="additionButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAALBJREFUSEvtltEJhTAMRVv1pzu4S6fIPB3HbqEzPIcR9ENz5T0IJSgVkYf042CL
+        8V7a2DQmhFARUX2Gc6611vbMjCfmWlwK9A0G3vvmDBaOzCqIWlwK9HNMPonJqMWl5JqMxaSY/KHJ9yTj
+        oEHkiImRJphrcZIIfcMDlAr58d0MMEEt0l7exfLESnqZE9QmbV9/XMlJt+fkPb9wMSkmh7DoI3f89W4l
+        s+8amKy+i4jqDXxgDu9wGd7DAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="subtractionButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAERJREFUSEvtz0EKgEAMQ9Got/fAgsPImBTmCFk1H942pUgpNeyky0C71U2DPgPt
+        ah8PLSPt16WXpoF265PdYZBSahbwAy++SKn+3AiUAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="multiplicationButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAUpJREFUSEu1lk1uwyAQRrFSqexcHyBl43v4FD5WfIOml7F7nGSRRZbJfA5YzniA
+        wVIXTyBg5gnxa9q2/ayqaiAuxI04N01T931/KAVxiPd5kG9wzlmDCvFgTHVdN13XfWjBeIr7Y3nAAAmM
+        vAOoRQkBuEKCqUmdICvKCMANkh/WyImKFALwa/xiTayDsxEpBRPyG+wKCviihpEN4IxBpBUgL/LPklVg
+        bkajtfabSpUAed8kK1FuRnehbc0iECUFohhvAiBKwE7RRgCiElAoEgUgKQF+kXNrcKdxRykeaGaS20UB
+        zEQ8sFFJoSAgikTJTkEgv7uUgv3nRCnAiT+iZO2cRbRIlIIl0I/XXKqvuwsValALAj4uK5pvYargTZYG
+        BDaCQtFZ8zKKgoBCNL+MqTc+KQhkRBdIYr8VlSCQEJ0M/kVU+a9/18k5Z5+dyQy6lbO5OwAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
+  <data name="divisionButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAJlJREFUSEtjGAW0BIxALAylaQLUgPg6EP+H0qpATHWwGYhBFsDwJiCmOjgPxMiW
+        gPhUB8VAjGwJiE8TEAHEk6H04AcsQJwNxFOAeCqJGKQPpJ8g6AZi5LAnFYP0EwToqYhUTFSqo4tPyI0T
+        kPosICYqTgYc0DyflAAxctjTJMfTpewClbrIltCkFAbVHzSvT0CA5jXjiAcMDADxYmPXv+X65AAAAABJ
+        RU5ErkJggg==
+</value>
+  </data>
 </root>

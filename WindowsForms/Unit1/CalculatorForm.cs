@@ -20,6 +20,7 @@ namespace WindowsForms.Unit1
             number2 = Convert.ToDouble(secondNumberText.Text);
             result = number1 + number2;
             resultAnswerLabel.Text = result.ToString();
+            this.BackColor = Color.Red;
         }
 
         private void subtractionButton_Click(object sender, EventArgs e)
@@ -28,6 +29,7 @@ namespace WindowsForms.Unit1
             number2 = Convert.ToDouble(secondNumberText.Text);
             result = number1 - number2;
             resultAnswerLabel.Text = result.ToString();
+            this.BackColor = Color.Blue;
         }
 
         private void multiplicationButton_Click(object sender, EventArgs e)
@@ -36,6 +38,7 @@ namespace WindowsForms.Unit1
             number2 = Convert.ToDouble(secondNumberText.Text);
             result = number1 * number2;
             resultAnswerLabel.Text = result.ToString();
+            this.BackColor = Color.Lime;
         }
 
         private void divisionButton_Click(object sender, EventArgs e)
@@ -50,6 +53,7 @@ namespace WindowsForms.Unit1
                 number2 = Convert.ToDouble(secondNumberText.Text);
                 result = number1 / number2;
                 resultAnswerLabel.Text = result.ToString();
+                this.BackColor = Color.Pink;
             }
         }
 
@@ -65,6 +69,7 @@ namespace WindowsForms.Unit1
             number2 = Convert.ToDouble(secondNumberText.Text);
             result = Math.Pow(number1, number2);
             resultAnswerLabel.Text = result.ToString();
+            this.BackColor = Color.Yellow;
         }
 
         private void averageButton_Click(object sender, EventArgs e)
@@ -73,6 +78,7 @@ namespace WindowsForms.Unit1
             number2 = Convert.ToDouble(secondNumberText.Text);
             result = (number1 + number2) / 2;
             resultAnswerLabel.Text = result.ToString();
+            this.BackColor = Color.Cyan;
         }
 
         private void Clearbutton_Click(object sender, EventArgs e)

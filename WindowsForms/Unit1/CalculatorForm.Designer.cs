@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CalculatorForm));
             this.firstNumberText = new System.Windows.Forms.TextBox();
             this.secondNumberText = new System.Windows.Forms.TextBox();
             this.firstNumberLabel = new System.Windows.Forms.Label();
@@ -110,41 +111,41 @@
             // 
             // additionButton
             // 
-            this.additionButton.Location = new System.Drawing.Point(392, 67);
+            this.additionButton.Image = ((System.Drawing.Image)(resources.GetObject("additionButton.Image")));
+            this.additionButton.Location = new System.Drawing.Point(399, 48);
             this.additionButton.Name = "additionButton";
-            this.additionButton.Size = new System.Drawing.Size(75, 23);
+            this.additionButton.Size = new System.Drawing.Size(75, 42);
             this.additionButton.TabIndex = 7;
-            this.additionButton.Text = "Add";
             this.additionButton.UseVisualStyleBackColor = true;
             this.additionButton.Click += new System.EventHandler(this.additionButton_Click);
             // 
             // subtractionButton
             // 
-            this.subtractionButton.Location = new System.Drawing.Point(392, 115);
+            this.subtractionButton.Image = ((System.Drawing.Image)(resources.GetObject("subtractionButton.Image")));
+            this.subtractionButton.Location = new System.Drawing.Point(399, 96);
             this.subtractionButton.Name = "subtractionButton";
-            this.subtractionButton.Size = new System.Drawing.Size(75, 23);
+            this.subtractionButton.Size = new System.Drawing.Size(75, 44);
             this.subtractionButton.TabIndex = 8;
-            this.subtractionButton.Text = "Subtract";
             this.subtractionButton.UseVisualStyleBackColor = true;
             this.subtractionButton.Click += new System.EventHandler(this.subtractionButton_Click);
             // 
             // multiplicationButton
             // 
-            this.multiplicationButton.Location = new System.Drawing.Point(392, 165);
+            this.multiplicationButton.Image = ((System.Drawing.Image)(resources.GetObject("multiplicationButton.Image")));
+            this.multiplicationButton.Location = new System.Drawing.Point(399, 146);
             this.multiplicationButton.Name = "multiplicationButton";
-            this.multiplicationButton.Size = new System.Drawing.Size(75, 23);
+            this.multiplicationButton.Size = new System.Drawing.Size(75, 46);
             this.multiplicationButton.TabIndex = 9;
-            this.multiplicationButton.Text = "Multiply";
             this.multiplicationButton.UseVisualStyleBackColor = true;
             this.multiplicationButton.Click += new System.EventHandler(this.multiplicationButton_Click);
             // 
             // divisionButton
             // 
-            this.divisionButton.Location = new System.Drawing.Point(392, 216);
+            this.divisionButton.Image = ((System.Drawing.Image)(resources.GetObject("divisionButton.Image")));
+            this.divisionButton.Location = new System.Drawing.Point(399, 198);
             this.divisionButton.Name = "divisionButton";
-            this.divisionButton.Size = new System.Drawing.Size(75, 23);
+            this.divisionButton.Size = new System.Drawing.Size(75, 42);
             this.divisionButton.TabIndex = 10;
-            this.divisionButton.Text = "Divide";
             this.divisionButton.UseVisualStyleBackColor = true;
             this.divisionButton.Click += new System.EventHandler(this.divisionButton_Click);
             // 
