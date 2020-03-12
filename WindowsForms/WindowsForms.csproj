@@ -84,6 +84,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Unit2\RPSSplashForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Unit2\RPSSplashForm.Designer.cs">
+      <DependentUpon>RPSSplashForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Unit1\CalculatorForm.resx">
       <DependentUpon>CalculatorForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -111,6 +117,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Unit2\RPSSplashForm.resx">
+      <DependentUpon>RPSSplashForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -125,9 +134,16 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Unit2\" />
     <Folder Include="Unit3\" />
     <Folder Include="Unit4\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Paper.jpg" />
+    <Content Include="bin\Debug\Rock.jpg" />
+    <Content Include="bin\Debug\Scissors.jpg" />
+    <Content Include="Unit2\Images\Paper.jpg" />
+    <Content Include="Unit2\Images\Rock.jpg" />
+    <Content Include="Unit2\Images\Scissors.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

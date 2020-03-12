@@ -20,5 +20,10 @@ namespace WindowsForms.Unit1
         {
             this.Close();
         }
+
+        private void SplashForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
