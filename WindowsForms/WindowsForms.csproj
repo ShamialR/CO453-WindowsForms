@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -114,6 +115,12 @@
     <Compile Include="Unit2\RPSWin.Designer.cs">
       <DependentUpon>RPSWin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Unit3\CurrencyConverterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Unit3\CurrencyConverterForm.Designer.cs">
+      <DependentUpon>CurrencyConverterForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Unit1\CalculatorForm.resx">
       <DependentUpon>CalculatorForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -156,6 +163,9 @@
     <EmbeddedResource Include="Unit2\RPSWin.resx">
       <DependentUpon>RPSWin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Unit3\CurrencyConverterForm.resx">
+      <DependentUpon>CurrencyConverterForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -170,7 +180,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Unit3\" />
     <Folder Include="Unit4\" />
   </ItemGroup>
   <ItemGroup>
