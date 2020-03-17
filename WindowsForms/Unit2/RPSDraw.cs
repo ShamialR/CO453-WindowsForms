@@ -10,21 +10,16 @@ using System.Windows.Forms;
 
 namespace WindowsForms.Unit2
 {
-    public partial class RPSSplashForm : Form
+    public partial class RPSDraw : Form
     {
-        public RPSSplashForm()
+        public RPSDraw()
         {
             InitializeComponent();
         }
 
-        private void RPSSplashForm_Click(object sender, EventArgs e)
+        private void RPSDraw_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void RPSSplashForm_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

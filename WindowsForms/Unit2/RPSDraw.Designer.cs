@@ -1,6 +1,6 @@
 ﻿namespace WindowsForms.Unit2
 {
-    partial class RPSSplashForm
+    partial class RPSDraw
     {
         /// <summary>
         /// Required designer variable.
@@ -28,33 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RPSSplashForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RPSDraw));
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.label1.Location = new System.Drawing.Point(179, 362);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
+            this.label1.Location = new System.Drawing.Point(12, 383);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(461, 29);
+            this.label1.Size = new System.Drawing.Size(175, 39);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Click To Play Rock Paper Scissors Game!";
+            this.label1.Text = "You Drew!";
             // 
-            // RPSSplashForm
+            // RPSDraw
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(554, 450);
             this.Controls.Add(this.label1);
-            this.Name = "RPSSplashForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "RPSSplashForm";
-            this.Load += new System.EventHandler(this.RPSSplashForm_Load);
-            this.Click += new System.EventHandler(this.RPSSplashForm_Click);
+            this.DoubleBuffered = true;
+            this.Name = "RPSDraw";
+            this.Text = "RPSDraw";
+            this.Click += new System.EventHandler(this.RPSDraw_Click);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -14,37 +14,33 @@ namespace WindowsForms.Unit1
     {
         private double number1, number2, result;
 
-        private void ConvertToDouble()
+        private void convertToDouble()
         {
             number1 = Convert.ToDouble(firstNumberText.Text);
             number2 = Convert.ToDouble(secondNumberText.Text);
         }
 
-        private void ConvertResult()
-        {
-            resultAnswerLabel.Text = result.ToString();
-        }
         private void additionButton_Click(object sender, EventArgs e)
         {
-            ConvertToDouble();
+            convertToDouble();
             result = number1 + number2;
-            ConvertResult();
+            resultAnswerLabel.Text = result.ToString();
             this.BackColor = Color.Red;
         }
 
         private void subtractionButton_Click(object sender, EventArgs e)
         {
-            ConvertToDouble();
+            convertToDouble();
             result = number1 - number2;
-            ConvertResult();
+            resultAnswerLabel.Text = result.ToString();
             this.BackColor = Color.Blue;
         }
 
         private void multiplicationButton_Click(object sender, EventArgs e)
         {
-            ConvertToDouble();
+            convertToDouble();
             result = number1 * number2;
-            ConvertResult();
+            resultAnswerLabel.Text = result.ToString();
             this.BackColor = Color.Lime;
         }
 
@@ -56,25 +52,32 @@ namespace WindowsForms.Unit1
             }
             else
             {
-                ConvertToDouble();
+                convertToDouble();
                 result = number1 / number2;
-                ConvertResult();
+                resultAnswerLabel.Text = result.ToString();
                 this.BackColor = Color.Pink;
             }
         }
+
+        private void CalculatorForm_Load(object sender, EventArgs e)
+        {
+            SplashForm SplashScreen = new SplashForm(); // create new SScreen form object
+            SplashScreen.ShowDialog(); // show the splash screen
+        }
+
         private void powerButton_Click(object sender, EventArgs e)
         {
-            ConvertToDouble();
+            convertToDouble();
             result = Math.Pow(number1, number2);
-            ConvertResult();
+            resultAnswerLabel.Text = result.ToString();
             this.BackColor = Color.Yellow;
         }
 
         private void averageButton_Click(object sender, EventArgs e)
         {
-            ConvertToDouble();
+            convertToDouble();
             result = (number1 + number2) / 2;
-            ConvertResult();
+            resultAnswerLabel.Text = result.ToString();
             this.BackColor = Color.Cyan;
         }
 
@@ -84,11 +87,7 @@ namespace WindowsForms.Unit1
             firstNumberText.Text = "";
             secondNumberText.Text = "";
         }
-        private void CalculatorForm_Load(object sender, EventArgs e)
-        {
-            SplashForm SplashScreen = new SplashForm(); // create new SScreen form object
-            SplashScreen.ShowDialog(); // show the splash screen
-        }
+
         public CalculatorForm()
         {
             InitializeComponent();

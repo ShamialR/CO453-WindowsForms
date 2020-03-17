@@ -84,11 +84,35 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Unit2\RPSDraw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Unit2\RPSDraw.Designer.cs">
+      <DependentUpon>RPSDraw.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Unit2\RPSForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Unit2\RPSForm.Designer.cs">
+      <DependentUpon>RPSForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Unit2\RPSLose.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Unit2\RPSLose.Designer.cs">
+      <DependentUpon>RPSLose.cs</DependentUpon>
+    </Compile>
     <Compile Include="Unit2\RPSSplashForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Unit2\RPSSplashForm.Designer.cs">
       <DependentUpon>RPSSplashForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Unit2\RPSWin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Unit2\RPSWin.Designer.cs">
+      <DependentUpon>RPSWin.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Unit1\CalculatorForm.resx">
       <DependentUpon>CalculatorForm.cs</DependentUpon>
@@ -117,8 +141,20 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Unit2\RPSDraw.resx">
+      <DependentUpon>RPSDraw.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Unit2\RPSForm.resx">
+      <DependentUpon>RPSForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Unit2\RPSLose.resx">
+      <DependentUpon>RPSLose.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Unit2\RPSSplashForm.resx">
       <DependentUpon>RPSSplashForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Unit2\RPSWin.resx">
+      <DependentUpon>RPSWin.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
