@@ -21,7 +21,8 @@ namespace WindowsForms
             //Application.Run(new Unit1.CalculatorForm());
             //Application.Run(new Unit1.CalculatorV2Form());
             //Application.Run(new Unit2.RPSForm());
-            Application.Run(new Unit3.CurrencyConverterForm());
+            //Application.Run(new Unit3.CurrencyConverterForm());
+            Application.Run(new Unit3.PizzaOrderForm());
         }
     }
 }
