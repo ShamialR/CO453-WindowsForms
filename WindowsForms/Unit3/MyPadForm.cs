@@ -52,5 +52,23 @@ namespace WindowsForms.Unit3
         {
             mainRichTextBox.LoadFile(openFileDialog.FileName);
         }
+
+        private void fontToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fontDialog.ShowDialog();
+            mainRichTextBox.Font = fontDialog.Font;
+        }
+
+        private void backgroundColourToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            colorDialog.ShowDialog();
+            mainRichTextBox.BackColor = colorDialog.Color;
+        }
+
+        private void foregroundColourToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            colorDialog.ShowDialog();
+            mainRichTextBox.ForeColor = colorDialog.Color;
+        }
     }
 }

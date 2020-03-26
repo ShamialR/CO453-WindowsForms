@@ -44,6 +44,9 @@
             this.backgroundColourToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this.fontDialog = new System.Windows.Forms.FontDialog();
+            this.colorDialog = new System.Windows.Forms.ColorDialog();
+            this.foregroundColourToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -92,7 +95,8 @@
             // 
             this.formatToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fontToolStripMenuItem,
-            this.backgroundColourToolStripMenuItem});
+            this.backgroundColourToolStripMenuItem,
+            this.foregroundColourToolStripMenuItem});
             this.formatToolStripMenuItem.Name = "formatToolStripMenuItem";
             this.formatToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
             this.formatToolStripMenuItem.Text = "Format";
@@ -159,6 +163,7 @@
             this.fontToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F)));
             this.fontToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
             this.fontToolStripMenuItem.Text = "Font";
+            this.fontToolStripMenuItem.Click += new System.EventHandler(this.fontToolStripMenuItem_Click);
             // 
             // backgroundColourToolStripMenuItem
             // 
@@ -166,10 +171,19 @@
             this.backgroundColourToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.B)));
             this.backgroundColourToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
             this.backgroundColourToolStripMenuItem.Text = "Background Colour";
+            this.backgroundColourToolStripMenuItem.Click += new System.EventHandler(this.backgroundColourToolStripMenuItem_Click);
             // 
             // openFileDialog
             // 
             this.openFileDialog.FileName = "openFileDialog";
+            // 
+            // foregroundColourToolStripMenuItem
+            // 
+            this.foregroundColourToolStripMenuItem.Name = "foregroundColourToolStripMenuItem";
+            this.foregroundColourToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.G)));
+            this.foregroundColourToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
+            this.foregroundColourToolStripMenuItem.Text = "Foreground Colour";
+            this.foregroundColourToolStripMenuItem.Click += new System.EventHandler(this.foregroundColourToolStripMenuItem_Click);
             // 
             // MyPadForm
             // 
@@ -206,5 +220,8 @@
         private System.Windows.Forms.ToolStripMenuItem backgroundColourToolStripMenuItem;
         private System.Windows.Forms.SaveFileDialog saveFileDialog;
         private System.Windows.Forms.OpenFileDialog openFileDialog;
+        private System.Windows.Forms.FontDialog fontDialog;
+        private System.Windows.Forms.ColorDialog colorDialog;
+        private System.Windows.Forms.ToolStripMenuItem foregroundColourToolStripMenuItem;
     }
 }
