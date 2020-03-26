@@ -41,5 +41,16 @@ namespace WindowsForms.Unit3
         {
             Application.Exit();
         }
+
+        private void saveToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            saveFileDialog.ShowDialog();
+            mainRichTextBox.SaveFile(saveFileDialog.FileName);
+        }
+
+        private void openToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mainRichTextBox.LoadFile(openFileDialog.FileName);
+        }
     }
 }
