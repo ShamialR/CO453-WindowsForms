@@ -29,8 +29,23 @@ namespace WindowsForms.Unit3
 
         private void monkeyPictureBox_Click(object sender, EventArgs e)
         {
+            animationTimer.Enabled = false;
+            monkeyPictureBox.Image = Image.FromFile("monkeySad1.jpg");
             MessageBox.Show("Ouch! You HIT Me!", "Monkey");
-            monkeyPictureBox.Image = Image.FromFile("monkeySad.jpg");
+            animationTimer.Enabled = true;
+            monkeyPictureBox.Image = Image.FromFile("monkey.jpg");
+            playerScore += 1;
+            hitsLabel.Text = "Hits: " + playerScore.ToString();
+        }
+
+        private void MonkeyBashForm_MouseDown(object sender, MouseEventArgs e)
+        {
+            //MessageBox.Show("The mouse X position is " + e.X);
+
+            monkeyPictureBox.Image = Image.FromFile("monkey.jpg");
+            MessageBox.Show("HAHA, You missed me!", "Monkey");
+            monkeyScore += 1;
+            missesLabel.Text = "Misses: " + monkeyScore.ToString();
         }
 
         private void animationTimer_Tick(object sender, EventArgs e)
@@ -40,7 +55,7 @@ namespace WindowsForms.Unit3
             monkeyPictureBox.Left = x;
             monkeyPictureBox.Top = y;
             Refresh();
-
+            
         }
 
 
@@ -51,7 +66,7 @@ namespace WindowsForms.Unit3
 
         private void stopButton_Click(object sender, EventArgs e)
         {
-            animationTimer.Enabled = true;  
+            animationTimer.Enabled = false;
         }
 
     }
