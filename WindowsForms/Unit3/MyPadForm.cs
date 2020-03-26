@@ -16,5 +16,30 @@ namespace WindowsForms.Unit3
         {
             InitializeComponent();
         }
+
+        private void cutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mainRichTextBox.Cut();
+        }
+
+        private void copyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mainRichTextBox.Copy();
+        }
+
+        private void pasteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mainRichTextBox.Paste();
+        }
+
+        private void undoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mainRichTextBox.Undo();
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
