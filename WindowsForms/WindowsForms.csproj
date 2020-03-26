@@ -127,6 +127,12 @@
     <Compile Include="Unit3\MonkeyBashForm.Designer.cs">
       <DependentUpon>MonkeyBashForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Unit3\MyPadForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Unit3\MyPadForm.Designer.cs">
+      <DependentUpon>MyPadForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Unit3\PizzaOrderForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -186,6 +192,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Unit3\MonkeyBashForm.resx">
       <DependentUpon>MonkeyBashForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Unit3\MyPadForm.resx">
+      <DependentUpon>MyPadForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Unit3\PizzaOrderForm.resx">
       <DependentUpon>PizzaOrderForm.cs</DependentUpon>
