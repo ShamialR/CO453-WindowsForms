@@ -42,7 +42,7 @@
             this.divisionButton = new System.Windows.Forms.Button();
             this.subtractionButton = new System.Windows.Forms.Button();
             this.additionButton = new System.Windows.Forms.Button();
-            this.fullStopButton = new System.Windows.Forms.Button();
+            this.quitButton = new System.Windows.Forms.Button();
             this.multiplyButton = new System.Windows.Forms.Button();
             this.clearButton = new System.Windows.Forms.Button();
             this.resultAnswerLabel = new System.Windows.Forms.Label();
@@ -189,15 +189,16 @@
             this.additionButton.UseVisualStyleBackColor = true;
             this.additionButton.Click += new System.EventHandler(this.additionButton_Click);
             // 
-            // fullStopButton
+            // quitButton
             // 
-            this.fullStopButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.fullStopButton.Location = new System.Drawing.Point(168, 286);
-            this.fullStopButton.Name = "fullStopButton";
-            this.fullStopButton.Size = new System.Drawing.Size(62, 56);
-            this.fullStopButton.TabIndex = 15;
-            this.fullStopButton.Text = ".";
-            this.fullStopButton.UseVisualStyleBackColor = true;
+            this.quitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.quitButton.Location = new System.Drawing.Point(168, 286);
+            this.quitButton.Name = "quitButton";
+            this.quitButton.Size = new System.Drawing.Size(62, 56);
+            this.quitButton.TabIndex = 15;
+            this.quitButton.Text = "Q";
+            this.quitButton.UseVisualStyleBackColor = true;
+            this.quitButton.Click += new System.EventHandler(this.quitButton_Click);
             // 
             // multiplyButton
             // 
@@ -249,7 +250,7 @@
             this.Controls.Add(this.resultAnswerLabel);
             this.Controls.Add(this.clearButton);
             this.Controls.Add(this.multiplyButton);
-            this.Controls.Add(this.fullStopButton);
+            this.Controls.Add(this.quitButton);
             this.Controls.Add(this.divisionButton);
             this.Controls.Add(this.subtractionButton);
             this.Controls.Add(this.additionButton);
@@ -284,7 +285,7 @@
         private System.Windows.Forms.Button divisionButton;
         private System.Windows.Forms.Button subtractionButton;
         private System.Windows.Forms.Button additionButton;
-        private System.Windows.Forms.Button fullStopButton;
+        private System.Windows.Forms.Button quitButton;
         private System.Windows.Forms.Button multiplyButton;
         private System.Windows.Forms.Button clearButton;
         private System.Windows.Forms.Label resultAnswerLabel;

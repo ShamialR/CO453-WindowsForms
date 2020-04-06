@@ -10,6 +10,13 @@ using System.Windows.Forms;
 
 namespace WindowsForms.Unit1
 {
+    /// <summary>
+    /// Tasks 1.7
+    /// This class is the quit screen, it opens when in the calculator
+    /// the quit button is clicked. Once this form is clicked the
+    /// application is closed.
+    /// Once this s
+    /// </summary>
     public partial class QuitForm : Form
     {
         public QuitForm()
@@ -17,7 +24,7 @@ namespace WindowsForms.Unit1
             InitializeComponent();
         }
 
-        private void QuitForm_Click(object sender, EventArgs e)
+        private void quitForm_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }

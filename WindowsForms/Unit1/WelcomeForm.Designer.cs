@@ -69,7 +69,7 @@
             this.quitButton.TabIndex = 2;
             this.quitButton.Text = "Quit";
             this.quitButton.UseVisualStyleBackColor = true;
-            this.quitButton.Click += new System.EventHandler(this.QuitButton_Click);
+            this.quitButton.Click += new System.EventHandler(this.quitButton_Click);
             // 
             // showButton1
             // 
@@ -80,7 +80,7 @@
             this.showButton1.TabIndex = 3;
             this.showButton1.Text = "Best Computer";
             this.showButton1.UseVisualStyleBackColor = true;
-            this.showButton1.Click += new System.EventHandler(this.ShowButton1_Click);
+            this.showButton1.Click += new System.EventHandler(this.showButton1_Click);
             // 
             // showButton2
             // 
@@ -91,7 +91,7 @@
             this.showButton2.TabIndex = 4;
             this.showButton2.Text = "Best Software";
             this.showButton2.UseVisualStyleBackColor = true;
-            this.showButton2.Click += new System.EventHandler(this.ShowButton2_Click);
+            this.showButton2.Click += new System.EventHandler(this.showButton2_Click);
             // 
             // WelcomeForm
             // 

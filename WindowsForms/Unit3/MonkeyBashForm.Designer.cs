@@ -36,8 +36,8 @@
             this.quitButton = new System.Windows.Forms.Button();
             this.animationTimer1 = new System.Windows.Forms.Timer(this.components);
             this.scoreGroupBox = new System.Windows.Forms.GroupBox();
-            this.hitsLabel = new System.Windows.Forms.Label();
             this.missesLabel = new System.Windows.Forms.Label();
+            this.hitsLabel = new System.Windows.Forms.Label();
             this.animationTimer2 = new System.Windows.Forms.Timer(this.components);
             this.animationTimer3 = new System.Windows.Forms.Timer(this.components);
             this.animationTimer4 = new System.Windows.Forms.Timer(this.components);
@@ -111,15 +111,6 @@
             this.scoreGroupBox.TabStop = false;
             this.scoreGroupBox.Text = "Score";
             // 
-            // hitsLabel
-            // 
-            this.hitsLabel.AutoSize = true;
-            this.hitsLabel.Location = new System.Drawing.Point(25, 21);
-            this.hitsLabel.Name = "hitsLabel";
-            this.hitsLabel.Size = new System.Drawing.Size(37, 13);
-            this.hitsLabel.TabIndex = 0;
-            this.hitsLabel.Text = "Hits: 0";
-            // 
             // missesLabel
             // 
             this.missesLabel.AutoSize = true;
@@ -128,6 +119,15 @@
             this.missesLabel.Size = new System.Drawing.Size(51, 13);
             this.missesLabel.TabIndex = 1;
             this.missesLabel.Text = "Misses: 0";
+            // 
+            // hitsLabel
+            // 
+            this.hitsLabel.AutoSize = true;
+            this.hitsLabel.Location = new System.Drawing.Point(25, 21);
+            this.hitsLabel.Name = "hitsLabel";
+            this.hitsLabel.Size = new System.Drawing.Size(37, 13);
+            this.hitsLabel.TabIndex = 0;
+            this.hitsLabel.Text = "Hits: 0";
             // 
             // animationTimer2
             // 
@@ -203,6 +203,7 @@
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Name = "MonkeyBashForm";
             this.Text = "MonkeyBashForm";
+            this.Load += new System.EventHandler(this.MonkeyBashForm_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MonkeyBashForm_MouseDown);
             ((System.ComponentModel.ISupportInitialize)(this.monkeyPictureBox1)).EndInit();
             this.scoreGroupBox.ResumeLayout(false);

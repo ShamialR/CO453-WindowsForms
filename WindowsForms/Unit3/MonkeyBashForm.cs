@@ -48,6 +48,11 @@ namespace WindowsForms.Unit3
             missesLabel.Text = "Misses: " + monkeyScore.ToString();
         }
 
+        private void MonkeyBashForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void animationTimer_Tick(object sender, EventArgs e)
         {
             x = generator.Next(this.Width - 100);

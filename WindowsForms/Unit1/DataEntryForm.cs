@@ -10,6 +10,13 @@ using System.Windows.Forms;
 
 namespace WindowsForms.Unit1
 {
+    /// <summary>
+    /// Tasks 1.4
+    /// This class displays a message using data entered by the user
+    /// the message can be changed to all upper/lower case
+    /// or the message can be cleared which changes background oclour.
+    /// Author: Shamial Rashid 21905385
+    /// </summary>
     public partial class DataEntryForm : Form
     {
         public DataEntryForm()

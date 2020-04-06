@@ -10,6 +10,13 @@ using System.Windows.Forms;
 
 namespace WindowsForms.Unit1
 {
+    /// <summary>
+    /// Tasks 1.5 - 1.10
+    /// This class is a calculator which uses text entered by the user and
+    /// buttons for the operations type to work out the result of the calculation.
+    /// Each operation type also buttons change the background of the form
+    /// Author: Shamial Rashid 21905385
+    /// </summary>
     public partial class CalculatorForm : Form
     {
         private double number1, number2, result;
@@ -26,6 +33,7 @@ namespace WindowsForms.Unit1
             result = number1 + number2;
             resultAnswerLabel.Text = result.ToString();
             this.BackColor = Color.Red;
+            calculationTypePictureBox.Image = Image.FromFile("AddSmall.png");
         }
 
         private void subtractionButton_Click(object sender, EventArgs e)
@@ -34,6 +42,7 @@ namespace WindowsForms.Unit1
             result = number1 - number2;
             resultAnswerLabel.Text = result.ToString();
             this.BackColor = Color.Blue;
+            calculationTypePictureBox.Image = Image.FromFile("MinusSmall.png");
         }
 
         private void multiplicationButton_Click(object sender, EventArgs e)
@@ -42,6 +51,7 @@ namespace WindowsForms.Unit1
             result = number1 * number2;
             resultAnswerLabel.Text = result.ToString();
             this.BackColor = Color.Lime;
+            calculationTypePictureBox.Image = Image.FromFile("MultiplySmall.png");
         }
 
         private void divisionButton_Click(object sender, EventArgs e)
@@ -56,10 +66,11 @@ namespace WindowsForms.Unit1
                 result = number1 / number2;
                 resultAnswerLabel.Text = result.ToString();
                 this.BackColor = Color.Pink;
+                calculationTypePictureBox.Image = Image.FromFile("DivideSmall.png");
             }
         }
 
-        private void CalculatorForm_Load(object sender, EventArgs e)
+        private void calculatorForm_Load(object sender, EventArgs e)
         {
             SplashForm SplashScreen = new SplashForm(); // create new SScreen form object
             SplashScreen.ShowDialog(); // show the splash screen
@@ -71,6 +82,7 @@ namespace WindowsForms.Unit1
             result = Math.Pow(number1, number2);
             resultAnswerLabel.Text = result.ToString();
             this.BackColor = Color.Yellow;
+            calculationTypePictureBox.Image = null;
         }
 
         private void averageButton_Click(object sender, EventArgs e)
@@ -79,13 +91,15 @@ namespace WindowsForms.Unit1
             result = (number1 + number2) / 2;
             resultAnswerLabel.Text = result.ToString();
             this.BackColor = Color.Cyan;
+            calculationTypePictureBox.Image = null;
         }
 
-        private void Clearbutton_Click(object sender, EventArgs e)
+        private void clearbutton_Click(object sender, EventArgs e)
         {
             resultAnswerLabel.Text = "";
             firstNumberText.Text = "";
             secondNumberText.Text = "";
+            calculationTypePictureBox.Image = null;
         }
 
         public CalculatorForm()
