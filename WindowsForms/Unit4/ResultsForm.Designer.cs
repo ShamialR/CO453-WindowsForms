@@ -137,12 +137,12 @@
         #endregion
 
         private System.Windows.Forms.GroupBox billDetailsGroupBox;
-        private System.Windows.Forms.Label displayPeopleLabel;
-        private System.Windows.Forms.Label displayTotalBillLabel;
         private System.Windows.Forms.Label peopleLabel;
         private System.Windows.Forms.Label totalBillLabel;
         private System.Windows.Forms.Label eachPaysLabel;
-        private System.Windows.Forms.Label displayEachPaysLabel;
         private System.Windows.Forms.Button closeButton;
+        public System.Windows.Forms.Label displayPeopleLabel;
+        public System.Windows.Forms.Label displayTotalBillLabel;
+        public System.Windows.Forms.Label displayEachPaysLabel;
     }
 }

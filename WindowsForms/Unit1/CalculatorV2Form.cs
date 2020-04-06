@@ -10,6 +10,15 @@ using System.Windows.Forms;
 
 namespace WindowsForms.Unit1
 {
+    /// <summary>
+    /// Tasks 1.11
+    /// This class is based off an actual calculator.
+    /// it has 10 buttons, one for each number, the operator types,
+    /// a equals/calculate button, a clear button and a quit button.
+    /// The number buttons can be saved, then using a operator button,
+    /// the result can be displayed.
+    /// Author: Shamial Rashid 21905385
+    /// </summary>
     public partial class CalculatorV2Form : Form
     {
         private string stringNumber, operationType;
@@ -117,7 +126,7 @@ namespace WindowsForms.Unit1
 
         private void quitButton_Click(object sender, EventArgs e)
         {
-
+            Application.Exit();
         }
 
         private void subtractionButton_Click(object sender, EventArgs e)

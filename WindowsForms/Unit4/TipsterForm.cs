@@ -19,8 +19,11 @@ namespace WindowsForms.Unit4
 
         private void calculateButton_Click(object sender, EventArgs e)
         {
-            ResultsForm ResultsScreen = new ResultsForm(); 
-            ResultsScreen.Show();  
+            ResultsForm ResultsScreen = new ResultsForm();
+            ResultsScreen.Show();
+            ResultsScreen.displayTotalBillLabel.Text = billTextBox.Text;
+            ResultsScreen.displayPeopleLabel.Text = numberOfPeopleListBox.Text;
+            ResultsScreen.displayEachPaysLabel.Text = billTextBox.Text;
         }
     }
 }
