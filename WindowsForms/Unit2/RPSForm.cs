@@ -21,10 +21,10 @@ namespace WindowsForms.Unit2
     }
     public partial class RPSForm : Form
     {
+        private const int MAX_SCORE = 20;
         private int compChoice, userChoice;
         private int userScore = 0;
         private int compScore = 0;
-        private const int MAX_SCORE = 20;
 
         public RPSForm()
         {
