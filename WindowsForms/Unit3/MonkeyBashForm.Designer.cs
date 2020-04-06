@@ -132,22 +132,18 @@
             // animationTimer2
             // 
             this.animationTimer2.Interval = 1000;
-            this.animationTimer2.Tick += new System.EventHandler(this.animationTimer2_Tick);
             // 
             // animationTimer3
             // 
             this.animationTimer3.Interval = 1000;
-            this.animationTimer3.Tick += new System.EventHandler(this.animationTimer3_Tick);
             // 
             // animationTimer4
             // 
             this.animationTimer4.Interval = 1000;
-            this.animationTimer4.Tick += new System.EventHandler(this.animationTimer4_Tick);
             // 
             // animationTimer5
             // 
             this.animationTimer5.Interval = 1000;
-            this.animationTimer5.Tick += new System.EventHandler(this.animationTimer5_Tick);
             // 
             // monkeyPictureBox2
             // 
@@ -158,7 +154,6 @@
             this.monkeyPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.monkeyPictureBox2.TabIndex = 5;
             this.monkeyPictureBox2.TabStop = false;
-            this.monkeyPictureBox2.Click += new System.EventHandler(this.monkeyPictureBox2_Click);
             // 
             // monkeyPictureBox3
             // 
@@ -169,7 +164,6 @@
             this.monkeyPictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.monkeyPictureBox3.TabIndex = 6;
             this.monkeyPictureBox3.TabStop = false;
-            this.monkeyPictureBox3.Click += new System.EventHandler(this.monkeyPictureBox3_Click);
             // 
             // monkeyPictureBox4
             // 
@@ -180,7 +174,6 @@
             this.monkeyPictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.monkeyPictureBox4.TabIndex = 7;
             this.monkeyPictureBox4.TabStop = false;
-            this.monkeyPictureBox4.Click += new System.EventHandler(this.monkeyPictureBox4_Click);
             // 
             // monkeyPictureBox5
             // 
@@ -191,7 +184,6 @@
             this.monkeyPictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.monkeyPictureBox5.TabIndex = 8;
             this.monkeyPictureBox5.TabStop = false;
-            this.monkeyPictureBox5.Click += new System.EventHandler(this.monkeyPictureBox5_Click);
             // 
             // MonkeyBashForm
             // 
