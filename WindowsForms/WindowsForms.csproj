@@ -115,6 +115,12 @@
     <Compile Include="Unit2\RPSWin.Designer.cs">
       <DependentUpon>RPSWin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Unit3\ChoosePictureForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Unit3\ChoosePictureForm.Designer.cs">
+      <DependentUpon>ChoosePictureForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Unit3\CurrencyConverterForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -192,6 +198,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Unit2\RPSWin.resx">
       <DependentUpon>RPSWin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Unit3\ChoosePictureForm.resx">
+      <DependentUpon>ChoosePictureForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Unit3\CurrencyConverterForm.resx">
       <DependentUpon>CurrencyConverterForm.cs</DependentUpon>
