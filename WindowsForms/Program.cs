@@ -24,8 +24,8 @@ namespace WindowsForms
             //Application.Run(new Unit3.CurrencyConverterForm());
             //Application.Run(new Unit3.PizzaOrderForm());
             //Application.Run(new Unit3.PoshNoshForm());
-            Application.Run(new Unit3.MonkeyBashForm());
-            //Application.Run(new Unit3.MyPadForm());
+            //Application.Run(new Unit3.MonkeyBashForm());
+            Application.Run(new Unit3.MyPadForm());
         }
     }
 }

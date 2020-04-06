@@ -12,6 +12,7 @@ namespace WindowsForms.Unit3
 {
     public partial class MyPadForm : Form
     {
+        private int fontSize = 0;
         public MyPadForm()
         {
             InitializeComponent();
@@ -69,6 +70,13 @@ namespace WindowsForms.Unit3
         {
             colorDialog.ShowDialog();
             mainRichTextBox.ForeColor = colorDialog.Color;
+        }
+
+        private void horizontalScrollBar_Scroll(object sender, ScrollEventArgs e)
+        {
+            Font fontsize = new Font(mainRichTextBox.Font.Name, horizontalScrollBar.Value, FontStyle.Regular);
+            mainRichTextBox.SelectionFont = fontsize;
+            fontSize = horizontalScrollBar.Value;
         }
     }
 }
