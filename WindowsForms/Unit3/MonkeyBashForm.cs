@@ -29,11 +29,11 @@ namespace WindowsForms.Unit3
 
         private void monkeyPictureBox_Click(object sender, EventArgs e)
         {
-            animationTimer.Enabled = false;
-            monkeyPictureBox.Image = Image.FromFile("monkeySad1.jpg");
+            animationTimer1.Enabled = false;
+            monkeyPictureBox1.Image = Image.FromFile("monkeySad1.jpg");
             MessageBox.Show("Ouch! You HIT Me!", "Monkey");
-            animationTimer.Enabled = true;
-            monkeyPictureBox.Image = Image.FromFile("monkey.jpg");
+            animationTimer1.Enabled = true;
+            monkeyPictureBox1.Image = Image.FromFile("monkey.jpg");
             playerScore += 1;
             hitsLabel.Text = "Hits: " + playerScore.ToString();
         }
@@ -42,7 +42,7 @@ namespace WindowsForms.Unit3
         {
             //MessageBox.Show("The mouse X position is " + e.X);
 
-            monkeyPictureBox.Image = Image.FromFile("monkey.jpg");
+            monkeyPictureBox1.Image = Image.FromFile("monkey.jpg");
             MessageBox.Show("HAHA, You missed me!", "Monkey");
             monkeyScore += 1;
             missesLabel.Text = "Misses: " + monkeyScore.ToString();
@@ -52,8 +52,8 @@ namespace WindowsForms.Unit3
         {
             x = generator.Next(this.Width - 100);
             y = generator.Next(this.Height - 100);
-            monkeyPictureBox.Left = x;
-            monkeyPictureBox.Top = y;
+            monkeyPictureBox1.Left = x;
+            monkeyPictureBox1.Top = y;
             Refresh();
             
         }
@@ -61,12 +61,20 @@ namespace WindowsForms.Unit3
 
         private void startButton_Click(object sender, EventArgs e)
         {
-            animationTimer.Enabled = true;
+            animationTimer1.Enabled = true;
+            animationTimer2.Enabled = true;
+            animationTimer3.Enabled = true;
+            animationTimer4.Enabled = true;
+            animationTimer5.Enabled = true;
         }
 
         private void stopButton_Click(object sender, EventArgs e)
         {
-            animationTimer.Enabled = false;
+            animationTimer1.Enabled = false;
+            animationTimer2.Enabled = false;
+            animationTimer3.Enabled = false;
+            animationTimer4.Enabled = false;
+            animationTimer5.Enabled = false;
         }
 
     }
