@@ -10,6 +10,11 @@ using System.Windows.Forms;
 
 namespace WindowsForms.Unit2
 {
+    /// <summary>
+    /// Task 2.1 - 2.8
+    /// This class allows the user to play a rock paper scissors game against the computer which randomly picks between rock paper and scissors with the first to reach 20 points winning
+    /// Author: Shamial Rashid 21905385
+    /// </summary>
     public enum Choices
     {
         Rock,Paper,Scissors

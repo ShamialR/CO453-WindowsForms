@@ -15,7 +15,7 @@ namespace WindowsForms.Unit1
     /// This class is the quit screen, it opens when in the calculator
     /// the quit button is clicked. Once this form is clicked the
     /// application is closed.
-    /// Once this s
+    /// Author: Shamial Rashid 21905385
     /// </summary>
     public partial class QuitForm : Form
     {

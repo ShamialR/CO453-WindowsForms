@@ -14,7 +14,8 @@ namespace WindowsForms.Unit1
     /// Tasks 1.6
     /// This class is the entry screen, it opens first when
     /// the calculator form is opened, once it's clicked this
-    /// splash form will close displaying the actual calc form.
+    /// form closes and the calculator is displayed.
+    /// Author: Shamial Rashid 21905385
     /// </summary>
     public partial class SplashForm : Form
     {
@@ -22,12 +23,12 @@ namespace WindowsForms.Unit1
         {
             InitializeComponent();
         }
-        private void splashForm_Click(object sender, EventArgs e)
+        private void SplashForm_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void splashForm_Load(object sender, EventArgs e)
+        private void SplashForm_Load(object sender, EventArgs e)
         {
 
         }

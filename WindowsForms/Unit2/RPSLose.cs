@@ -10,6 +10,13 @@ using System.Windows.Forms;
 
 namespace WindowsForms.Unit2
 {
+    /// <summary>
+    /// Tasks 2.8
+    /// This class is the screen displayed when the
+    /// player has lost the RPS game.
+    /// Clicking it closes this form.
+    /// Author: Shamial Rashid 21905385
+    /// </summary>
     public partial class RPSLose : Form
     {
         public RPSLose()

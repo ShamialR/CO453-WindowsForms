@@ -16,7 +16,8 @@ namespace WindowsForms.Unit1
     /// it has 10 buttons, one for each number, the operator types,
     /// a equals/calculate button, a clear button and a quit button.
     /// The number buttons can be saved, then using a operator button,
-    /// the result can be displayed
+    /// the result can be displayed.
+    /// Author: Shamial Rashid 21905385
     /// </summary>
     public partial class CalculatorV2Form : Form
     {

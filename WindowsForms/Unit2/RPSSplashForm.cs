@@ -10,6 +10,13 @@ using System.Windows.Forms;
 
 namespace WindowsForms.Unit2
 {
+    /// <summary>
+    /// Tasks 2.7
+    /// This class is the entry screen, it opens first when
+    /// the RPS form is opened, once it's clicked this
+    /// form closes and the RPS form is displayed.
+    /// Author: Shamial Rashid 21905385
+    /// </summary>
     public partial class RPSSplashForm : Form
     {
         public RPSSplashForm()
