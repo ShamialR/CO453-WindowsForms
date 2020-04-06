@@ -10,17 +10,16 @@ using System.Windows.Forms;
 
 namespace WindowsForms.Unit4
 {
-    public partial class TipsterForm : Form
+    public partial class ResultsForm : Form
     {
-        public TipsterForm()
+        public ResultsForm()
         {
             InitializeComponent();
         }
 
-        private void calculateButton_Click(object sender, EventArgs e)
+        private void closeButton_Click(object sender, EventArgs e)
         {
-            ResultsForm ResultsScreen = new ResultsForm(); 
-            ResultsScreen.Show();  
+            this.Close();
         }
     }
 }
