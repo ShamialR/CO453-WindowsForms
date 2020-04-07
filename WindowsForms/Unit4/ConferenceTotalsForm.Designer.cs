@@ -308,6 +308,7 @@
             this.closeButton.TabIndex = 6;
             this.closeButton.Text = "Close";
             this.closeButton.UseVisualStyleBackColor = true;
+            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
             // 
             // ConferenceTotalsForm
             // 
@@ -341,30 +342,30 @@
         #endregion
 
         private System.Windows.Forms.GroupBox totalAttendanceGroupBox;
-        private System.Windows.Forms.Label displayTotalTeachersLabel;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox totalSchoolBillGroupBox;
         private System.Windows.Forms.GroupBox henleyCollegeGroupBox;
-        private System.Windows.Forms.Label displayHenleyCollegeBillLabel;
         private System.Windows.Forms.Label henleyCollegeBillLabel;
-        private System.Windows.Forms.Label displayHenleyCollegeTeachersLabel;
         private System.Windows.Forms.Label henleyCollegeTeachersLabel;
         private System.Windows.Forms.GroupBox bucksNewUniGroupBox;
-        private System.Windows.Forms.Label displayBNUBill;
         private System.Windows.Forms.Label bnuBill;
-        private System.Windows.Forms.Label displayBNULabel;
         private System.Windows.Forms.Label bnuTeachers;
         private System.Windows.Forms.GroupBox oakridgeSchoolGroupBox;
-        private System.Windows.Forms.Label displayOakridgeBillLabel;
         private System.Windows.Forms.Label oakridgeBillLabel;
-        private System.Windows.Forms.Label displayOakridgeTeachersLabel;
         private System.Windows.Forms.Label oakridgeTeachersLabel;
         private System.Windows.Forms.GroupBox rgsGroupBox;
-        private System.Windows.Forms.Label displayRGSBillLabel;
         private System.Windows.Forms.Label rgsBillLabel;
-        private System.Windows.Forms.Label displayRGSTeachersLabel;
         private System.Windows.Forms.Label rgsTeachersLabel;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button closeButton;
+        public System.Windows.Forms.Label displayTotalTeachersLabel;
+        public System.Windows.Forms.Label displayHenleyCollegeBillLabel;
+        public System.Windows.Forms.Label displayHenleyCollegeTeachersLabel;
+        public System.Windows.Forms.Label displayBNUBill;
+        public System.Windows.Forms.Label displayBNULabel;
+        public System.Windows.Forms.Label displayOakridgeBillLabel;
+        public System.Windows.Forms.Label displayOakridgeTeachersLabel;
+        public System.Windows.Forms.Label displayRGSBillLabel;
+        public System.Windows.Forms.Label displayRGSTeachersLabel;
     }
 }

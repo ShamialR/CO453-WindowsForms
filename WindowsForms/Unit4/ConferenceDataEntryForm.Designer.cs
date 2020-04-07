@@ -203,17 +203,17 @@
         #endregion
 
         private System.Windows.Forms.Label attendeeNameLabel;
-        private System.Windows.Forms.TextBox attendeeNameTextBox;
         private System.Windows.Forms.Label schoolNameLabel;
-        private System.Windows.Forms.ListBox schoolNameListBox;
         private System.Windows.Forms.Label diningOptionsLabel;
-        private System.Windows.Forms.RadioButton pizzaRadioButton;
-        private System.Windows.Forms.RadioButton fishAndChipsRadioButton;
-        private System.Windows.Forms.RadioButton pastaRadioButton;
-        private System.Windows.Forms.RadioButton saladRadioButton;
-        private System.Windows.Forms.Button quitButton;
-        private System.Windows.Forms.Button totalsButton;
-        private System.Windows.Forms.Button seeBillButton;
         private System.Windows.Forms.PictureBox pictureBox1;
+        public System.Windows.Forms.TextBox attendeeNameTextBox;
+        public System.Windows.Forms.ListBox schoolNameListBox;
+        public System.Windows.Forms.RadioButton pizzaRadioButton;
+        public System.Windows.Forms.RadioButton fishAndChipsRadioButton;
+        public System.Windows.Forms.RadioButton pastaRadioButton;
+        public System.Windows.Forms.RadioButton saladRadioButton;
+        public System.Windows.Forms.Button quitButton;
+        public System.Windows.Forms.Button totalsButton;
+        public System.Windows.Forms.Button seeBillButton;
     }
 }

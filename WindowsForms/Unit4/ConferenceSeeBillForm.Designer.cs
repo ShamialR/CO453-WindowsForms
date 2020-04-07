@@ -34,13 +34,13 @@
             this.schoolNameLabel = new System.Windows.Forms.Label();
             this.displaySchoolNameLabel = new System.Windows.Forms.Label();
             this.choicesGroupBox = new System.Windows.Forms.GroupBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.diningCostLabel = new System.Windows.Forms.Label();
-            this.displayDiningCostLabel = new System.Windows.Forms.Label();
-            this.displayAttendanceCostLabel = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.displayTotalCostLabel = new System.Windows.Forms.Label();
             this.totalCostLabel = new System.Windows.Forms.Label();
+            this.displayAttendanceCostLabel = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.displayDiningCostLabel = new System.Windows.Forms.Label();
+            this.diningCostLabel = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.acceptBillButton = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.choicesGroupBox.SuspendLayout();
@@ -107,35 +107,22 @@
             this.choicesGroupBox.TabStop = false;
             this.choicesGroupBox.Text = "Choices";
             // 
-            // groupBox1
+            // displayTotalCostLabel
             // 
-            this.groupBox1.Controls.Add(this.schoolNameLabel);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.displaySchoolNameLabel);
-            this.groupBox1.Controls.Add(this.displayAttendeeNameLabel);
-            this.groupBox1.Location = new System.Drawing.Point(29, 12);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(236, 144);
-            this.groupBox1.TabIndex = 6;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Choices";
+            this.displayTotalCostLabel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.displayTotalCostLabel.Location = new System.Drawing.Point(131, 107);
+            this.displayTotalCostLabel.Name = "displayTotalCostLabel";
+            this.displayTotalCostLabel.Size = new System.Drawing.Size(84, 13);
+            this.displayTotalCostLabel.TabIndex = 9;
             // 
-            // diningCostLabel
+            // totalCostLabel
             // 
-            this.diningCostLabel.AutoSize = true;
-            this.diningCostLabel.Location = new System.Drawing.Point(10, 32);
-            this.diningCostLabel.Name = "diningCostLabel";
-            this.diningCostLabel.Size = new System.Drawing.Size(64, 13);
-            this.diningCostLabel.TabIndex = 0;
-            this.diningCostLabel.Text = "Dining Cost:";
-            // 
-            // displayDiningCostLabel
-            // 
-            this.displayDiningCostLabel.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.displayDiningCostLabel.Location = new System.Drawing.Point(131, 32);
-            this.displayDiningCostLabel.Name = "displayDiningCostLabel";
-            this.displayDiningCostLabel.Size = new System.Drawing.Size(84, 13);
-            this.displayDiningCostLabel.TabIndex = 5;
+            this.totalCostLabel.AutoSize = true;
+            this.totalCostLabel.Location = new System.Drawing.Point(10, 107);
+            this.totalCostLabel.Name = "totalCostLabel";
+            this.totalCostLabel.Size = new System.Drawing.Size(58, 13);
+            this.totalCostLabel.TabIndex = 8;
+            this.totalCostLabel.Text = "Total Cost:";
             // 
             // displayAttendanceCostLabel
             // 
@@ -154,22 +141,35 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "Attendance Cost:";
             // 
-            // displayTotalCostLabel
+            // displayDiningCostLabel
             // 
-            this.displayTotalCostLabel.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.displayTotalCostLabel.Location = new System.Drawing.Point(131, 107);
-            this.displayTotalCostLabel.Name = "displayTotalCostLabel";
-            this.displayTotalCostLabel.Size = new System.Drawing.Size(84, 13);
-            this.displayTotalCostLabel.TabIndex = 9;
+            this.displayDiningCostLabel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.displayDiningCostLabel.Location = new System.Drawing.Point(131, 32);
+            this.displayDiningCostLabel.Name = "displayDiningCostLabel";
+            this.displayDiningCostLabel.Size = new System.Drawing.Size(84, 13);
+            this.displayDiningCostLabel.TabIndex = 5;
             // 
-            // totalCostLabel
+            // diningCostLabel
             // 
-            this.totalCostLabel.AutoSize = true;
-            this.totalCostLabel.Location = new System.Drawing.Point(10, 107);
-            this.totalCostLabel.Name = "totalCostLabel";
-            this.totalCostLabel.Size = new System.Drawing.Size(58, 13);
-            this.totalCostLabel.TabIndex = 8;
-            this.totalCostLabel.Text = "Total Cost:";
+            this.diningCostLabel.AutoSize = true;
+            this.diningCostLabel.Location = new System.Drawing.Point(10, 32);
+            this.diningCostLabel.Name = "diningCostLabel";
+            this.diningCostLabel.Size = new System.Drawing.Size(64, 13);
+            this.diningCostLabel.TabIndex = 0;
+            this.diningCostLabel.Text = "Dining Cost:";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.schoolNameLabel);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.displaySchoolNameLabel);
+            this.groupBox1.Controls.Add(this.displayAttendeeNameLabel);
+            this.groupBox1.Location = new System.Drawing.Point(29, 12);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(236, 144);
+            this.groupBox1.TabIndex = 6;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Choices";
             // 
             // acceptBillButton
             // 
@@ -179,6 +179,7 @@
             this.acceptBillButton.TabIndex = 7;
             this.acceptBillButton.Text = "Accept Bill";
             this.acceptBillButton.UseVisualStyleBackColor = true;
+            this.acceptBillButton.Click += new System.EventHandler(this.acceptBillButton_Click);
             // 
             // pictureBox1
             // 
@@ -214,18 +215,18 @@
 
         private System.Windows.Forms.Button closeButton;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label displayAttendeeNameLabel;
         private System.Windows.Forms.Label schoolNameLabel;
-        private System.Windows.Forms.Label displaySchoolNameLabel;
         private System.Windows.Forms.GroupBox choicesGroupBox;
-        private System.Windows.Forms.Label displayTotalCostLabel;
         private System.Windows.Forms.Label totalCostLabel;
-        private System.Windows.Forms.Label displayAttendanceCostLabel;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label displayDiningCostLabel;
         private System.Windows.Forms.Label diningCostLabel;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button acceptBillButton;
         private System.Windows.Forms.PictureBox pictureBox1;
+        public System.Windows.Forms.Label displayAttendeeNameLabel;
+        public System.Windows.Forms.Label displaySchoolNameLabel;
+        public System.Windows.Forms.Label displayTotalCostLabel;
+        public System.Windows.Forms.Label displayAttendanceCostLabel;
+        public System.Windows.Forms.Label displayDiningCostLabel;
     }
 }

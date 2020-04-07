@@ -28,7 +28,8 @@ namespace WindowsForms
             //Application.Run(new Unit3.MyPadForm());
             //Application.Run(new Unit3.TargetForm());
             //Application.Run(new Unit3.ChoosePictureForm());
-            Application.Run(new Unit4.TipsterForm());
+            //Application.Run(new Unit4.TipsterForm());
+            Application.Run(new Unit4.ConferenceDataEntryForm());
         }
     }
 }
