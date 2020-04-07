@@ -36,18 +36,22 @@
             this.displayTotalBillLabel = new System.Windows.Forms.Label();
             this.displayPeopleLabel = new System.Windows.Forms.Label();
             this.closeButton = new System.Windows.Forms.Button();
+            this.displayTipLabel = new System.Windows.Forms.Label();
+            this.tipLabel = new System.Windows.Forms.Label();
             this.billDetailsGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // billDetailsGroupBox
             // 
+            this.billDetailsGroupBox.Controls.Add(this.displayTipLabel);
+            this.billDetailsGroupBox.Controls.Add(this.tipLabel);
             this.billDetailsGroupBox.Controls.Add(this.displayPeopleLabel);
             this.billDetailsGroupBox.Controls.Add(this.displayTotalBillLabel);
             this.billDetailsGroupBox.Controls.Add(this.peopleLabel);
             this.billDetailsGroupBox.Controls.Add(this.totalBillLabel);
             this.billDetailsGroupBox.Location = new System.Drawing.Point(43, 36);
             this.billDetailsGroupBox.Name = "billDetailsGroupBox";
-            this.billDetailsGroupBox.Size = new System.Drawing.Size(244, 102);
+            this.billDetailsGroupBox.Size = new System.Drawing.Size(244, 124);
             this.billDetailsGroupBox.TabIndex = 0;
             this.billDetailsGroupBox.TabStop = false;
             this.billDetailsGroupBox.Text = "Bill Details";
@@ -116,6 +120,24 @@
             this.closeButton.UseVisualStyleBackColor = true;
             this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
             // 
+            // displayTipLabel
+            // 
+            this.displayTipLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.displayTipLabel.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.displayTipLabel.Location = new System.Drawing.Point(104, 88);
+            this.displayTipLabel.Name = "displayTipLabel";
+            this.displayTipLabel.Size = new System.Drawing.Size(100, 23);
+            this.displayTipLabel.TabIndex = 7;
+            // 
+            // tipLabel
+            // 
+            this.tipLabel.AutoSize = true;
+            this.tipLabel.Location = new System.Drawing.Point(17, 98);
+            this.tipLabel.Name = "tipLabel";
+            this.tipLabel.Size = new System.Drawing.Size(25, 13);
+            this.tipLabel.TabIndex = 6;
+            this.tipLabel.Text = "Tip:";
+            // 
             // ResultsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -144,5 +166,7 @@
         public System.Windows.Forms.Label displayPeopleLabel;
         public System.Windows.Forms.Label displayTotalBillLabel;
         public System.Windows.Forms.Label displayEachPaysLabel;
+        public System.Windows.Forms.Label displayTipLabel;
+        private System.Windows.Forms.Label tipLabel;
     }
 }

@@ -35,14 +35,20 @@
             this.pictureBox = new System.Windows.Forms.PictureBox();
             this.calculateButton = new System.Windows.Forms.Button();
             this.quitButton = new System.Windows.Forms.Button();
+            this.tipGroupBox = new System.Windows.Forms.GroupBox();
+            this.madTipRadioButton = new System.Windows.Forms.RadioButton();
+            this.generousTipRadioButton = new System.Windows.Forms.RadioButton();
+            this.normalTipRadioButton = new System.Windows.Forms.RadioButton();
+            this.noneTipRadioButton = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
+            this.tipGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // billLabel
             // 
             this.billLabel.AutoSize = true;
             this.billLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.billLabel.Location = new System.Drawing.Point(47, 28);
+            this.billLabel.Location = new System.Drawing.Point(12, 28);
             this.billLabel.Name = "billLabel";
             this.billLabel.Size = new System.Drawing.Size(27, 18);
             this.billLabel.TabIndex = 0;
@@ -52,7 +58,7 @@
             // 
             this.numberOfPeopleLabel.AutoSize = true;
             this.numberOfPeopleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.numberOfPeopleLabel.Location = new System.Drawing.Point(47, 80);
+            this.numberOfPeopleLabel.Location = new System.Drawing.Point(12, 226);
             this.numberOfPeopleLabel.Name = "numberOfPeopleLabel";
             this.numberOfPeopleLabel.Size = new System.Drawing.Size(131, 18);
             this.numberOfPeopleLabel.TabIndex = 1;
@@ -60,7 +66,7 @@
             // 
             // billTextBox
             // 
-            this.billTextBox.Location = new System.Drawing.Point(144, 28);
+            this.billTextBox.Location = new System.Drawing.Point(118, 29);
             this.billTextBox.Name = "billTextBox";
             this.billTextBox.Size = new System.Drawing.Size(100, 20);
             this.billTextBox.TabIndex = 2;
@@ -79,14 +85,14 @@
             "8",
             "9",
             "10"});
-            this.numberOfPeopleListBox.Location = new System.Drawing.Point(204, 80);
+            this.numberOfPeopleListBox.Location = new System.Drawing.Point(178, 217);
             this.numberOfPeopleListBox.Name = "numberOfPeopleListBox";
-            this.numberOfPeopleListBox.Size = new System.Drawing.Size(40, 43);
+            this.numberOfPeopleListBox.Size = new System.Drawing.Size(40, 69);
             this.numberOfPeopleListBox.TabIndex = 3;
             // 
             // pictureBox
             // 
-            this.pictureBox.Location = new System.Drawing.Point(348, 28);
+            this.pictureBox.Location = new System.Drawing.Point(264, 28);
             this.pictureBox.Name = "pictureBox";
             this.pictureBox.Size = new System.Drawing.Size(222, 216);
             this.pictureBox.TabIndex = 4;
@@ -94,7 +100,7 @@
             // 
             // calculateButton
             // 
-            this.calculateButton.Location = new System.Drawing.Point(348, 278);
+            this.calculateButton.Location = new System.Drawing.Point(264, 278);
             this.calculateButton.Name = "calculateButton";
             this.calculateButton.Size = new System.Drawing.Size(75, 23);
             this.calculateButton.TabIndex = 5;
@@ -104,7 +110,7 @@
             // 
             // quitButton
             // 
-            this.quitButton.Location = new System.Drawing.Point(495, 278);
+            this.quitButton.Location = new System.Drawing.Point(411, 278);
             this.quitButton.Name = "quitButton";
             this.quitButton.Size = new System.Drawing.Size(75, 23);
             this.quitButton.TabIndex = 6;
@@ -112,12 +118,70 @@
             this.quitButton.UseVisualStyleBackColor = true;
             this.quitButton.Click += new System.EventHandler(this.quitButton_Click);
             // 
+            // tipGroupBox
+            // 
+            this.tipGroupBox.Controls.Add(this.madTipRadioButton);
+            this.tipGroupBox.Controls.Add(this.generousTipRadioButton);
+            this.tipGroupBox.Controls.Add(this.normalTipRadioButton);
+            this.tipGroupBox.Controls.Add(this.noneTipRadioButton);
+            this.tipGroupBox.Location = new System.Drawing.Point(15, 78);
+            this.tipGroupBox.Name = "tipGroupBox";
+            this.tipGroupBox.Size = new System.Drawing.Size(203, 114);
+            this.tipGroupBox.TabIndex = 7;
+            this.tipGroupBox.TabStop = false;
+            this.tipGroupBox.Text = "Tip";
+            // 
+            // madTipRadioButton
+            // 
+            this.madTipRadioButton.AutoSize = true;
+            this.madTipRadioButton.Location = new System.Drawing.Point(43, 88);
+            this.madTipRadioButton.Name = "madTipRadioButton";
+            this.madTipRadioButton.Size = new System.Drawing.Size(46, 17);
+            this.madTipRadioButton.TabIndex = 3;
+            this.madTipRadioButton.TabStop = true;
+            this.madTipRadioButton.Text = "Mad";
+            this.madTipRadioButton.UseVisualStyleBackColor = true;
+            // 
+            // generousTipRadioButton
+            // 
+            this.generousTipRadioButton.AutoSize = true;
+            this.generousTipRadioButton.Location = new System.Drawing.Point(43, 65);
+            this.generousTipRadioButton.Name = "generousTipRadioButton";
+            this.generousTipRadioButton.Size = new System.Drawing.Size(71, 17);
+            this.generousTipRadioButton.TabIndex = 2;
+            this.generousTipRadioButton.TabStop = true;
+            this.generousTipRadioButton.Text = "Generous";
+            this.generousTipRadioButton.UseVisualStyleBackColor = true;
+            // 
+            // normalTipRadioButton
+            // 
+            this.normalTipRadioButton.AutoSize = true;
+            this.normalTipRadioButton.Location = new System.Drawing.Point(43, 42);
+            this.normalTipRadioButton.Name = "normalTipRadioButton";
+            this.normalTipRadioButton.Size = new System.Drawing.Size(58, 17);
+            this.normalTipRadioButton.TabIndex = 1;
+            this.normalTipRadioButton.TabStop = true;
+            this.normalTipRadioButton.Text = "Normal";
+            this.normalTipRadioButton.UseVisualStyleBackColor = true;
+            // 
+            // noneTipRadioButton
+            // 
+            this.noneTipRadioButton.AutoSize = true;
+            this.noneTipRadioButton.Location = new System.Drawing.Point(43, 19);
+            this.noneTipRadioButton.Name = "noneTipRadioButton";
+            this.noneTipRadioButton.Size = new System.Drawing.Size(51, 17);
+            this.noneTipRadioButton.TabIndex = 0;
+            this.noneTipRadioButton.TabStop = true;
+            this.noneTipRadioButton.Text = "None";
+            this.noneTipRadioButton.UseVisualStyleBackColor = true;
+            // 
             // TipsterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCoral;
-            this.ClientSize = new System.Drawing.Size(628, 324);
+            this.ClientSize = new System.Drawing.Size(541, 324);
+            this.Controls.Add(this.tipGroupBox);
             this.Controls.Add(this.quitButton);
             this.Controls.Add(this.calculateButton);
             this.Controls.Add(this.pictureBox);
@@ -128,6 +192,8 @@
             this.Name = "TipsterForm";
             this.Text = "Tipster Data Entry";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
+            this.tipGroupBox.ResumeLayout(false);
+            this.tipGroupBox.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -142,5 +208,10 @@
         private System.Windows.Forms.PictureBox pictureBox;
         private System.Windows.Forms.Button calculateButton;
         private System.Windows.Forms.Button quitButton;
+        private System.Windows.Forms.GroupBox tipGroupBox;
+        private System.Windows.Forms.RadioButton madTipRadioButton;
+        private System.Windows.Forms.RadioButton generousTipRadioButton;
+        private System.Windows.Forms.RadioButton normalTipRadioButton;
+        private System.Windows.Forms.RadioButton noneTipRadioButton;
     }
 }
