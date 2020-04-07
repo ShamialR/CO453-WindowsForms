@@ -12,6 +12,13 @@ namespace WindowsForms.Unit4
 {
     public partial class TipsterForm : Form
     {
+        private double billNumber, peopleNumber, answer;
+
+        private void quitButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
         public TipsterForm()
         {
             InitializeComponent();
@@ -24,6 +31,12 @@ namespace WindowsForms.Unit4
             ResultsScreen.displayTotalBillLabel.Text = billTextBox.Text;
             ResultsScreen.displayPeopleLabel.Text = numberOfPeopleListBox.Text;
             ResultsScreen.displayEachPaysLabel.Text = billTextBox.Text;
+
+            
+            billNumber = Convert.ToDouble(ResultsScreen.displayTotalBillLabel.Text);
+            peopleNumber = Convert.ToDouble(ResultsScreen.displayPeopleLabel.Text);
+            answer = billNumber / peopleNumber;
+            ResultsScreen.displayEachPaysLabel.Text = answer.ToString();
         }
     }
 }
