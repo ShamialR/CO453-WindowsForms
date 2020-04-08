@@ -42,6 +42,8 @@ namespace WindowsForms.Unit4
         }
         private void seeBillButton_Click(object sender, EventArgs e)
         {
+            ConferenceTotalsForm TotalsScreen = new ConferenceTotalsForm();
+
             ConferenceSeeBillForm SeeBillScreen = new ConferenceSeeBillForm();
             SeeBillScreen.Show();
 
@@ -54,7 +56,15 @@ namespace WindowsForms.Unit4
             SeeBillScreen.displayAttendanceCostLabel.Text = attendanceCost.ToString();
 
             totalCost = mealOrder + attendanceCost;
+            TotalsScreen.displayOakridgeBillLabel.Text = totalCost.ToString();
             SeeBillScreen.displayTotalCostLabel.Text = totalCost.ToString();
+
+            switchSchoolCases();
+
+            if(schoolNameListBox.Text == "Oakridge School")
+            {
+                TotalsScreen.displayOakridgeBillLabel.Text += totalCost.ToString();
+            }
 
             mealOrder = 0;
             totalCost = 0;
@@ -65,12 +75,13 @@ namespace WindowsForms.Unit4
             ConferenceTotalsForm TotalsScreen = new ConferenceTotalsForm();
             TotalsScreen.Show();
 
-            switchSchoolCases();
             TotalsScreen.displayOakridgeTeachersLabel.Text = oakridgeSchoolTeacherCount.ToString();
             TotalsScreen.displayRGSTeachersLabel.Text = royalGrammarSchoolTeacherCount.ToString();
             TotalsScreen.displayHenleyCollegeTeachersLabel.Text = henleyCollegeTeacherCount.ToString();
             TotalsScreen.displayBNULabel.Text = bucksNewUniTeacherCount.ToString();
             TotalsScreen.displayTotalTeachersLabel.Text = totalTeachers.ToString();
+            TotalsScreen.displayTotalTeachersLabel.Text = totalTeachers.ToString();
+
         }
     }
 }

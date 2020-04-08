@@ -28,7 +28,7 @@ namespace WindowsForms.Unit4
 
         private void acceptBillButton_Click(object sender, EventArgs e)
         {
-
+            
         }
     }
 }
