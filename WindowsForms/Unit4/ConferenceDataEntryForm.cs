@@ -12,9 +12,15 @@ namespace WindowsForms.Unit4
 {
     public partial class ConferenceDataEntryForm : Form
     {
-        private double oakridgeSchoolTeacherCount, royalGrammarSchoolTeacherCount, henleyCollegeTeacherCount, bucksNewUniTeacherCount, totalTeachers;
-        private const double diningCost = 15, attendanceCost = 50;
-        private double mealOrder, totalCost;
+        public double oakridgeSchoolTeacherCount, royalGrammarSchoolTeacherCount, henleyCollegeTeacherCount, bucksNewUniTeacherCount, totalTeachers;
+        public const double diningCost = 15, attendanceCost = 50;
+        public double mealOrder = 0, totalCost;
+
+        private void clearButton_Click(object sender, EventArgs e)
+        {
+            attendeeNameTextBox.Text = "";
+        }
+
         public ConferenceDataEntryForm()
         {
             InitializeComponent();
@@ -28,10 +34,10 @@ namespace WindowsForms.Unit4
         {
             switch (schoolNameListBox.Text)
             {
-                case "Oakridge School": oakridgeSchoolTeacherCount += 1; mealOrder += 1; break;
-                case "Royal Grammar School": royalGrammarSchoolTeacherCount += 1; mealOrder += 1; break;
-                case "Henley College": henleyCollegeTeacherCount += 1; mealOrder += 1; break;
-                case "Bucks New Uni": bucksNewUniTeacherCount += 1; mealOrder += 1; break;
+                case "Oakridge School": oakridgeSchoolTeacherCount += 1; mealOrder += 1; totalTeachers +=1; break;
+                case "Royal Grammar School": royalGrammarSchoolTeacherCount += 1; mealOrder += 1; totalTeachers += 1; break;
+                case "Henley College": henleyCollegeTeacherCount += 1; mealOrder += 1; totalTeachers += 1; break;
+                case "Bucks New Uni": bucksNewUniTeacherCount += 1; mealOrder += 1; totalTeachers += 1; break;
             }
         }
         private void seeBillButton_Click(object sender, EventArgs e)
@@ -42,13 +48,16 @@ namespace WindowsForms.Unit4
             SeeBillScreen.displayAttendeeNameLabel.Text = attendeeNameTextBox.Text;
             SeeBillScreen.displaySchoolNameLabel.Text = schoolNameListBox.Text;
 
-            switchSchoolCases();
+            
             mealOrder += diningCost;
             SeeBillScreen.displayDiningCostLabel.Text = mealOrder.ToString();
             SeeBillScreen.displayAttendanceCostLabel.Text = attendanceCost.ToString();
 
             totalCost = mealOrder + attendanceCost;
             SeeBillScreen.displayTotalCostLabel.Text = totalCost.ToString();
+
+            mealOrder = 0;
+            totalCost = 0;
         }
 
         private void totalsButton_Click(object sender, EventArgs e)

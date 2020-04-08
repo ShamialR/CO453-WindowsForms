@@ -41,6 +41,7 @@
             this.totalsButton = new System.Windows.Forms.Button();
             this.seeBillButton = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.clearButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -137,7 +138,7 @@
             // 
             // quitButton
             // 
-            this.quitButton.Location = new System.Drawing.Point(429, 284);
+            this.quitButton.Location = new System.Drawing.Point(457, 284);
             this.quitButton.Name = "quitButton";
             this.quitButton.Size = new System.Drawing.Size(92, 27);
             this.quitButton.TabIndex = 9;
@@ -147,17 +148,17 @@
             // 
             // totalsButton
             // 
-            this.totalsButton.Location = new System.Drawing.Point(230, 284);
+            this.totalsButton.Location = new System.Drawing.Point(310, 284);
             this.totalsButton.Name = "totalsButton";
             this.totalsButton.Size = new System.Drawing.Size(92, 27);
             this.totalsButton.TabIndex = 10;
-            this.totalsButton.Text = "Totals";
+            this.totalsButton.Text = "Total";
             this.totalsButton.UseVisualStyleBackColor = true;
             this.totalsButton.Click += new System.EventHandler(this.totalsButton_Click);
             // 
             // seeBillButton
             // 
-            this.seeBillButton.Location = new System.Drawing.Point(37, 284);
+            this.seeBillButton.Location = new System.Drawing.Point(26, 284);
             this.seeBillButton.Name = "seeBillButton";
             this.seeBillButton.Size = new System.Drawing.Size(92, 27);
             this.seeBillButton.TabIndex = 11;
@@ -173,12 +174,23 @@
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
             // 
+            // clearButton
+            // 
+            this.clearButton.Location = new System.Drawing.Point(167, 284);
+            this.clearButton.Name = "clearButton";
+            this.clearButton.Size = new System.Drawing.Size(92, 27);
+            this.clearButton.TabIndex = 13;
+            this.clearButton.Text = "Clear";
+            this.clearButton.UseVisualStyleBackColor = true;
+            this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
+            // 
             // ConferenceDataEntryForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCoral;
             this.ClientSize = new System.Drawing.Size(587, 324);
+            this.Controls.Add(this.clearButton);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.seeBillButton);
             this.Controls.Add(this.totalsButton);
@@ -215,5 +227,6 @@
         public System.Windows.Forms.Button quitButton;
         public System.Windows.Forms.Button totalsButton;
         public System.Windows.Forms.Button seeBillButton;
+        public System.Windows.Forms.Button clearButton;
     }
 }
