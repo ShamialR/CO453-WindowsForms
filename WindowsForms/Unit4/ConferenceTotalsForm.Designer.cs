@@ -29,37 +29,37 @@
         private void InitializeComponent()
         {
             this.totalAttendanceGroupBox = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.displayTotalTeachersLabel = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.totalSchoolBillGroupBox = new System.Windows.Forms.GroupBox();
-            this.oakridgeSchoolGroupBox = new System.Windows.Forms.GroupBox();
-            this.displayOakridgeTeachersLabel = new System.Windows.Forms.Label();
-            this.oakridgeTeachersLabel = new System.Windows.Forms.Label();
-            this.displayOakridgeBillLabel = new System.Windows.Forms.Label();
-            this.oakridgeBillLabel = new System.Windows.Forms.Label();
-            this.rgsGroupBox = new System.Windows.Forms.GroupBox();
-            this.displayRGSBillLabel = new System.Windows.Forms.Label();
-            this.rgsBillLabel = new System.Windows.Forms.Label();
-            this.displayRGSTeachersLabel = new System.Windows.Forms.Label();
-            this.rgsTeachersLabel = new System.Windows.Forms.Label();
             this.henleyCollegeGroupBox = new System.Windows.Forms.GroupBox();
             this.displayHenleyCollegeBillLabel = new System.Windows.Forms.Label();
             this.henleyCollegeBillLabel = new System.Windows.Forms.Label();
             this.displayHenleyCollegeTeachersLabel = new System.Windows.Forms.Label();
             this.henleyCollegeTeachersLabel = new System.Windows.Forms.Label();
             this.bucksNewUniGroupBox = new System.Windows.Forms.GroupBox();
-            this.displayBNUBill = new System.Windows.Forms.Label();
+            this.displayBNUBillLabel = new System.Windows.Forms.Label();
             this.bnuBill = new System.Windows.Forms.Label();
             this.displayBNULabel = new System.Windows.Forms.Label();
             this.bnuTeachers = new System.Windows.Forms.Label();
+            this.oakridgeSchoolGroupBox = new System.Windows.Forms.GroupBox();
+            this.displayOakridgeBillLabel = new System.Windows.Forms.Label();
+            this.oakridgeBillLabel = new System.Windows.Forms.Label();
+            this.displayOakridgeTeachersLabel = new System.Windows.Forms.Label();
+            this.oakridgeTeachersLabel = new System.Windows.Forms.Label();
+            this.rgsGroupBox = new System.Windows.Forms.GroupBox();
+            this.displayRGSBillLabel = new System.Windows.Forms.Label();
+            this.rgsBillLabel = new System.Windows.Forms.Label();
+            this.displayRGSTeachersLabel = new System.Windows.Forms.Label();
+            this.rgsTeachersLabel = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.closeButton = new System.Windows.Forms.Button();
             this.totalAttendanceGroupBox.SuspendLayout();
             this.totalSchoolBillGroupBox.SuspendLayout();
-            this.oakridgeSchoolGroupBox.SuspendLayout();
-            this.rgsGroupBox.SuspendLayout();
             this.henleyCollegeGroupBox.SuspendLayout();
             this.bucksNewUniGroupBox.SuspendLayout();
+            this.oakridgeSchoolGroupBox.SuspendLayout();
+            this.rgsGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -74,6 +74,14 @@
             this.totalAttendanceGroupBox.TabStop = false;
             this.totalAttendanceGroupBox.Text = "Total Attendance";
             // 
+            // displayTotalTeachersLabel
+            // 
+            this.displayTotalTeachersLabel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.displayTotalTeachersLabel.Location = new System.Drawing.Point(98, 45);
+            this.displayTotalTeachersLabel.Name = "displayTotalTeachersLabel";
+            this.displayTotalTeachersLabel.Size = new System.Drawing.Size(110, 13);
+            this.displayTotalTeachersLabel.TabIndex = 1;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -82,14 +90,6 @@
             this.label1.Size = new System.Drawing.Size(55, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Teachers:";
-            // 
-            // displayTotalTeachersLabel
-            // 
-            this.displayTotalTeachersLabel.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.displayTotalTeachersLabel.Location = new System.Drawing.Point(98, 45);
-            this.displayTotalTeachersLabel.Name = "displayTotalTeachersLabel";
-            this.displayTotalTeachersLabel.Size = new System.Drawing.Size(110, 13);
-            this.displayTotalTeachersLabel.TabIndex = 1;
             // 
             // totalSchoolBillGroupBox
             // 
@@ -102,100 +102,6 @@
             this.totalSchoolBillGroupBox.TabIndex = 2;
             this.totalSchoolBillGroupBox.TabStop = false;
             this.totalSchoolBillGroupBox.Text = "Total School Bills";
-            // 
-            // oakridgeSchoolGroupBox
-            // 
-            this.oakridgeSchoolGroupBox.Controls.Add(this.displayOakridgeBillLabel);
-            this.oakridgeSchoolGroupBox.Controls.Add(this.oakridgeBillLabel);
-            this.oakridgeSchoolGroupBox.Controls.Add(this.displayOakridgeTeachersLabel);
-            this.oakridgeSchoolGroupBox.Controls.Add(this.oakridgeTeachersLabel);
-            this.oakridgeSchoolGroupBox.Location = new System.Drawing.Point(16, 19);
-            this.oakridgeSchoolGroupBox.Name = "oakridgeSchoolGroupBox";
-            this.oakridgeSchoolGroupBox.Size = new System.Drawing.Size(297, 97);
-            this.oakridgeSchoolGroupBox.TabIndex = 2;
-            this.oakridgeSchoolGroupBox.TabStop = false;
-            this.oakridgeSchoolGroupBox.Text = "Oakridge School";
-            // 
-            // displayOakridgeTeachersLabel
-            // 
-            this.displayOakridgeTeachersLabel.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.displayOakridgeTeachersLabel.Location = new System.Drawing.Point(121, 26);
-            this.displayOakridgeTeachersLabel.Name = "displayOakridgeTeachersLabel";
-            this.displayOakridgeTeachersLabel.Size = new System.Drawing.Size(110, 13);
-            this.displayOakridgeTeachersLabel.TabIndex = 1;
-            // 
-            // oakridgeTeachersLabel
-            // 
-            this.oakridgeTeachersLabel.AutoSize = true;
-            this.oakridgeTeachersLabel.Location = new System.Drawing.Point(17, 26);
-            this.oakridgeTeachersLabel.Name = "oakridgeTeachersLabel";
-            this.oakridgeTeachersLabel.Size = new System.Drawing.Size(55, 13);
-            this.oakridgeTeachersLabel.TabIndex = 0;
-            this.oakridgeTeachersLabel.Text = "Teachers:";
-            // 
-            // displayOakridgeBillLabel
-            // 
-            this.displayOakridgeBillLabel.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.displayOakridgeBillLabel.Location = new System.Drawing.Point(121, 56);
-            this.displayOakridgeBillLabel.Name = "displayOakridgeBillLabel";
-            this.displayOakridgeBillLabel.Size = new System.Drawing.Size(110, 13);
-            this.displayOakridgeBillLabel.TabIndex = 3;
-            // 
-            // oakridgeBillLabel
-            // 
-            this.oakridgeBillLabel.AutoSize = true;
-            this.oakridgeBillLabel.Location = new System.Drawing.Point(17, 56);
-            this.oakridgeBillLabel.Name = "oakridgeBillLabel";
-            this.oakridgeBillLabel.Size = new System.Drawing.Size(23, 13);
-            this.oakridgeBillLabel.TabIndex = 2;
-            this.oakridgeBillLabel.Text = "Bill:";
-            // 
-            // rgsGroupBox
-            // 
-            this.rgsGroupBox.Controls.Add(this.displayRGSBillLabel);
-            this.rgsGroupBox.Controls.Add(this.rgsBillLabel);
-            this.rgsGroupBox.Controls.Add(this.displayRGSTeachersLabel);
-            this.rgsGroupBox.Controls.Add(this.rgsTeachersLabel);
-            this.rgsGroupBox.Location = new System.Drawing.Point(279, 139);
-            this.rgsGroupBox.Name = "rgsGroupBox";
-            this.rgsGroupBox.Size = new System.Drawing.Size(297, 97);
-            this.rgsGroupBox.TabIndex = 4;
-            this.rgsGroupBox.TabStop = false;
-            this.rgsGroupBox.Text = "Royal Grammar School";
-            // 
-            // displayRGSBillLabel
-            // 
-            this.displayRGSBillLabel.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.displayRGSBillLabel.Location = new System.Drawing.Point(121, 56);
-            this.displayRGSBillLabel.Name = "displayRGSBillLabel";
-            this.displayRGSBillLabel.Size = new System.Drawing.Size(110, 13);
-            this.displayRGSBillLabel.TabIndex = 3;
-            // 
-            // rgsBillLabel
-            // 
-            this.rgsBillLabel.AutoSize = true;
-            this.rgsBillLabel.Location = new System.Drawing.Point(17, 56);
-            this.rgsBillLabel.Name = "rgsBillLabel";
-            this.rgsBillLabel.Size = new System.Drawing.Size(23, 13);
-            this.rgsBillLabel.TabIndex = 2;
-            this.rgsBillLabel.Text = "Bill:";
-            // 
-            // displayRGSTeachersLabel
-            // 
-            this.displayRGSTeachersLabel.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.displayRGSTeachersLabel.Location = new System.Drawing.Point(121, 26);
-            this.displayRGSTeachersLabel.Name = "displayRGSTeachersLabel";
-            this.displayRGSTeachersLabel.Size = new System.Drawing.Size(110, 13);
-            this.displayRGSTeachersLabel.TabIndex = 1;
-            // 
-            // rgsTeachersLabel
-            // 
-            this.rgsTeachersLabel.AutoSize = true;
-            this.rgsTeachersLabel.Location = new System.Drawing.Point(17, 26);
-            this.rgsTeachersLabel.Name = "rgsTeachersLabel";
-            this.rgsTeachersLabel.Size = new System.Drawing.Size(55, 13);
-            this.rgsTeachersLabel.TabIndex = 0;
-            this.rgsTeachersLabel.Text = "Teachers:";
             // 
             // henleyCollegeGroupBox
             // 
@@ -246,7 +152,7 @@
             // 
             // bucksNewUniGroupBox
             // 
-            this.bucksNewUniGroupBox.Controls.Add(this.displayBNUBill);
+            this.bucksNewUniGroupBox.Controls.Add(this.displayBNUBillLabel);
             this.bucksNewUniGroupBox.Controls.Add(this.bnuBill);
             this.bucksNewUniGroupBox.Controls.Add(this.displayBNULabel);
             this.bucksNewUniGroupBox.Controls.Add(this.bnuTeachers);
@@ -257,13 +163,13 @@
             this.bucksNewUniGroupBox.TabStop = false;
             this.bucksNewUniGroupBox.Text = "Bucks New Uni";
             // 
-            // displayBNUBill
+            // displayBNUBillLabel
             // 
-            this.displayBNUBill.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.displayBNUBill.Location = new System.Drawing.Point(121, 56);
-            this.displayBNUBill.Name = "displayBNUBill";
-            this.displayBNUBill.Size = new System.Drawing.Size(110, 13);
-            this.displayBNUBill.TabIndex = 3;
+            this.displayBNUBillLabel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.displayBNUBillLabel.Location = new System.Drawing.Point(121, 56);
+            this.displayBNUBillLabel.Name = "displayBNUBillLabel";
+            this.displayBNUBillLabel.Size = new System.Drawing.Size(110, 13);
+            this.displayBNUBillLabel.TabIndex = 3;
             // 
             // bnuBill
             // 
@@ -290,6 +196,100 @@
             this.bnuTeachers.Size = new System.Drawing.Size(55, 13);
             this.bnuTeachers.TabIndex = 0;
             this.bnuTeachers.Text = "Teachers:";
+            // 
+            // oakridgeSchoolGroupBox
+            // 
+            this.oakridgeSchoolGroupBox.Controls.Add(this.displayOakridgeBillLabel);
+            this.oakridgeSchoolGroupBox.Controls.Add(this.oakridgeBillLabel);
+            this.oakridgeSchoolGroupBox.Controls.Add(this.displayOakridgeTeachersLabel);
+            this.oakridgeSchoolGroupBox.Controls.Add(this.oakridgeTeachersLabel);
+            this.oakridgeSchoolGroupBox.Location = new System.Drawing.Point(16, 19);
+            this.oakridgeSchoolGroupBox.Name = "oakridgeSchoolGroupBox";
+            this.oakridgeSchoolGroupBox.Size = new System.Drawing.Size(297, 97);
+            this.oakridgeSchoolGroupBox.TabIndex = 2;
+            this.oakridgeSchoolGroupBox.TabStop = false;
+            this.oakridgeSchoolGroupBox.Text = "Oakridge School";
+            // 
+            // displayOakridgeBillLabel
+            // 
+            this.displayOakridgeBillLabel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.displayOakridgeBillLabel.Location = new System.Drawing.Point(121, 56);
+            this.displayOakridgeBillLabel.Name = "displayOakridgeBillLabel";
+            this.displayOakridgeBillLabel.Size = new System.Drawing.Size(110, 13);
+            this.displayOakridgeBillLabel.TabIndex = 3;
+            // 
+            // oakridgeBillLabel
+            // 
+            this.oakridgeBillLabel.AutoSize = true;
+            this.oakridgeBillLabel.Location = new System.Drawing.Point(17, 56);
+            this.oakridgeBillLabel.Name = "oakridgeBillLabel";
+            this.oakridgeBillLabel.Size = new System.Drawing.Size(23, 13);
+            this.oakridgeBillLabel.TabIndex = 2;
+            this.oakridgeBillLabel.Text = "Bill:";
+            // 
+            // displayOakridgeTeachersLabel
+            // 
+            this.displayOakridgeTeachersLabel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.displayOakridgeTeachersLabel.Location = new System.Drawing.Point(121, 26);
+            this.displayOakridgeTeachersLabel.Name = "displayOakridgeTeachersLabel";
+            this.displayOakridgeTeachersLabel.Size = new System.Drawing.Size(110, 13);
+            this.displayOakridgeTeachersLabel.TabIndex = 1;
+            // 
+            // oakridgeTeachersLabel
+            // 
+            this.oakridgeTeachersLabel.AutoSize = true;
+            this.oakridgeTeachersLabel.Location = new System.Drawing.Point(17, 26);
+            this.oakridgeTeachersLabel.Name = "oakridgeTeachersLabel";
+            this.oakridgeTeachersLabel.Size = new System.Drawing.Size(55, 13);
+            this.oakridgeTeachersLabel.TabIndex = 0;
+            this.oakridgeTeachersLabel.Text = "Teachers:";
+            // 
+            // rgsGroupBox
+            // 
+            this.rgsGroupBox.Controls.Add(this.displayRGSBillLabel);
+            this.rgsGroupBox.Controls.Add(this.rgsBillLabel);
+            this.rgsGroupBox.Controls.Add(this.displayRGSTeachersLabel);
+            this.rgsGroupBox.Controls.Add(this.rgsTeachersLabel);
+            this.rgsGroupBox.Location = new System.Drawing.Point(279, 139);
+            this.rgsGroupBox.Name = "rgsGroupBox";
+            this.rgsGroupBox.Size = new System.Drawing.Size(297, 97);
+            this.rgsGroupBox.TabIndex = 4;
+            this.rgsGroupBox.TabStop = false;
+            this.rgsGroupBox.Text = "Royal Grammar School";
+            // 
+            // displayRGSBillLabel
+            // 
+            this.displayRGSBillLabel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.displayRGSBillLabel.Location = new System.Drawing.Point(121, 56);
+            this.displayRGSBillLabel.Name = "displayRGSBillLabel";
+            this.displayRGSBillLabel.Size = new System.Drawing.Size(110, 13);
+            this.displayRGSBillLabel.TabIndex = 3;
+            // 
+            // rgsBillLabel
+            // 
+            this.rgsBillLabel.AutoSize = true;
+            this.rgsBillLabel.Location = new System.Drawing.Point(17, 56);
+            this.rgsBillLabel.Name = "rgsBillLabel";
+            this.rgsBillLabel.Size = new System.Drawing.Size(23, 13);
+            this.rgsBillLabel.TabIndex = 2;
+            this.rgsBillLabel.Text = "Bill:";
+            // 
+            // displayRGSTeachersLabel
+            // 
+            this.displayRGSTeachersLabel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.displayRGSTeachersLabel.Location = new System.Drawing.Point(121, 26);
+            this.displayRGSTeachersLabel.Name = "displayRGSTeachersLabel";
+            this.displayRGSTeachersLabel.Size = new System.Drawing.Size(110, 13);
+            this.displayRGSTeachersLabel.TabIndex = 1;
+            // 
+            // rgsTeachersLabel
+            // 
+            this.rgsTeachersLabel.AutoSize = true;
+            this.rgsTeachersLabel.Location = new System.Drawing.Point(17, 26);
+            this.rgsTeachersLabel.Name = "rgsTeachersLabel";
+            this.rgsTeachersLabel.Size = new System.Drawing.Size(55, 13);
+            this.rgsTeachersLabel.TabIndex = 0;
+            this.rgsTeachersLabel.Text = "Teachers:";
             // 
             // pictureBox1
             // 
@@ -326,14 +326,14 @@
             this.totalAttendanceGroupBox.ResumeLayout(false);
             this.totalAttendanceGroupBox.PerformLayout();
             this.totalSchoolBillGroupBox.ResumeLayout(false);
-            this.oakridgeSchoolGroupBox.ResumeLayout(false);
-            this.oakridgeSchoolGroupBox.PerformLayout();
-            this.rgsGroupBox.ResumeLayout(false);
-            this.rgsGroupBox.PerformLayout();
             this.henleyCollegeGroupBox.ResumeLayout(false);
             this.henleyCollegeGroupBox.PerformLayout();
             this.bucksNewUniGroupBox.ResumeLayout(false);
             this.bucksNewUniGroupBox.PerformLayout();
+            this.oakridgeSchoolGroupBox.ResumeLayout(false);
+            this.oakridgeSchoolGroupBox.PerformLayout();
+            this.rgsGroupBox.ResumeLayout(false);
+            this.rgsGroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -361,7 +361,7 @@
         public System.Windows.Forms.Label displayTotalTeachersLabel;
         public System.Windows.Forms.Label displayHenleyCollegeBillLabel;
         public System.Windows.Forms.Label displayHenleyCollegeTeachersLabel;
-        public System.Windows.Forms.Label displayBNUBill;
+        public System.Windows.Forms.Label displayBNUBillLabel;
         public System.Windows.Forms.Label displayBNULabel;
         public System.Windows.Forms.Label displayOakridgeBillLabel;
         public System.Windows.Forms.Label displayOakridgeTeachersLabel;
