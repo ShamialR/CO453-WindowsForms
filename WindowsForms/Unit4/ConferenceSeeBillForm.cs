@@ -28,7 +28,12 @@ namespace WindowsForms.Unit4
 
         private void acceptBillButton_Click(object sender, EventArgs e)
         {
-            
+            DialogResult response;
+            response = MessageBox.Show("Are you happy with your choice? ", "Confirm Choice", MessageBoxButtons.YesNo);
+            if (response == DialogResult.Yes)
+            {
+                MessageBox.Show("Confirmed!", "Confirm Choice");
+            }
         }
     }
 }

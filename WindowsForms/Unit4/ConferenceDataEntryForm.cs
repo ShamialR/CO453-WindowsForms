@@ -13,6 +13,7 @@ namespace WindowsForms.Unit4
     public partial class ConferenceDataEntryForm : Form
     {
         public double oakridgeSchoolTeacherCount, royalGrammarSchoolTeacherCount, henleyCollegeTeacherCount, bucksNewUniTeacherCount, totalTeachers;
+        private int displayOakBill, displayRGSBill, displayHenleyBill, displayBNUBill;
         public const double diningCost = 15, attendanceCost = 50;
         public double mealOrder = 0, totalCost;
 
@@ -77,6 +78,27 @@ namespace WindowsForms.Unit4
                 TotalsScreen.displayBNUBillLabel.Text += totalCost.ToString();
             }
 
+            if (schoolNameListBox.GetSelected(0) == true)
+            {
+                displayOakBill += 65;
+
+            }
+            else if (schoolNameListBox.GetSelected(1) == true)
+            {
+                displayRGSBill += 65;
+
+            }
+            else if (schoolNameListBox.GetSelected(2) == true)
+            {
+                displayHenleyBill += 65;
+
+            }
+            else if (schoolNameListBox.GetSelected(3) == true)
+            {
+                displayBNUBill += 65;
+
+            }
+
             mealOrder = 0;
             totalCost = 0;
         }
@@ -93,28 +115,15 @@ namespace WindowsForms.Unit4
             TotalsScreen.displayTotalTeachersLabel.Text = totalTeachers.ToString();
             TotalsScreen.displayTotalTeachersLabel.Text = totalTeachers.ToString();
 
-            TotalsScreen.displayOakridgeBillLabel.Text = (oakridgeSchoolTeacherCount * 50).ToString();
-            TotalsScreen.displayRGSBillLabel.Text = (royalGrammarSchoolTeacherCount * 50).ToString();
-            TotalsScreen.displayHenleyCollegeBillLabel.Text = (henleyCollegeTeacherCount * 50).ToString();
-            TotalsScreen.displayBNUBillLabel.Text = (bucksNewUniTeacherCount * 50).ToString();
+            //TotalsScreen.displayOakridgeBillLabel.Text = (oakridgeSchoolTeacherCount * 65).ToString();
+            //TotalsScreen.displayRGSBillLabel.Text = (royalGrammarSchoolTeacherCount * 65).ToString();
+            //TotalsScreen.displayHenleyCollegeBillLabel.Text = (henleyCollegeTeacherCount * 65).ToString();
+            //TotalsScreen.displayBNUBillLabel.Text = (bucksNewUniTeacherCount * 65).ToString();
 
-            if (schoolNameListBox.GetSelected(0) == true)
-            {
-                TotalsScreen.displayOakridgeBillLabel.Text += totalCost.ToString();
-            }
-            else if (schoolNameListBox.GetSelected(1) == true)
-            {
-                TotalsScreen.displayRGSBillLabel.Text += totalCost.ToString();
-            }
-            else if (schoolNameListBox.GetSelected(2) == true)
-            {
-                TotalsScreen.displayHenleyCollegeBillLabel.Text += totalCost.ToString();
-            }
-            else if (schoolNameListBox.GetSelected(3) == true)
-            {
-                TotalsScreen.displayBNUBillLabel.Text += totalCost.ToString();
-            }
-
+            TotalsScreen.displayOakridgeBillLabel.Text += displayOakBill;
+            TotalsScreen.displayRGSBillLabel.Text += displayRGSBill;
+            TotalsScreen.displayHenleyCollegeBillLabel.Text += displayHenleyBill;
+            TotalsScreen.displayBNUBillLabel.Text += displayBNUBill;
             //if (radiobutton.... .selected)
             //set storeOakridge food cost to 15
             //this will then be displayed in the totals form
