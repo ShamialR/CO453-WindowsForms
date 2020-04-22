@@ -10,6 +10,17 @@ using System.Windows.Forms;
 
 namespace WindowsForms.Unit3
 {
+    /// <summary>
+    /// Task 3.5 - 3.6 & 3.12
+    /// This class has 5 monkeys which move across the form to
+    /// random places every second. Once a monkey has been clicked
+    /// on, the users score  increments by 1, if the user misses 
+    /// the monkeys, the misses label is incremented by one, while
+    /// also displaying a popup message box telling you hit or miss.
+    /// The monkeys can start moving by pressing the  start button
+    /// and pressing the stop button to stop them from moving. 
+    /// Author: Shamial Rashid 21905385
+    /// </summary>
     public partial class MonkeyBashForm : Form
     {
 

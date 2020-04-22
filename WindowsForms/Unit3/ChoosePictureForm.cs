@@ -10,6 +10,13 @@ using System.Windows.Forms;
 
 namespace WindowsForms.Unit3
 {
+    /// <summary>
+    /// Task 3.14
+    /// This class uses a switch case which changes the image
+    /// in the choicePictureBox depending on what is selected
+    /// from the choiceComboBox. 
+    /// Author: Shamial Rashid 21905385
+    /// </summary>
     public partial class ChoosePictureForm : Form
     {
         public ChoosePictureForm()

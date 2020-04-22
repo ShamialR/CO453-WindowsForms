@@ -10,6 +10,20 @@ using System.Windows.Forms;
 
 namespace WindowsForms.Unit3
 {
+    /// <summary>
+    /// Task 3.7 - 3.10 & 3.13
+    /// This class works as a notepad where the user can type
+    /// into the mainRichTextBox, the size of the typed text
+    /// can be changed using the scroll bar at the bottom &
+    /// the menu strip has 3 boxes which contain subboxes, from
+    /// the file box, the user can save and load their documents
+    /// aswell as close them, in the edit box they can cut, copy
+    /// paste and undo whats in the mainRichTextBox, and in the 
+    /// format box from the menu string the user can change the
+    /// font of the text, the colour of the text and the background
+    /// colour of the mainRichTextBox. 
+    /// Author: Shamial Rashid 21905385
+    /// </summary>
     public partial class MyPadForm : Form
     {
         private int fontSize = 0;

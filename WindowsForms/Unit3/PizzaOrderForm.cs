@@ -10,6 +10,14 @@ using System.Windows.Forms;
 
 namespace WindowsForms.Unit3
 {
+    /// <summary>
+    /// Task 3.2
+    /// This class uses radio buttons which allows the user
+    /// to select the size of the pizza they want, it then
+    /// uses check boxes for toppings and adds the total
+    /// cost of the order before displaying it. 
+    /// Author: Shamial Rashid 21905385
+    /// </summary>
     public partial class PizzaOrderForm : Form
     {
 

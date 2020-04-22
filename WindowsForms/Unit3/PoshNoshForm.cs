@@ -10,6 +10,14 @@ using System.Windows.Forms;
 
 namespace WindowsForms.Unit3
 {
+    /// <summary>
+    /// Task 3.3 - 3.4
+    /// This class uses list boxes which allow the user to select
+    /// their starters, mains and desserts, this is then added up
+    /// to calculate the total price of the meal which is displayed
+    ///in the totalCostLabel. 
+    /// Author: Shamial Rashid 21905385
+    /// </summary>
     public partial class PoshNoshForm : Form
     {
 

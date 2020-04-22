@@ -10,6 +10,14 @@ using System.Windows.Forms;
 
 namespace WindowsForms.Unit3
 {
+    /// <summary>
+    /// Task 3.1
+    /// This class converts british pounds into 3 different
+    /// currencies that can be selected from the choice boxes
+    /// which are dollars, euros and rupees. This is then 
+    /// displayed in the convertedResultLabel label. 
+    /// Author: Shamial Rashid 21905385
+    /// </summary>
     public partial class CurrencyConverterForm : Form
     {
         private double amount;
