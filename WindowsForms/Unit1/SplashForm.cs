@@ -23,12 +23,12 @@ namespace WindowsForms.Unit1
         {
             InitializeComponent();
         }
-        private void SplashForm_Click(object sender, EventArgs e)
+        private void closeSplashForm(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void SplashForm_Load(object sender, EventArgs e)
+        private void loadSplashForm(object sender, EventArgs e)
         {
 
         }

@@ -119,7 +119,7 @@
             this.additionButton.Size = new System.Drawing.Size(75, 42);
             this.additionButton.TabIndex = 7;
             this.additionButton.UseVisualStyleBackColor = true;
-            this.additionButton.Click += new System.EventHandler(this.additionButton_Click);
+            this.additionButton.Click += new System.EventHandler(this.calculateAddition);
             // 
             // subtractionButton
             // 
@@ -129,7 +129,7 @@
             this.subtractionButton.Size = new System.Drawing.Size(75, 44);
             this.subtractionButton.TabIndex = 8;
             this.subtractionButton.UseVisualStyleBackColor = true;
-            this.subtractionButton.Click += new System.EventHandler(this.subtractionButton_Click);
+            this.subtractionButton.Click += new System.EventHandler(this.calculateSubtraction);
             // 
             // multiplicationButton
             // 
@@ -139,7 +139,7 @@
             this.multiplicationButton.Size = new System.Drawing.Size(75, 46);
             this.multiplicationButton.TabIndex = 9;
             this.multiplicationButton.UseVisualStyleBackColor = true;
-            this.multiplicationButton.Click += new System.EventHandler(this.multiplicationButton_Click);
+            this.multiplicationButton.Click += new System.EventHandler(this.calculateMultiplication);
             // 
             // divisionButton
             // 
@@ -149,7 +149,7 @@
             this.divisionButton.Size = new System.Drawing.Size(75, 42);
             this.divisionButton.TabIndex = 10;
             this.divisionButton.UseVisualStyleBackColor = true;
-            this.divisionButton.Click += new System.EventHandler(this.divisionButton_Click);
+            this.divisionButton.Click += new System.EventHandler(this.calculateDivision);
             // 
             // quitButton
             // 
@@ -159,7 +159,7 @@
             this.quitButton.TabIndex = 11;
             this.quitButton.Text = "Quit";
             this.quitButton.UseVisualStyleBackColor = true;
-            this.quitButton.Click += new System.EventHandler(this.quitButton_Click);
+            this.quitButton.Click += new System.EventHandler(this.quitApplication);
             // 
             // averageButton
             // 
@@ -169,7 +169,7 @@
             this.averageButton.TabIndex = 12;
             this.averageButton.Text = "Average";
             this.averageButton.UseVisualStyleBackColor = true;
-            this.averageButton.Click += new System.EventHandler(this.averageButton_Click);
+            this.averageButton.Click += new System.EventHandler(this.calculateAverage);
             // 
             // powerButton
             // 
@@ -179,7 +179,7 @@
             this.powerButton.TabIndex = 13;
             this.powerButton.Text = "Power";
             this.powerButton.UseVisualStyleBackColor = true;
-            this.powerButton.Click += new System.EventHandler(this.powerButton_Click);
+            this.powerButton.Click += new System.EventHandler(this.calculatePower);
             // 
             // clearButton
             // 
@@ -189,7 +189,7 @@
             this.clearButton.TabIndex = 14;
             this.clearButton.Text = "Clear";
             this.clearButton.UseVisualStyleBackColor = true;
-            this.clearButton.Click += new System.EventHandler(this.clearbutton_Click);
+            this.clearButton.Click += new System.EventHandler(this.clearAll);
             // 
             // calculationTypePictureBox
             // 
@@ -225,7 +225,7 @@
             this.Name = "CalculatorForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculator";
-            this.Load += new System.EventHandler(this.calculatorForm_Load);
+            this.Load += new System.EventHandler(this.loadCalculatorForm);
             ((System.ComponentModel.ISupportInitialize)(this.calculationTypePictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

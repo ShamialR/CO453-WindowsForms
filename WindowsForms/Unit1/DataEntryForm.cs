@@ -24,27 +24,27 @@ namespace WindowsForms.Unit1
             InitializeComponent();
         }
 
-        private void messageLabel_Click(object sender, EventArgs e)
+        private void clickMessageLabel(object sender, EventArgs e)
         {
             
         }
 
-        private void quitButton_Click(object sender, EventArgs e)
+        private void quitApplication(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void messageButton_Click(object sender, EventArgs e)
+        private void showMessage(object sender, EventArgs e)
         {
             messageLabel.Text = "Hi " + firstNameText.Text + " " + lastNameText.Text + " from " + townNameText.Text + "\nHappy Programming";
         }
 
-        private void lastNameLabel_Click(object sender, EventArgs e)
+        private void clickLastNameLabel(object sender, EventArgs e)
         {
 
         }
 
-        private void clearButton_Click(object sender, EventArgs e)
+        private void clearMessage(object sender, EventArgs e)
         {
             messageLabel.Text = "";
             firstNameText.Text = "";
@@ -52,17 +52,17 @@ namespace WindowsForms.Unit1
             townNameText.Text = "";
         }
 
-        private void toUpperButton_Click(object sender, EventArgs e)
+        private void changeMessageToUpper(object sender, EventArgs e)
         {
             messageLabel.Text = messageLabel.Text.ToUpper();
         }
 
-        private void toLowerButton_Click(object sender, EventArgs e)
+        private void changeMessageToLower(object sender, EventArgs e)
         {
             messageLabel.Text = messageLabel.Text.ToLower(); 
         }
 
-        private void changeMessageButton_Click(object sender, EventArgs e)
+        private void changeMessage(object sender, EventArgs e)
         {
             this.BackColor = Color.Red;
             firstNameText.BackColor = Color.LightBlue;

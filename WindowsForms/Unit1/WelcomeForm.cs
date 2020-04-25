@@ -24,17 +24,17 @@ namespace WindowsForms
             InitializeComponent();
         }
 
-        private void WelcomeForm_Load(object sender, EventArgs e)
+        private void loadWelcomeForm(object sender, EventArgs e)
         {
 
         }
 
-        private void quitButton_Click(object sender, EventArgs e)
+        private void quitApplication(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void showButton1_Click(object sender, EventArgs e)
+        private void showBestComputerMessage(object sender, EventArgs e)
         {
             bragLabel.Text = "Supa Dupa Computer\n Selling for £339";
             bragLabel.BackColor = Color.Aqua;
@@ -42,12 +42,12 @@ namespace WindowsForms
             bragLabel.Size = new System.Drawing.Size(310, 70);
         }
 
-        private void showButton2_Click(object sender, EventArgs e)
+        private void showBestSoftwareMessage(object sender, EventArgs e)
         {
-            greetingLabel.Text = "C# .NET for Dumbos\n A real bargain at £29.99";
-            greetingLabel.BackColor = Color.Aqua;
-            greetingLabel.ForeColor = Color.Red;
-            greetingLabel.Size = new System.Drawing.Size(310, 70);
+            bragLabel.Text = "C# .NET for Dumbos\n A real bargain at £29.99";
+            bragLabel.BackColor = Color.Aqua;
+            bragLabel.ForeColor = Color.Red;
+            bragLabel.Size = new System.Drawing.Size(310, 70);
         }
     }
 }

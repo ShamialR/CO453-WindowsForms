@@ -27,7 +27,7 @@ namespace WindowsForms.Unit1
             number2 = Convert.ToDouble(secondNumberText.Text);
         }
 
-        private void additionButton_Click(object sender, EventArgs e)
+        private void calculateAddition(object sender, EventArgs e)
         {
             convertToDouble();
             result = number1 + number2;
@@ -36,7 +36,7 @@ namespace WindowsForms.Unit1
             calculationTypePictureBox.Image = Image.FromFile("AddSmall.png");
         }
 
-        private void subtractionButton_Click(object sender, EventArgs e)
+        private void calculateSubtraction(object sender, EventArgs e)
         {
             convertToDouble();
             result = number1 - number2;
@@ -45,7 +45,7 @@ namespace WindowsForms.Unit1
             calculationTypePictureBox.Image = Image.FromFile("MinusSmall.png");
         }
 
-        private void multiplicationButton_Click(object sender, EventArgs e)
+        private void calculateMultiplication(object sender, EventArgs e)
         {
             convertToDouble();
             result = number1 * number2;
@@ -54,7 +54,7 @@ namespace WindowsForms.Unit1
             calculationTypePictureBox.Image = Image.FromFile("MultiplySmall.png");
         }
 
-        private void divisionButton_Click(object sender, EventArgs e)
+        private void calculateDivision(object sender, EventArgs e)
         {
             if (number2 == 0)
             {
@@ -70,13 +70,13 @@ namespace WindowsForms.Unit1
             }
         }
 
-        private void calculatorForm_Load(object sender, EventArgs e)
+        private void loadCalculatorForm(object sender, EventArgs e)
         {
             SplashForm SplashScreen = new SplashForm(); // create new SScreen form object
             SplashScreen.ShowDialog(); // show the splash screen
         }
 
-        private void powerButton_Click(object sender, EventArgs e)
+        private void calculatePower(object sender, EventArgs e)
         {
             convertToDouble();
             result = Math.Pow(number1, number2);
@@ -85,7 +85,7 @@ namespace WindowsForms.Unit1
             calculationTypePictureBox.Image = null;
         }
 
-        private void averageButton_Click(object sender, EventArgs e)
+        private void calculateAverage(object sender, EventArgs e)
         {
             convertToDouble();
             result = (number1 + number2) / 2;
@@ -94,7 +94,7 @@ namespace WindowsForms.Unit1
             calculationTypePictureBox.Image = null;
         }
 
-        private void clearbutton_Click(object sender, EventArgs e)
+        private void clearAll(object sender, EventArgs e)
         {
             resultAnswerLabel.Text = "";
             firstNumberText.Text = "";
@@ -107,7 +107,7 @@ namespace WindowsForms.Unit1
             InitializeComponent();
         }
 
-        private void quitButton_Click(object sender, EventArgs e)
+        private void quitApplication(object sender, EventArgs e)
         {
             QuitForm QuitScreen = new QuitForm();
             QuitScreen.ShowDialog();

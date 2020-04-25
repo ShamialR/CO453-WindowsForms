@@ -69,7 +69,7 @@
             this.quitButton.TabIndex = 2;
             this.quitButton.Text = "Quit";
             this.quitButton.UseVisualStyleBackColor = true;
-            this.quitButton.Click += new System.EventHandler(this.quitButton_Click);
+            this.quitButton.Click += new System.EventHandler(this.quitApplication);
             // 
             // showButton1
             // 
@@ -80,7 +80,7 @@
             this.showButton1.TabIndex = 3;
             this.showButton1.Text = "Best Computer";
             this.showButton1.UseVisualStyleBackColor = true;
-            this.showButton1.Click += new System.EventHandler(this.showButton1_Click);
+            this.showButton1.Click += new System.EventHandler(this.showBestComputerMessage);
             // 
             // showButton2
             // 
@@ -91,7 +91,7 @@
             this.showButton2.TabIndex = 4;
             this.showButton2.Text = "Best Software";
             this.showButton2.UseVisualStyleBackColor = true;
-            this.showButton2.Click += new System.EventHandler(this.showButton2_Click);
+            this.showButton2.Click += new System.EventHandler(this.showBestSoftwareMessage);
             // 
             // WelcomeForm
             // 
@@ -110,7 +110,7 @@
             this.Name = "WelcomeForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SuperSoft Software Co.";
-            this.Load += new System.EventHandler(this.WelcomeForm_Load);
+            this.Load += new System.EventHandler(this.loadWelcomeForm);
             this.ResumeLayout(false);
 
         }

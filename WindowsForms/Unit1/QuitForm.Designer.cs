@@ -65,7 +65,7 @@
             this.Name = "QuitForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "QuitForm";
-            this.Click += new System.EventHandler(this.quitForm_Click);
+            this.Click += new System.EventHandler(this.closeForm);
             this.ResumeLayout(false);
             this.PerformLayout();
 

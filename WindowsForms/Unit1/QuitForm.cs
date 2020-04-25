@@ -24,7 +24,7 @@ namespace WindowsForms.Unit1
             InitializeComponent();
         }
 
-        private void quitForm_Click(object sender, EventArgs e)
+        private void closeForm(object sender, EventArgs e)
         {
             Application.Exit();
         }

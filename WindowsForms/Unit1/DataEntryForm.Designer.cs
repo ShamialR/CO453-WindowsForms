@@ -64,7 +64,7 @@
             this.quitButton.TabIndex = 1;
             this.quitButton.Text = "&Quit";
             this.quitButton.UseVisualStyleBackColor = true;
-            this.quitButton.Click += new System.EventHandler(this.quitButton_Click);
+            this.quitButton.Click += new System.EventHandler(this.quitApplication);
             // 
             // firstNameLabel
             // 
@@ -85,7 +85,7 @@
             this.lastNameLabel.Size = new System.Drawing.Size(106, 22);
             this.lastNameLabel.TabIndex = 3;
             this.lastNameLabel.Text = "Last Name:";
-            this.lastNameLabel.Click += new System.EventHandler(this.lastNameLabel_Click);
+            this.lastNameLabel.Click += new System.EventHandler(this.clickLastNameLabel);
             // 
             // messageButton
             // 
@@ -95,7 +95,7 @@
             this.messageButton.TabIndex = 4;
             this.messageButton.Text = "&Message";
             this.messageButton.UseVisualStyleBackColor = true;
-            this.messageButton.Click += new System.EventHandler(this.messageButton_Click);
+            this.messageButton.Click += new System.EventHandler(this.showMessage);
             // 
             // clearButton
             // 
@@ -105,7 +105,7 @@
             this.clearButton.TabIndex = 5;
             this.clearButton.Text = "&Clear Message";
             this.clearButton.UseVisualStyleBackColor = true;
-            this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
+            this.clearButton.Click += new System.EventHandler(this.clearMessage);
             // 
             // messageLabel
             // 
@@ -118,7 +118,7 @@
             this.messageLabel.Size = new System.Drawing.Size(242, 24);
             this.messageLabel.TabIndex = 6;
             this.messageLabel.Text = "                                              ";
-            this.messageLabel.Click += new System.EventHandler(this.messageLabel_Click);
+            this.messageLabel.Click += new System.EventHandler(this.clickMessageLabel);
             // 
             // firstNameText
             // 
@@ -146,7 +146,7 @@
             this.toUpperButton.TabIndex = 9;
             this.toUpperButton.Text = "&Upper Case";
             this.toUpperButton.UseVisualStyleBackColor = true;
-            this.toUpperButton.Click += new System.EventHandler(this.toUpperButton_Click);
+            this.toUpperButton.Click += new System.EventHandler(this.changeMessageToUpper);
             // 
             // toLowerButton
             // 
@@ -156,7 +156,7 @@
             this.toLowerButton.TabIndex = 10;
             this.toLowerButton.Text = "&Lower Case";
             this.toLowerButton.UseVisualStyleBackColor = true;
-            this.toLowerButton.Click += new System.EventHandler(this.toLowerButton_Click);
+            this.toLowerButton.Click += new System.EventHandler(this.changeMessageToLower);
             // 
             // changeMessageButton
             // 
@@ -166,7 +166,7 @@
             this.changeMessageButton.TabIndex = 11;
             this.changeMessageButton.Text = "Change Message";
             this.changeMessageButton.UseVisualStyleBackColor = true;
-            this.changeMessageButton.Click += new System.EventHandler(this.changeMessageButton_Click);
+            this.changeMessageButton.Click += new System.EventHandler(this.changeMessage);
             // 
             // townNameText
             // 

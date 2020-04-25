@@ -28,59 +28,59 @@ namespace WindowsForms.Unit1
             InitializeComponent();
         }
 
-        private void number0Button_Click(object sender, EventArgs e)
+        private void selectNumber0(object sender, EventArgs e)
         {
             stringNumber += "0";
             resultAnswerLabel.Text = stringNumber;
         }
-        private void number1Button_Click_1(object sender, EventArgs e)
+        private void selectNumber1(object sender, EventArgs e)
         {
             stringNumber += "1";
             resultAnswerLabel.Text = stringNumber;
         }
-        private void number2Button_Click_1(object sender, EventArgs e)
+        private void selectNumber2(object sender, EventArgs e)
         {
             stringNumber += "2";
             resultAnswerLabel.Text = stringNumber;
         }
-        private void number3Button_Click_1(object sender, EventArgs e)
+        private void selectNumber3(object sender, EventArgs e)
         {
             stringNumber += "3";
             resultAnswerLabel.Text = stringNumber;
         }
-        private void number4Button_Click_1(object sender, EventArgs e)
+        private void selectNumber4(object sender, EventArgs e)
         {
             stringNumber += "4";
             resultAnswerLabel.Text = stringNumber;
         }
-        private void number5Button_Click_1(object sender, EventArgs e)
+        private void selectNumber5(object sender, EventArgs e)
         {
             stringNumber += "5";
             resultAnswerLabel.Text = stringNumber;
         }
-        private void number6Button_Click_1(object sender, EventArgs e)
+        private void selectNumber6(object sender, EventArgs e)
         {
             stringNumber += "6";
             resultAnswerLabel.Text = stringNumber;
         }
-        private void number7Button_Click_1(object sender, EventArgs e)
+        private void selectNumber7(object sender, EventArgs e)
         {
             stringNumber += "7";
             resultAnswerLabel.Text = stringNumber;
         }
-        private void number8Button_Click_1(object sender, EventArgs e)
+        private void selectNumber8(object sender, EventArgs e)
         {
             stringNumber += "8";
             resultAnswerLabel.Text = stringNumber;
         }
 
-        private void number9Button_Click_1(object sender, EventArgs e)
+        private void selectNumber9(object sender, EventArgs e)
         {
             stringNumber += "9";
             resultAnswerLabel.Text = stringNumber;
         }
 
-        private void equalsButton_Click(object sender, EventArgs e)
+        private void calculate(object sender, EventArgs e)
         {
             number2 = Convert.ToDouble(stringNumber);
             
@@ -110,33 +110,33 @@ namespace WindowsForms.Unit1
             }
         }
 
-        private void additionButton_Click(object sender, EventArgs e)
+        private void calculateAddition(object sender, EventArgs e)
         {
             number1 = Convert.ToDouble(stringNumber);
             stringNumber = "";
             operationType = "+";
         }
 
-        private void divisionButton_Click(object sender, EventArgs e)
+        private void calculateDivision(object sender, EventArgs e)
         {
             number1 = Convert.ToDouble(stringNumber);
             stringNumber = "";
             operationType = "/";
         }
 
-        private void quitButton_Click(object sender, EventArgs e)
+        private void quitApplication(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void subtractionButton_Click(object sender, EventArgs e)
+        private void calculateSubtraction(object sender, EventArgs e)
         {
             number1 = Convert.ToDouble(stringNumber);
             stringNumber = "";
             operationType = "-";
         }
 
-        private void multiplyButton_Click(object sender, EventArgs e)
+        private void calculateMultiplication(object sender, EventArgs e)
         {
             number1 = Convert.ToDouble(stringNumber);
             stringNumber = "";
@@ -144,7 +144,7 @@ namespace WindowsForms.Unit1
         }
 
 
-        private void clearButton_Click(object sender, EventArgs e)
+        private void clearAll(object sender, EventArgs e)
         {
             resultAnswerLabel.Text = "";
             stringNumber = "";
