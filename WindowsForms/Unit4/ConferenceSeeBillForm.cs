@@ -10,6 +10,13 @@ using System.Windows.Forms;
 
 namespace WindowsForms.Unit4
 {
+    /// <summary>
+    /// Task 4.8
+    /// This class will display the attendees name, their school name,
+    /// the price of the ticket, price of attendance and the total cost,
+    /// which will have been entered by the user in the ConferenceDataEntryForm.
+    /// Author: Shamial Rashid 21905385
+    /// </summary>
     public partial class ConferenceSeeBillForm : Form
     {
         public ConferenceSeeBillForm()

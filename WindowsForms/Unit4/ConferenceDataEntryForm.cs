@@ -10,6 +10,12 @@ using System.Windows.Forms;
 
 namespace WindowsForms.Unit4
 {
+    /// <summary>
+    /// Task 4.7
+    /// This class will allow the user to type in their names, select their
+    /// school from the list and what they want for dinner.
+    /// Author: Shamial Rashid 21905385
+    /// </summary>
     public partial class ConferenceDataEntryForm : Form
     {
         public double oakridgeSchoolTeacherCount, royalGrammarSchoolTeacherCount, henleyCollegeTeacherCount, bucksNewUniTeacherCount, totalTeachers;
@@ -115,6 +121,8 @@ namespace WindowsForms.Unit4
             TotalsScreen.displayTotalTeachersLabel.Text = totalTeachers.ToString();
             TotalsScreen.displayTotalTeachersLabel.Text = totalTeachers.ToString();
 
+            //Different method that is usable for adding price to the bill label in the ConferenceTotalsForm.
+
             //TotalsScreen.displayOakridgeBillLabel.Text = (oakridgeSchoolTeacherCount * 65).ToString();
             //TotalsScreen.displayRGSBillLabel.Text = (royalGrammarSchoolTeacherCount * 65).ToString();
             //TotalsScreen.displayHenleyCollegeBillLabel.Text = (henleyCollegeTeacherCount * 65).ToString();
@@ -124,9 +132,6 @@ namespace WindowsForms.Unit4
             TotalsScreen.displayRGSBillLabel.Text += displayRGSBill;
             TotalsScreen.displayHenleyCollegeBillLabel.Text += displayHenleyBill;
             TotalsScreen.displayBNUBillLabel.Text += displayBNUBill;
-            //if (radiobutton.... .selected)
-            //set storeOakridge food cost to 15
-            //this will then be displayed in the totals form
 
         }
     }

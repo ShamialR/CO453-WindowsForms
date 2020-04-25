@@ -59,6 +59,7 @@
             this.mainRichTextBox.Size = new System.Drawing.Size(499, 279);
             this.mainRichTextBox.TabIndex = 0;
             this.mainRichTextBox.Text = "";
+            this.mainRichTextBox.TextChanged += new System.EventHandler(this.mainRichTextBox_TextChanged);
             // 
             // menuStrip
             // 

@@ -10,6 +10,15 @@ using System.Windows.Forms;
 
 namespace WindowsForms.Unit4
 {
+    /// <summary>
+    /// Task 4.1 - 4.6
+    /// This class allows the user to type in their bill amount,
+    /// then select what sort of tip they would like to give using
+    /// radio buttons, then select the number of people paying,
+    /// this will decide how much the bill+tip is split, finally
+    /// the calculate button will take the user to the ResultsForm.
+    /// Author: Shamial Rashid 21905385
+    /// </summary>
     public partial class TipsterForm : Form
     {
         private double billNumber, peopleNumber, answer, tip, displayTip, totalBill;

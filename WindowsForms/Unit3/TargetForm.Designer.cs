@@ -38,23 +38,27 @@
             this.scoreLabel = new System.Windows.Forms.Label();
             this.scoreMessageLbel = new System.Windows.Forms.Label();
             this.animationTimer = new System.Windows.Forms.Timer(this.components);
+            this.panelBoxTarget = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.targetPictureBox)).BeginInit();
             this.resultGroupBox.SuspendLayout();
+            this.panelBoxTarget.SuspendLayout();
             this.SuspendLayout();
             // 
             // targetPictureBox
             // 
             this.targetPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("targetPictureBox.Image")));
-            this.targetPictureBox.Location = new System.Drawing.Point(119, 66);
+            this.targetPictureBox.Location = new System.Drawing.Point(136, 103);
             this.targetPictureBox.Name = "targetPictureBox";
             this.targetPictureBox.Size = new System.Drawing.Size(100, 100);
             this.targetPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.targetPictureBox.TabIndex = 0;
             this.targetPictureBox.TabStop = false;
+            this.targetPictureBox.Click += new System.EventHandler(this.targetPictureBox_Click);
+            this.targetPictureBox.MouseDown += new System.Windows.Forms.MouseEventHandler(this.targetPictureBox_MouseDown);
             // 
             // startButton
             // 
-            this.startButton.Location = new System.Drawing.Point(32, 308);
+            this.startButton.Location = new System.Drawing.Point(494, 163);
             this.startButton.Name = "startButton";
             this.startButton.Size = new System.Drawing.Size(83, 28);
             this.startButton.TabIndex = 1;
@@ -64,7 +68,7 @@
             // 
             // stopButton
             // 
-            this.stopButton.Location = new System.Drawing.Point(210, 308);
+            this.stopButton.Location = new System.Drawing.Point(494, 215);
             this.stopButton.Name = "stopButton";
             this.stopButton.Size = new System.Drawing.Size(83, 28);
             this.stopButton.TabIndex = 2;
@@ -74,7 +78,7 @@
             // 
             // quitButton
             // 
-            this.quitButton.Location = new System.Drawing.Point(402, 308);
+            this.quitButton.Location = new System.Drawing.Point(494, 265);
             this.quitButton.Name = "quitButton";
             this.quitButton.Size = new System.Drawing.Size(83, 28);
             this.quitButton.TabIndex = 3;
@@ -110,22 +114,32 @@
             // 
             // animationTimer
             // 
+            this.animationTimer.Interval = 1000;
             this.animationTimer.Tick += new System.EventHandler(this.animationTimer_Tick);
+            // 
+            // panelBoxTarget
+            // 
+            this.panelBoxTarget.Controls.Add(this.targetPictureBox);
+            this.panelBoxTarget.Location = new System.Drawing.Point(12, 12);
+            this.panelBoxTarget.Name = "panelBoxTarget";
+            this.panelBoxTarget.Size = new System.Drawing.Size(410, 294);
+            this.panelBoxTarget.TabIndex = 5;
             // 
             // TargetForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(679, 355);
+            this.ClientSize = new System.Drawing.Size(679, 318);
+            this.Controls.Add(this.panelBoxTarget);
             this.Controls.Add(this.resultGroupBox);
             this.Controls.Add(this.quitButton);
             this.Controls.Add(this.stopButton);
             this.Controls.Add(this.startButton);
-            this.Controls.Add(this.targetPictureBox);
             this.Name = "TargetForm";
             this.Text = "Hit The Target";
             ((System.ComponentModel.ISupportInitialize)(this.targetPictureBox)).EndInit();
             this.resultGroupBox.ResumeLayout(false);
+            this.panelBoxTarget.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -140,5 +154,6 @@
         private System.Windows.Forms.Label scoreLabel;
         private System.Windows.Forms.Label scoreMessageLbel;
         private System.Windows.Forms.Timer animationTimer;
+        private System.Windows.Forms.Panel panelBoxTarget;
     }
 }
