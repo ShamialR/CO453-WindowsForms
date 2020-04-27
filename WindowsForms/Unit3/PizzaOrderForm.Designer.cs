@@ -67,7 +67,7 @@
             this.largeRadioButton.TabStop = true;
             this.largeRadioButton.Text = "Large";
             this.largeRadioButton.UseVisualStyleBackColor = true;
-            this.largeRadioButton.CheckedChanged += new System.EventHandler(this.largeRadioButton_CheckedChanged);
+            this.largeRadioButton.CheckedChanged += new System.EventHandler(this.chooseLargePizza);
             // 
             // mediumRadioButton
             // 
@@ -79,7 +79,7 @@
             this.mediumRadioButton.TabStop = true;
             this.mediumRadioButton.Text = "Medium";
             this.mediumRadioButton.UseVisualStyleBackColor = true;
-            this.mediumRadioButton.CheckedChanged += new System.EventHandler(this.mediumRadioButton_CheckedChanged);
+            this.mediumRadioButton.CheckedChanged += new System.EventHandler(this.chooseMediumPizza);
             // 
             // smallRadioButton
             // 
@@ -91,7 +91,7 @@
             this.smallRadioButton.TabStop = true;
             this.smallRadioButton.Text = "Small";
             this.smallRadioButton.UseVisualStyleBackColor = true;
-            this.smallRadioButton.CheckedChanged += new System.EventHandler(this.smallRadioButton_CheckedChanged);
+            this.smallRadioButton.CheckedChanged += new System.EventHandler(this.chooseSmallPizza);
             // 
             // pizzaCostGroupBox
             // 
@@ -118,7 +118,7 @@
             this.quitButton.TabIndex = 2;
             this.quitButton.Text = "Quit";
             this.quitButton.UseVisualStyleBackColor = true;
-            this.quitButton.Click += new System.EventHandler(this.quitButton_Click);
+            this.quitButton.Click += new System.EventHandler(this.quitApplication);
             // 
             // toppingsGroupBox
             // 
@@ -142,7 +142,7 @@
             this.pineappleCheckBox.TabIndex = 0;
             this.pineappleCheckBox.Text = "Pineapple";
             this.pineappleCheckBox.UseVisualStyleBackColor = true;
-            this.pineappleCheckBox.CheckedChanged += new System.EventHandler(this.pineappleCheckBox_CheckedChanged);
+            this.pineappleCheckBox.CheckedChanged += new System.EventHandler(this.pickPineappleTopping);
             // 
             // rhubarbCheckBox
             // 
@@ -153,7 +153,7 @@
             this.rhubarbCheckBox.TabIndex = 1;
             this.rhubarbCheckBox.Text = "Rhubarb";
             this.rhubarbCheckBox.UseVisualStyleBackColor = true;
-            this.rhubarbCheckBox.CheckedChanged += new System.EventHandler(this.rhubarbCheckBox_CheckedChanged);
+            this.rhubarbCheckBox.CheckedChanged += new System.EventHandler(this.pickRhubarbTopping);
             // 
             // pepperoniCheckBox
             // 
@@ -164,7 +164,7 @@
             this.pepperoniCheckBox.TabIndex = 2;
             this.pepperoniCheckBox.Text = "Pepperoni";
             this.pepperoniCheckBox.UseVisualStyleBackColor = true;
-            this.pepperoniCheckBox.CheckedChanged += new System.EventHandler(this.pepperoniCheckBox_CheckedChanged);
+            this.pepperoniCheckBox.CheckedChanged += new System.EventHandler(this.pickPepperoniTopping);
             // 
             // chocolateCheckBox
             // 
@@ -175,7 +175,7 @@
             this.chocolateCheckBox.TabIndex = 3;
             this.chocolateCheckBox.Text = "Chocolate";
             this.chocolateCheckBox.UseVisualStyleBackColor = true;
-            this.chocolateCheckBox.CheckedChanged += new System.EventHandler(this.chocolateCheckBox_CheckedChanged);
+            this.chocolateCheckBox.CheckedChanged += new System.EventHandler(this.pickChocolateTopping);
             // 
             // PizzaOrderForm
             // 

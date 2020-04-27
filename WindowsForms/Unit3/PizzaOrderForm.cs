@@ -21,8 +21,7 @@ namespace WindowsForms.Unit3
     public partial class PizzaOrderForm : Form
     {
 
-        public const double toppingPrice = 2.50;
-
+        private const double MAX_TOPPING_PRICE = 2.50;
         private double pizzaCost = 0;
         private double toppingCost = 0;
         private double totalCost = 0;
@@ -31,7 +30,7 @@ namespace WindowsForms.Unit3
             InitializeComponent();
         }
 
-        private void largeRadioButton_CheckedChanged(object sender, EventArgs e)
+        private void chooseLargePizza(object sender, EventArgs e)
         {
             if(largeRadioButton.Checked)
             {
@@ -42,7 +41,7 @@ namespace WindowsForms.Unit3
             pizzaCostLabel.Text = "£ " + totalCost.ToString("0.00");
         }
 
-        private void mediumRadioButton_CheckedChanged(object sender, EventArgs e)
+        private void chooseMediumPizza(object sender, EventArgs e)
         {
             if (mediumRadioButton.Checked)
             {
@@ -53,7 +52,7 @@ namespace WindowsForms.Unit3
             pizzaCostLabel.Text = "£ " + totalCost.ToString("0.00");
         }
 
-        private void smallRadioButton_CheckedChanged(object sender, EventArgs e)
+        private void chooseSmallPizza(object sender, EventArgs e)
         {
             if (smallRadioButton.Checked)
             {
@@ -64,62 +63,62 @@ namespace WindowsForms.Unit3
             pizzaCostLabel.Text = "£ " + totalCost.ToString("0.00");
         }
 
-        private void quitButton_Click(object sender, EventArgs e)
+        private void quitApplication(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void pineappleCheckBox_CheckedChanged(object sender, EventArgs e)
+        private void pickPineappleTopping(object sender, EventArgs e)
         {
             if (pineappleCheckBox.Checked)
             {
-                toppingCost += toppingPrice;
+                toppingCost += MAX_TOPPING_PRICE;
             }
             else
             {
-                toppingCost -= toppingPrice;
+                toppingCost -= MAX_TOPPING_PRICE;
             }
             totalCost = pizzaCost + toppingCost;
             pizzaCostLabel.Text = "£ " + totalCost.ToString("0.00");
         }
 
-        private void rhubarbCheckBox_CheckedChanged(object sender, EventArgs e)
+        private void pickRhubarbTopping(object sender, EventArgs e)
         {
             if (rhubarbCheckBox.Checked)
             {
-                toppingCost += toppingPrice;
+                toppingCost += MAX_TOPPING_PRICE;
             }
             else
             {
-                toppingCost -= toppingPrice;
+                toppingCost -= MAX_TOPPING_PRICE;
             }
             totalCost = pizzaCost + toppingCost;
             pizzaCostLabel.Text = "£ " + totalCost.ToString("0.00");
         }
 
-        private void pepperoniCheckBox_CheckedChanged(object sender, EventArgs e)
+        private void pickPepperoniTopping(object sender, EventArgs e)
         {
             if (pepperoniCheckBox.Checked)
             {
-                toppingCost += toppingPrice;
+                toppingCost += MAX_TOPPING_PRICE;
             }
             else
             {
-                toppingCost -= toppingPrice;
+                toppingCost -= MAX_TOPPING_PRICE;
             }
             totalCost = pizzaCost + toppingCost;
             pizzaCostLabel.Text = "£ " + totalCost.ToString("0.00");
         }
 
-        private void chocolateCheckBox_CheckedChanged(object sender, EventArgs e)
+        private void pickChocolateTopping(object sender, EventArgs e)
         {
             if (chocolateCheckBox.Checked)
             {
-                toppingCost += toppingPrice;
+                toppingCost += MAX_TOPPING_PRICE;
             }
             else
             {
-                toppingCost -= toppingPrice;
+                toppingCost -= MAX_TOPPING_PRICE;
             }
             totalCost = pizzaCost + toppingCost;
             pizzaCostLabel.Text = "£ " + totalCost.ToString("0.00");

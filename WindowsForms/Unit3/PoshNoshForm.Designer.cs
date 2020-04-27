@@ -82,7 +82,7 @@
             this.quitButton.TabIndex = 0;
             this.quitButton.Text = "Quit";
             this.quitButton.UseVisualStyleBackColor = true;
-            this.quitButton.Click += new System.EventHandler(this.quitButton_Click);
+            this.quitButton.Click += new System.EventHandler(this.quitApplication);
             // 
             // startersGroupBox
             // 
@@ -110,7 +110,7 @@
             this.startersListBox.Size = new System.Drawing.Size(138, 30);
             this.startersListBox.Sorted = true;
             this.startersListBox.TabIndex = 0;
-            this.startersListBox.SelectedIndexChanged += new System.EventHandler(this.startersListBox_SelectedIndexChanged);
+            this.startersListBox.SelectedIndexChanged += new System.EventHandler(this.selectStarters);
             // 
             // mainsGroupBox
             // 
@@ -135,7 +135,7 @@
             this.mainsListBox.Size = new System.Drawing.Size(138, 30);
             this.mainsListBox.Sorted = true;
             this.mainsListBox.TabIndex = 0;
-            this.mainsListBox.SelectedIndexChanged += new System.EventHandler(this.mainsListBox_SelectedIndexChanged);
+            this.mainsListBox.SelectedIndexChanged += new System.EventHandler(this.selectMainCourse);
             // 
             // dessertsGroupBox
             // 
@@ -160,7 +160,7 @@
             this.dessertsComboBox.Size = new System.Drawing.Size(138, 21);
             this.dessertsComboBox.TabIndex = 0;
             this.dessertsComboBox.Text = "Dessert Choices";
-            this.dessertsComboBox.SelectedIndexChanged += new System.EventHandler(this.dessertsComboBox_SelectedIndexChanged);
+            this.dessertsComboBox.SelectedIndexChanged += new System.EventHandler(this.selectDesserts);
             // 
             // PoshNoshForm
             // 

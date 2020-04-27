@@ -49,7 +49,7 @@
             this.choiceComboBox.Size = new System.Drawing.Size(121, 21);
             this.choiceComboBox.TabIndex = 0;
             this.choiceComboBox.Text = "Choose Here";
-            this.choiceComboBox.SelectedIndexChanged += new System.EventHandler(this.choiceComboBox_SelectedIndexChanged);
+            this.choiceComboBox.SelectedIndexChanged += new System.EventHandler(this.selectPicture);
             // 
             // choicePictureBox
             // 
@@ -68,7 +68,7 @@
             this.quitButton.TabIndex = 2;
             this.quitButton.Text = "Quit";
             this.quitButton.UseVisualStyleBackColor = true;
-            this.quitButton.Click += new System.EventHandler(this.quitButton_Click);
+            this.quitButton.Click += new System.EventHandler(this.quitApplication);
             // 
             // ChoosePictureForm
             // 

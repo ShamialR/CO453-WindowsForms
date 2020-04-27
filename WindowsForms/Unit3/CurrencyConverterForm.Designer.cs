@@ -108,7 +108,7 @@
             this.dollarsRadioButton.TabStop = true;
             this.dollarsRadioButton.Text = "Dollars";
             this.dollarsRadioButton.UseVisualStyleBackColor = true;
-            this.dollarsRadioButton.CheckedChanged += new System.EventHandler(this.dollarsRadioButton_CheckedChanged);
+            this.dollarsRadioButton.CheckedChanged += new System.EventHandler(this.convertDollars);
             // 
             // eurosRadioButton
             // 
@@ -121,7 +121,7 @@
             this.eurosRadioButton.TabStop = true;
             this.eurosRadioButton.Text = "Euros";
             this.eurosRadioButton.UseVisualStyleBackColor = true;
-            this.eurosRadioButton.CheckedChanged += new System.EventHandler(this.eurosRadioButton_CheckedChanged);
+            this.eurosRadioButton.CheckedChanged += new System.EventHandler(this.convertEuros);
             // 
             // rupeesRadioButton
             // 
@@ -134,7 +134,7 @@
             this.rupeesRadioButton.TabStop = true;
             this.rupeesRadioButton.Text = "Rupees";
             this.rupeesRadioButton.UseVisualStyleBackColor = true;
-            this.rupeesRadioButton.CheckedChanged += new System.EventHandler(this.rupeesRadioButton_CheckedChanged);
+            this.rupeesRadioButton.CheckedChanged += new System.EventHandler(this.convertRepees);
             // 
             // button1
             // 
@@ -144,7 +144,7 @@
             this.button1.TabIndex = 6;
             this.button1.Text = "Quit";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.quitApplication);
             // 
             // CurrencyConverterForm
             // 

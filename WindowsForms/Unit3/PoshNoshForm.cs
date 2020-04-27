@@ -21,17 +21,17 @@ namespace WindowsForms.Unit3
     public partial class PoshNoshForm : Form
     {
 
-        double totalCost = 0;
-        double starterCost = 0;
-        double maincourseCost = 0;
-        double dessertCost = 0;
+        private double totalCost = 0;
+        private double starterCost = 0;
+        private double maincourseCost = 0;
+        private double dessertCost = 0;
 
         public PoshNoshForm()
         {
             InitializeComponent();
         }
 
-        private void startersListBox_SelectedIndexChanged(object sender, EventArgs e)
+        private void selectStarters(object sender, EventArgs e)
         {
             switch (startersListBox.Text)
             {
@@ -47,7 +47,7 @@ namespace WindowsForms.Unit3
             totalCostLabel.Text = "£" + totalCost.ToString("0.00");
         }
 
-        private void mainsListBox_SelectedIndexChanged(object sender, EventArgs e)
+        private void selectMainCourse(object sender, EventArgs e)
         {
             switch (mainsListBox.Text)
             {
@@ -60,7 +60,7 @@ namespace WindowsForms.Unit3
             totalCostLabel.Text = "£" + totalCost.ToString("0.00");
         }
 
-        private void dessertsComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        private void selectDesserts(object sender, EventArgs e)
         {
             switch (dessertsComboBox.Text)
             {
@@ -73,7 +73,7 @@ namespace WindowsForms.Unit3
             totalCostLabel.Text = "£" + totalCost.ToString("0.00");
         }
 
-        private void quitButton_Click(object sender, EventArgs e)
+        private void quitApplication(object sender, EventArgs e)
         {
             Application.Exit();
         }

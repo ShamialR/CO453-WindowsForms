@@ -53,8 +53,8 @@
             this.targetPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.targetPictureBox.TabIndex = 0;
             this.targetPictureBox.TabStop = false;
-            this.targetPictureBox.Click += new System.EventHandler(this.targetPictureBox_Click);
-            this.targetPictureBox.MouseDown += new System.Windows.Forms.MouseEventHandler(this.targetPictureBox_MouseDown);
+            this.targetPictureBox.Click += new System.EventHandler(this.clickTarget);
+            this.targetPictureBox.MouseDown += new System.Windows.Forms.MouseEventHandler(this.hitTargetDistance);
             // 
             // startButton
             // 
@@ -64,7 +64,7 @@
             this.startButton.TabIndex = 1;
             this.startButton.Text = "Start";
             this.startButton.UseVisualStyleBackColor = true;
-            this.startButton.Click += new System.EventHandler(this.startButton_Click);
+            this.startButton.Click += new System.EventHandler(this.startGame);
             // 
             // stopButton
             // 
@@ -74,7 +74,7 @@
             this.stopButton.TabIndex = 2;
             this.stopButton.Text = "Stop";
             this.stopButton.UseVisualStyleBackColor = true;
-            this.stopButton.Click += new System.EventHandler(this.stopButton_Click);
+            this.stopButton.Click += new System.EventHandler(this.stopGame);
             // 
             // quitButton
             // 
@@ -84,7 +84,7 @@
             this.quitButton.TabIndex = 3;
             this.quitButton.Text = "Quit";
             this.quitButton.UseVisualStyleBackColor = true;
-            this.quitButton.Click += new System.EventHandler(this.quitButton_Click);
+            this.quitButton.Click += new System.EventHandler(this.quitApplication);
             // 
             // resultGroupBox
             // 
@@ -115,7 +115,7 @@
             // animationTimer
             // 
             this.animationTimer.Interval = 1000;
-            this.animationTimer.Tick += new System.EventHandler(this.animationTimer_Tick);
+            this.animationTimer.Tick += new System.EventHandler(this.moveTarget);
             // 
             // panelBoxTarget
             // 

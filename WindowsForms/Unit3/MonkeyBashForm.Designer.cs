@@ -63,7 +63,7 @@
             this.monkeyPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.monkeyPictureBox1.TabIndex = 0;
             this.monkeyPictureBox1.TabStop = false;
-            this.monkeyPictureBox1.Click += new System.EventHandler(this.monkeyPictureBox1_Click);
+            this.monkeyPictureBox1.Click += new System.EventHandler(this.hitMonkey1);
             // 
             // startButton
             // 
@@ -73,7 +73,7 @@
             this.startButton.TabIndex = 1;
             this.startButton.Text = "Start";
             this.startButton.UseVisualStyleBackColor = true;
-            this.startButton.Click += new System.EventHandler(this.startButton_Click);
+            this.startButton.Click += new System.EventHandler(this.startGame);
             // 
             // stopButton
             // 
@@ -83,7 +83,7 @@
             this.stopButton.TabIndex = 2;
             this.stopButton.Text = "Stop";
             this.stopButton.UseVisualStyleBackColor = true;
-            this.stopButton.Click += new System.EventHandler(this.stopButton_Click);
+            this.stopButton.Click += new System.EventHandler(this.stopGame);
             // 
             // quitButton
             // 
@@ -93,12 +93,12 @@
             this.quitButton.TabIndex = 3;
             this.quitButton.Text = "Quit";
             this.quitButton.UseVisualStyleBackColor = true;
-            this.quitButton.Click += new System.EventHandler(this.quitButton_Click);
+            this.quitButton.Click += new System.EventHandler(this.quitApplication);
             // 
             // animationTimer1
             // 
             this.animationTimer1.Interval = 1000;
-            this.animationTimer1.Tick += new System.EventHandler(this.animationTimer_Tick);
+            this.animationTimer1.Tick += new System.EventHandler(this.moveMonkey1);
             // 
             // scoreGroupBox
             // 
@@ -132,18 +132,22 @@
             // animationTimer2
             // 
             this.animationTimer2.Interval = 1000;
+            this.animationTimer2.Tick += new System.EventHandler(this.moveMonkey2);
             // 
             // animationTimer3
             // 
             this.animationTimer3.Interval = 1000;
+            this.animationTimer3.Tick += new System.EventHandler(this.moveMonkey3);
             // 
             // animationTimer4
             // 
             this.animationTimer4.Interval = 1000;
+            this.animationTimer4.Tick += new System.EventHandler(this.moveMonkey4);
             // 
             // animationTimer5
             // 
             this.animationTimer5.Interval = 1000;
+            this.animationTimer5.Tick += new System.EventHandler(this.moveMonkey5);
             // 
             // monkeyPictureBox2
             // 
@@ -154,6 +158,7 @@
             this.monkeyPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.monkeyPictureBox2.TabIndex = 5;
             this.monkeyPictureBox2.TabStop = false;
+            this.monkeyPictureBox2.Click += new System.EventHandler(this.hitMonkey2);
             // 
             // monkeyPictureBox3
             // 
@@ -164,6 +169,7 @@
             this.monkeyPictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.monkeyPictureBox3.TabIndex = 6;
             this.monkeyPictureBox3.TabStop = false;
+            this.monkeyPictureBox3.Click += new System.EventHandler(this.hitMnkey3);
             // 
             // monkeyPictureBox4
             // 
@@ -174,6 +180,7 @@
             this.monkeyPictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.monkeyPictureBox4.TabIndex = 7;
             this.monkeyPictureBox4.TabStop = false;
+            this.monkeyPictureBox4.Click += new System.EventHandler(this.hitMonkey4);
             // 
             // monkeyPictureBox5
             // 
@@ -184,6 +191,7 @@
             this.monkeyPictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.monkeyPictureBox5.TabIndex = 8;
             this.monkeyPictureBox5.TabStop = false;
+            this.monkeyPictureBox5.Click += new System.EventHandler(this.hitMonkey5);
             // 
             // MonkeyBashForm
             // 
@@ -203,8 +211,8 @@
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Name = "MonkeyBashForm";
             this.Text = "MonkeyBashForm";
-            this.Load += new System.EventHandler(this.MonkeyBashForm_Load);
-            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MonkeyBashForm_MouseDown);
+            this.Load += new System.EventHandler(this.loadMonkeyForm);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.missMonkey);
             ((System.ComponentModel.ISupportInitialize)(this.monkeyPictureBox1)).EndInit();
             this.scoreGroupBox.ResumeLayout(false);
             this.scoreGroupBox.PerformLayout();

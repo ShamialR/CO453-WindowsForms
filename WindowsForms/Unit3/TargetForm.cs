@@ -34,21 +34,21 @@ namespace WindowsForms.Unit3
             InitializeComponent();
         }
 
-        private void startButton_Click(object sender, EventArgs e)
+        private void startGame(object sender, EventArgs e)
         {
             animationTimer.Enabled = true;
         }
-        private void quitButton_Click(object sender, EventArgs e)
+        private void quitApplication(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void stopButton_Click(object sender, EventArgs e)
+        private void stopGame(object sender, EventArgs e)
         {
             animationTimer.Enabled = false;
         }
 
-        private void animationTimer_Tick(object sender, EventArgs e)
+        private void moveTarget(object sender, EventArgs e)
         {
             x = generator.Next(panelBoxTarget.Width - targetPictureBox.Width);
             y = generator.Next(panelBoxTarget.Height - targetPictureBox.Height);
@@ -56,7 +56,7 @@ namespace WindowsForms.Unit3
             targetPictureBox.Top = y;
             Refresh();
         }
-        private void targetPictureBox_MouseDown(object sender, MouseEventArgs e)
+        private void hitTargetDistance(object sender, MouseEventArgs e)
         {
             targetPositionX = e.X;
             targetPositionY = e.Y;
@@ -91,7 +91,7 @@ namespace WindowsForms.Unit3
             MessageBox.Show(distance.ToString());
             scoreLabel.Text = playerScore.ToString();
         }
-        private void targetPictureBox_Click(object sender, EventArgs e)
+        private void clickTarget(object sender, EventArgs e)
         {
             
         }

@@ -102,7 +102,7 @@
             this.rockRadioButton.TabStop = true;
             this.rockRadioButton.Text = "Rock";
             this.rockRadioButton.UseVisualStyleBackColor = true;
-            this.rockRadioButton.CheckedChanged += new System.EventHandler(this.rockRadioButton_CheckedChanged);
+            this.rockRadioButton.CheckedChanged += new System.EventHandler(this.selectRockRadio);
             // 
             // paperRadioButton
             // 
@@ -114,7 +114,7 @@
             this.paperRadioButton.TabStop = true;
             this.paperRadioButton.Text = "Paper";
             this.paperRadioButton.UseVisualStyleBackColor = true;
-            this.paperRadioButton.CheckedChanged += new System.EventHandler(this.paperRadioButton_CheckedChanged);
+            this.paperRadioButton.CheckedChanged += new System.EventHandler(this.selectPaperRadio);
             // 
             // scissorsRadioButton
             // 
@@ -126,7 +126,7 @@
             this.scissorsRadioButton.TabStop = true;
             this.scissorsRadioButton.Text = "Scissors";
             this.scissorsRadioButton.UseVisualStyleBackColor = true;
-            this.scissorsRadioButton.CheckedChanged += new System.EventHandler(this.scissorsRadioButton_CheckedChanged);
+            this.scissorsRadioButton.CheckedChanged += new System.EventHandler(this.selectScissorsRadio);
             // 
             // userPictureBox
             // 
@@ -154,7 +154,7 @@
             this.playButton.TabIndex = 5;
             this.playButton.Text = "Play";
             this.playButton.UseVisualStyleBackColor = true;
-            this.playButton.Click += new System.EventHandler(this.playButton_Click);
+            this.playButton.Click += new System.EventHandler(this.playGame);
             // 
             // quitButton
             // 
@@ -164,7 +164,7 @@
             this.quitButton.TabIndex = 6;
             this.quitButton.Text = "Quit";
             this.quitButton.UseVisualStyleBackColor = true;
-            this.quitButton.Click += new System.EventHandler(this.quitButton_Click);
+            this.quitButton.Click += new System.EventHandler(this.quitApplication);
             // 
             // resultLabel
             // 
@@ -220,7 +220,7 @@
             this.Name = "RPSForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RPSForm";
-            this.Load += new System.EventHandler(this.RPSForm_Load);
+            this.Load += new System.EventHandler(this.loadRPSForm);
             this.userChoiceGroupBox.ResumeLayout(false);
             this.userChoiceGroupBox.PerformLayout();
             this.computerChoiceGroupBox.ResumeLayout(false);

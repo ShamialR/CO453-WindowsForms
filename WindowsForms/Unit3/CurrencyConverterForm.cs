@@ -26,25 +26,25 @@ namespace WindowsForms.Unit3
             InitializeComponent();
         }
 
-        private void dollarsRadioButton_CheckedChanged(object sender, EventArgs e)
+        private void convertDollars(object sender, EventArgs e)
         {
             amount = Convert.ToDouble(ukPoundsTextBox.Text) * 1.8;
             convertedResultLabel.Text = amount.ToString() + " Dollars";
         }
 
-        private void eurosRadioButton_CheckedChanged(object sender, EventArgs e)
+        private void convertEuros(object sender, EventArgs e)
         {
             amount = Convert.ToDouble(ukPoundsTextBox.Text) * 1.4;
             convertedResultLabel.Text = amount.ToString() + " Euros";
         }
 
-        private void rupeesRadioButton_CheckedChanged(object sender, EventArgs e)
+        private void convertRepees(object sender, EventArgs e)
         {
             amount = Convert.ToDouble(ukPoundsTextBox.Text) * 80;
             convertedResultLabel.Text = amount.ToString() + " Rupees";
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void quitApplication(object sender, EventArgs e)
         {
             DialogResult response; 
 

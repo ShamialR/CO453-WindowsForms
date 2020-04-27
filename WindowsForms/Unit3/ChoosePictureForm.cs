@@ -24,7 +24,7 @@ namespace WindowsForms.Unit3
             InitializeComponent();
         }
 
-        private void choiceComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        private void selectPicture(object sender, EventArgs e)
         {
             switch (choiceComboBox.Text)
             {
@@ -37,7 +37,7 @@ namespace WindowsForms.Unit3
             }
         }
 
-        private void quitButton_Click(object sender, EventArgs e)
+        private void quitApplication(object sender, EventArgs e)
         {
             Application.Exit();
         }
