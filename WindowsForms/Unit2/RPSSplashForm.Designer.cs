@@ -53,8 +53,8 @@
             this.Name = "RPSSplashForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RPSSplashForm";
-            this.Load += new System.EventHandler(this.RPSSplashForm_Load);
-            this.Click += new System.EventHandler(this.RPSSplashForm_Click);
+            this.Load += new System.EventHandler(this.loadSplashForm);
+            this.Click += new System.EventHandler(this.closeSplashForm);
             this.ResumeLayout(false);
             this.PerformLayout();
 

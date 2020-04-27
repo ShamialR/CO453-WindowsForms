@@ -23,7 +23,7 @@ namespace WindowsForms.Unit2
             InitializeComponent();
         }
 
-        private void RPSDraw_Click(object sender, EventArgs e)
+        private void closeDrawForm(object sender, EventArgs e)
         {
             this.Close();
         }

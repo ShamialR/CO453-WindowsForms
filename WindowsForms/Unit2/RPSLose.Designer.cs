@@ -40,7 +40,7 @@
             this.ClientSize = new System.Drawing.Size(739, 450);
             this.Name = "RPSLose";
             this.Text = "RPSLose";
-            this.Click += new System.EventHandler(this.RPSLose_Click);
+            this.Click += new System.EventHandler(this.closeLoseForm);
             this.ResumeLayout(false);
 
         }

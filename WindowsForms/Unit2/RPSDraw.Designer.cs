@@ -53,7 +53,7 @@
             this.DoubleBuffered = true;
             this.Name = "RPSDraw";
             this.Text = "RPSDraw";
-            this.Click += new System.EventHandler(this.RPSDraw_Click);
+            this.Click += new System.EventHandler(this.closeDrawForm);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -24,7 +24,7 @@ namespace WindowsForms.Unit2
             InitializeComponent();
         }
 
-        private void RPSWin_Click(object sender, EventArgs e)
+        private void closeWinForm(object sender, EventArgs e)
         {
             this.Close();
         }

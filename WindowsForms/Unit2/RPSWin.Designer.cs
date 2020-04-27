@@ -39,7 +39,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Name = "RPSWin";
             this.Text = "RPSWin";
-            this.Click += new System.EventHandler(this.RPSWin_Click);
+            this.Click += new System.EventHandler(this.closeWinForm);
             this.ResumeLayout(false);
 
         }

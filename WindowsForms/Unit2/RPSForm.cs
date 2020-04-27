@@ -31,25 +31,25 @@ namespace WindowsForms.Unit2
             InitializeComponent();
         }
 
-        private void rockRadioButton_CheckedChanged(object sender, EventArgs e)
+        private void selectRockRadio(object sender, EventArgs e)
         {
             userPictureBox.Image = Image.FromFile("Rock.jpg");
             userChoice = 1;
         }
 
-        private void paperRadioButton_CheckedChanged(object sender, EventArgs e)
+        private void selectPaperRadio(object sender, EventArgs e)
         {
             userPictureBox.Image = Image.FromFile("Paper.jpg");
             userChoice = 2;
         }
 
-        private void scissorsRadioButton_CheckedChanged(object sender, EventArgs e)
+        private void selectScissorsRadio(object sender, EventArgs e)
         {
             userPictureBox.Image = Image.FromFile("Scissors.jpg");
             userChoice = 3;
         }
 
-        private void playButton_Click(object sender, EventArgs e)
+        private void playGame(object sender, EventArgs e)
         {
             Random randomChoice = new Random();
             compChoice = randomChoice.Next(3) + 1;
@@ -67,22 +67,22 @@ namespace WindowsForms.Unit2
                 computerPictureBox.Image = Image.FromFile("Scissors.jpg");
             }
 
-            CheckResult();
+            checkResults();
         }
 
-        private void quitButton_Click(object sender, EventArgs e)
+        private void quitApplication(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void RPSForm_Load(object sender, EventArgs e)
+        private void loadRPSForm(object sender, EventArgs e)
         {
             RPSSplashForm RPSSplashScreen = new RPSSplashForm();
             RPSSplashScreen.ShowDialog();
             
         }
 
-        private void CheckResult()
+        private void checkResults()
         {
             if (compChoice == userChoice)
             {
@@ -136,14 +136,14 @@ namespace WindowsForms.Unit2
             }
             else if (compScore == MAX_SCORE || compScore > MAX_SCORE)
             {
-                userScore = 0;
+                userScore = 0; 
                 compScore = 0;
                 RPSLoseScreen.ShowDialog();
             }
             else if (userScore == MAX_SCORE || userScore > MAX_SCORE)
             {
                 userScore = 0;
-                compScore = 0;
+                compScore = 0; 
                 RPSWinScreen.ShowDialog();
             }
         }

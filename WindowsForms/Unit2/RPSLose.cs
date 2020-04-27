@@ -24,7 +24,7 @@ namespace WindowsForms.Unit2
             InitializeComponent();
         }
 
-        private void RPSLose_Click(object sender, EventArgs e)
+        private void closeLoseForm(object sender, EventArgs e)
         {
             this.Close();
         }
