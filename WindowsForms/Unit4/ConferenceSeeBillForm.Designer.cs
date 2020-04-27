@@ -57,7 +57,7 @@
             this.closeButton.TabIndex = 0;
             this.closeButton.Text = "Close";
             this.closeButton.UseVisualStyleBackColor = true;
-            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
+            this.closeButton.Click += new System.EventHandler(this.closeForm);
             // 
             // label1
             // 
@@ -180,7 +180,7 @@
             this.acceptBillButton.TabIndex = 7;
             this.acceptBillButton.Text = "Accept Bill";
             this.acceptBillButton.UseVisualStyleBackColor = true;
-            this.acceptBillButton.Click += new System.EventHandler(this.acceptBillButton_Click);
+            this.acceptBillButton.Click += new System.EventHandler(this.acceptBill);
             // 
             // pictureBox1
             // 

@@ -25,17 +25,17 @@ namespace WindowsForms.Unit4
         private double noneTip = 0, normalTip = 10, generousTip = 15, madTip = 20;
         private const double MAX_PERCENTAGE = 100;
 
-        private void quitButton_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
         public TipsterForm()
         {
             InitializeComponent();
         }
 
-        private void calculateButton_Click(object sender, EventArgs e)
+        private void quitApplication(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void calculatePrice(object sender, EventArgs e)
         {
             ResultsForm ResultsScreen = new ResultsForm();
             ResultsScreen.Show();

@@ -59,11 +59,11 @@
             // 
             this.numberOfPeopleLabel.AutoSize = true;
             this.numberOfPeopleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.numberOfPeopleLabel.Location = new System.Drawing.Point(12, 226);
+            this.numberOfPeopleLabel.Location = new System.Drawing.Point(25, 245);
             this.numberOfPeopleLabel.Name = "numberOfPeopleLabel";
-            this.numberOfPeopleLabel.Size = new System.Drawing.Size(131, 18);
+            this.numberOfPeopleLabel.Size = new System.Drawing.Size(135, 18);
             this.numberOfPeopleLabel.TabIndex = 1;
-            this.numberOfPeopleLabel.Text = "Number Of People";
+            this.numberOfPeopleLabel.Text = "Number Of People:";
             // 
             // billTextBox
             // 
@@ -103,23 +103,23 @@
             // 
             // calculateButton
             // 
-            this.calculateButton.Location = new System.Drawing.Point(264, 278);
+            this.calculateButton.Location = new System.Drawing.Point(264, 261);
             this.calculateButton.Name = "calculateButton";
-            this.calculateButton.Size = new System.Drawing.Size(75, 23);
+            this.calculateButton.Size = new System.Drawing.Size(103, 40);
             this.calculateButton.TabIndex = 5;
             this.calculateButton.Text = "Calculate";
             this.calculateButton.UseVisualStyleBackColor = true;
-            this.calculateButton.Click += new System.EventHandler(this.calculateButton_Click);
+            this.calculateButton.Click += new System.EventHandler(this.calculatePrice);
             // 
             // quitButton
             // 
-            this.quitButton.Location = new System.Drawing.Point(411, 278);
+            this.quitButton.Location = new System.Drawing.Point(389, 261);
             this.quitButton.Name = "quitButton";
-            this.quitButton.Size = new System.Drawing.Size(75, 23);
+            this.quitButton.Size = new System.Drawing.Size(97, 40);
             this.quitButton.TabIndex = 6;
             this.quitButton.Text = "Quit";
             this.quitButton.UseVisualStyleBackColor = true;
-            this.quitButton.Click += new System.EventHandler(this.quitButton_Click);
+            this.quitButton.Click += new System.EventHandler(this.quitApplication);
             // 
             // tipGroupBox
             // 

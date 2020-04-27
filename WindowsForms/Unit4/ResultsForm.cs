@@ -24,7 +24,7 @@ namespace WindowsForms.Unit4
             InitializeComponent();
         }
 
-        private void closeButton_Click(object sender, EventArgs e)
+        private void closeForm(object sender, EventArgs e)
         {
             this.Close();
         }

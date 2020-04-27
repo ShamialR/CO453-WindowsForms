@@ -145,7 +145,7 @@
             this.quitButton.TabIndex = 9;
             this.quitButton.Text = "Quit";
             this.quitButton.UseVisualStyleBackColor = true;
-            this.quitButton.Click += new System.EventHandler(this.quitButton_Click);
+            this.quitButton.Click += new System.EventHandler(this.quitApplication);
             // 
             // totalsButton
             // 
@@ -155,7 +155,7 @@
             this.totalsButton.TabIndex = 10;
             this.totalsButton.Text = "Total";
             this.totalsButton.UseVisualStyleBackColor = true;
-            this.totalsButton.Click += new System.EventHandler(this.totalsButton_Click);
+            this.totalsButton.Click += new System.EventHandler(this.viewTotals);
             // 
             // seeBillButton
             // 
@@ -165,7 +165,7 @@
             this.seeBillButton.TabIndex = 11;
             this.seeBillButton.Text = "See Bill";
             this.seeBillButton.UseVisualStyleBackColor = true;
-            this.seeBillButton.Click += new System.EventHandler(this.seeBillButton_Click);
+            this.seeBillButton.Click += new System.EventHandler(this.viewBill);
             // 
             // pictureBox1
             // 
@@ -185,7 +185,7 @@
             this.clearButton.TabIndex = 13;
             this.clearButton.Text = "Clear";
             this.clearButton.UseVisualStyleBackColor = true;
-            this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
+            this.clearButton.Click += new System.EventHandler(this.clearAttendeeName);
             // 
             // ConferenceDataEntryForm
             // 

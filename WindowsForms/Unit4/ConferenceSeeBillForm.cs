@@ -24,7 +24,7 @@ namespace WindowsForms.Unit4
             InitializeComponent();
         }
 
-        private void closeButton_Click(object sender, EventArgs e)
+        private void closeForm(object sender, EventArgs e)
         {
 
             ConferenceDataEntryForm DataEntryScreen = new ConferenceDataEntryForm();
@@ -33,7 +33,7 @@ namespace WindowsForms.Unit4
             this.Close();
         }
 
-        private void acceptBillButton_Click(object sender, EventArgs e)
+        private void acceptBill(object sender, EventArgs e)
         {
             DialogResult response;
             response = MessageBox.Show("Are you happy with your choice? ", "Confirm Choice", MessageBoxButtons.YesNo);

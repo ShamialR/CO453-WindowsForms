@@ -18,22 +18,23 @@ namespace WindowsForms.Unit4
     /// </summary>
     public partial class ConferenceDataEntryForm : Form
     {
-        public double oakridgeSchoolTeacherCount, royalGrammarSchoolTeacherCount, henleyCollegeTeacherCount, bucksNewUniTeacherCount, totalTeachers;
-        private int displayOakBill, displayRGSBill, displayHenleyBill, displayBNUBill;
-        public const double diningCost = 15, attendanceCost = 50;
-        public double mealOrder = 0, totalCost;
+        public const double MAX_DINING_COST = 15, MAX_ATTENDANCE_COST = 50;
 
-        private void clearButton_Click(object sender, EventArgs e)
-        {
-            attendeeNameTextBox.Text = "";
-        }
+        public double OakridgeSchoolTeacherCount, RoyalGrammarSchoolTeacherCount;
+        public double HenleyCollegeTeacherCount, BucksNewUniTeacherCount, TotalTeachers;
+        public double MealOrder = 0, TotalCost;
+        private int displayOakBill, displayRGSBill, displayHenleyBill, displayBNUBill;
 
         public ConferenceDataEntryForm()
         {
             InitializeComponent();
         }
+        private void clearAttendeeName(object sender, EventArgs e)
+        {
+            attendeeNameTextBox.Text = "";
+        }
 
-        private void quitButton_Click(object sender, EventArgs e)
+        private void quitApplication(object sender, EventArgs e)
         {
             Application.Exit();
         }
@@ -41,13 +42,13 @@ namespace WindowsForms.Unit4
         {
             switch (schoolNameListBox.Text)
             {
-                case "Oakridge School": oakridgeSchoolTeacherCount += 1; mealOrder += 1; totalTeachers +=1; break;
-                case "Royal Grammar School": royalGrammarSchoolTeacherCount += 1; mealOrder += 1; totalTeachers += 1; break;
-                case "Henley College": henleyCollegeTeacherCount += 1; mealOrder += 1; totalTeachers += 1; break;
-                case "Bucks New Uni": bucksNewUniTeacherCount += 1; mealOrder += 1; totalTeachers += 1; break;
+                case "Oakridge School": OakridgeSchoolTeacherCount += 1; MealOrder += 1; TotalTeachers +=1; break;
+                case "Royal Grammar School": RoyalGrammarSchoolTeacherCount += 1; MealOrder += 1; TotalTeachers += 1; break;
+                case "Henley College": HenleyCollegeTeacherCount += 1; MealOrder += 1; TotalTeachers += 1; break;
+                case "Bucks New Uni": BucksNewUniTeacherCount += 1; MealOrder += 1; TotalTeachers += 1; break;
             }
         }
-        private void seeBillButton_Click(object sender, EventArgs e)
+        private void viewBill(object sender, EventArgs e)
         {
             ConferenceTotalsForm TotalsScreen = new ConferenceTotalsForm();
 
@@ -58,30 +59,30 @@ namespace WindowsForms.Unit4
             SeeBillScreen.displaySchoolNameLabel.Text = schoolNameListBox.Text;
 
             
-            mealOrder += diningCost;
-            SeeBillScreen.displayDiningCostLabel.Text = mealOrder.ToString();
-            SeeBillScreen.displayAttendanceCostLabel.Text = attendanceCost.ToString();
+            MealOrder += MAX_DINING_COST;
+            SeeBillScreen.displayDiningCostLabel.Text = MealOrder.ToString();
+            SeeBillScreen.displayAttendanceCostLabel.Text = MAX_ATTENDANCE_COST.ToString();
 
-            totalCost = mealOrder + attendanceCost;
-            SeeBillScreen.displayTotalCostLabel.Text = totalCost.ToString();
+            TotalCost = MealOrder + MAX_ATTENDANCE_COST;
+            SeeBillScreen.displayTotalCostLabel.Text = TotalCost.ToString();
 
             switchSchoolCases();
 
             if (schoolNameListBox.GetSelected(0) == true)
             {
-                TotalsScreen.displayOakridgeBillLabel.Text += totalCost.ToString();
+                TotalsScreen.displayOakridgeBillLabel.Text += TotalCost.ToString();
             }
             else if (schoolNameListBox.GetSelected(1) == true)
             {
-                TotalsScreen.displayRGSBillLabel.Text += totalCost.ToString();
+                TotalsScreen.displayRGSBillLabel.Text += TotalCost.ToString();
             }
             else if (schoolNameListBox.GetSelected(2) == true)
             {
-                TotalsScreen.displayHenleyCollegeBillLabel.Text += totalCost.ToString();
+                TotalsScreen.displayHenleyCollegeBillLabel.Text += TotalCost.ToString();
             }
             else if (schoolNameListBox.GetSelected(3) == true)
             {
-                TotalsScreen.displayBNUBillLabel.Text += totalCost.ToString();
+                TotalsScreen.displayBNUBillLabel.Text += TotalCost.ToString();
             }
 
             if (schoolNameListBox.GetSelected(0) == true)
@@ -105,21 +106,21 @@ namespace WindowsForms.Unit4
 
             }
 
-            mealOrder = 0;
-            totalCost = 0;
+            MealOrder = 0;
+            TotalCost = 0;
         }
 
-        private void totalsButton_Click(object sender, EventArgs e)
+        private void viewTotals(object sender, EventArgs e)
         {
             ConferenceTotalsForm TotalsScreen = new ConferenceTotalsForm();
             TotalsScreen.Show();
 
-            TotalsScreen.displayOakridgeTeachersLabel.Text = oakridgeSchoolTeacherCount.ToString();
-            TotalsScreen.displayRGSTeachersLabel.Text = royalGrammarSchoolTeacherCount.ToString();
-            TotalsScreen.displayHenleyCollegeTeachersLabel.Text = henleyCollegeTeacherCount.ToString();
-            TotalsScreen.displayBNULabel.Text = bucksNewUniTeacherCount.ToString();
-            TotalsScreen.displayTotalTeachersLabel.Text = totalTeachers.ToString();
-            TotalsScreen.displayTotalTeachersLabel.Text = totalTeachers.ToString();
+            TotalsScreen.displayOakridgeTeachersLabel.Text = OakridgeSchoolTeacherCount.ToString();
+            TotalsScreen.displayRGSTeachersLabel.Text = RoyalGrammarSchoolTeacherCount.ToString();
+            TotalsScreen.displayHenleyCollegeTeachersLabel.Text = HenleyCollegeTeacherCount.ToString();
+            TotalsScreen.displayBNULabel.Text = BucksNewUniTeacherCount.ToString();
+            TotalsScreen.displayTotalTeachersLabel.Text = TotalTeachers.ToString();
+            TotalsScreen.displayTotalTeachersLabel.Text = TotalTeachers.ToString();
 
             //Different method that is usable for adding price to the bill label in the ConferenceTotalsForm.
 
