@@ -126,7 +126,7 @@
             this.firstNameText.Font = new System.Drawing.Font("Arial", 14F);
             this.firstNameText.Location = new System.Drawing.Point(176, 85);
             this.firstNameText.Name = "firstNameText";
-            this.firstNameText.Size = new System.Drawing.Size(103, 29);
+            this.firstNameText.Size = new System.Drawing.Size(129, 29);
             this.firstNameText.TabIndex = 7;
             // 
             // lastNameText
@@ -135,7 +135,7 @@
             this.lastNameText.Font = new System.Drawing.Font("Arial", 14F);
             this.lastNameText.Location = new System.Drawing.Point(176, 125);
             this.lastNameText.Name = "lastNameText";
-            this.lastNameText.Size = new System.Drawing.Size(103, 29);
+            this.lastNameText.Size = new System.Drawing.Size(129, 29);
             this.lastNameText.TabIndex = 8;
             // 
             // toUpperButton
@@ -174,7 +174,7 @@
             this.townNameText.Font = new System.Drawing.Font("Arial", 14F);
             this.townNameText.Location = new System.Drawing.Point(176, 166);
             this.townNameText.Name = "townNameText";
-            this.townNameText.Size = new System.Drawing.Size(103, 29);
+            this.townNameText.Size = new System.Drawing.Size(129, 29);
             this.townNameText.TabIndex = 13;
             // 
             // townNameLabel

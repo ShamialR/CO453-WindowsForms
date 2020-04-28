@@ -20,11 +20,11 @@ namespace WindowsForms
             //Application.Run(new Unit1.DataEntryForm());
             //Application.Run(new Unit1.CalculatorForm());
             //Application.Run(new Unit1.CalculatorV2Form());
-            //Application.Run(new Unit2.RPSForm());
+            Application.Run(new Unit2.RPSForm());
             //Application.Run(new Unit3.CurrencyConverterForm());
             //Application.Run(new Unit3.PizzaOrderForm());
             //Application.Run(new Unit3.PoshNoshForm());
-            Application.Run(new Unit3.MonkeyBashForm());
+            //Application.Run(new Unit3.MonkeyBashForm());
             //Application.Run(new Unit3.MyPadForm());
             //Application.Run(new Unit3.PadForm());
             //Application.Run(new Unit3.TargetForm());
