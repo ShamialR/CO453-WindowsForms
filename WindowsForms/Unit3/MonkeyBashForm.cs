@@ -96,13 +96,14 @@ namespace WindowsForms.Unit3
         private void missMonkey(object sender, MouseEventArgs e)
         {
             //MessageBox.Show("The mouse X position is " + e.X);
-
+            stopGame(sender, e);
             monkeyPictureBox1.Image = Image.FromFile("monkey.jpg");
             monkeyPictureBox2.Image = Image.FromFile("monkey.jpg");
             monkeyPictureBox3.Image = Image.FromFile("monkey.jpg");
             monkeyPictureBox4.Image = Image.FromFile("monkey.jpg");
             monkeyPictureBox5.Image = Image.FromFile("monkey.jpg");
             MessageBox.Show("HAHA, You missed me!", "Monkey");
+            startGame(sender, e);
             monkeyScore += 1;
             missesLabel.Text = "Misses: " + monkeyScore.ToString();
         }

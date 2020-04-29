@@ -29,25 +29,25 @@
         private void InitializeComponent()
         {
             this.userChoiceGroupBox = new System.Windows.Forms.GroupBox();
-            this.computerChoiceGroupBox = new System.Windows.Forms.GroupBox();
-            this.resultGroupBox = new System.Windows.Forms.GroupBox();
-            this.rockRadioButton = new System.Windows.Forms.RadioButton();
-            this.paperRadioButton = new System.Windows.Forms.RadioButton();
-            this.scissorsRadioButton = new System.Windows.Forms.RadioButton();
             this.userPictureBox = new System.Windows.Forms.PictureBox();
-            this.computerPictureBox = new System.Windows.Forms.PictureBox();
+            this.scissorsRadioButton = new System.Windows.Forms.RadioButton();
+            this.paperRadioButton = new System.Windows.Forms.RadioButton();
+            this.rockRadioButton = new System.Windows.Forms.RadioButton();
+            this.computerChoiceGroupBox = new System.Windows.Forms.GroupBox();
             this.playButton = new System.Windows.Forms.Button();
-            this.quitButton = new System.Windows.Forms.Button();
-            this.resultLabel = new System.Windows.Forms.Label();
-            this.userScoreTextLabel = new System.Windows.Forms.Label();
-            this.computerScoreTextLabel = new System.Windows.Forms.Label();
-            this.userScoreLabel = new System.Windows.Forms.Label();
+            this.computerPictureBox = new System.Windows.Forms.PictureBox();
+            this.resultGroupBox = new System.Windows.Forms.GroupBox();
             this.computerScoreLabel = new System.Windows.Forms.Label();
+            this.userScoreLabel = new System.Windows.Forms.Label();
+            this.computerScoreTextLabel = new System.Windows.Forms.Label();
+            this.userScoreTextLabel = new System.Windows.Forms.Label();
+            this.resultLabel = new System.Windows.Forms.Label();
+            this.quitButton = new System.Windows.Forms.Button();
             this.userChoiceGroupBox.SuspendLayout();
-            this.computerChoiceGroupBox.SuspendLayout();
-            this.resultGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.userPictureBox)).BeginInit();
+            this.computerChoiceGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.computerPictureBox)).BeginInit();
+            this.resultGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // userChoiceGroupBox
@@ -64,6 +64,52 @@
             this.userChoiceGroupBox.TabStop = false;
             this.userChoiceGroupBox.Text = "User Choice";
             // 
+            // userPictureBox
+            // 
+            this.userPictureBox.Location = new System.Drawing.Point(13, 41);
+            this.userPictureBox.Name = "userPictureBox";
+            this.userPictureBox.Size = new System.Drawing.Size(190, 188);
+            this.userPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.userPictureBox.TabIndex = 3;
+            this.userPictureBox.TabStop = false;
+            // 
+            // scissorsRadioButton
+            // 
+            this.scissorsRadioButton.AutoSize = true;
+            this.scissorsRadioButton.Location = new System.Drawing.Point(42, 341);
+            this.scissorsRadioButton.Name = "scissorsRadioButton";
+            this.scissorsRadioButton.Size = new System.Drawing.Size(87, 24);
+            this.scissorsRadioButton.TabIndex = 2;
+            this.scissorsRadioButton.TabStop = true;
+            this.scissorsRadioButton.Text = "Scissors";
+            this.scissorsRadioButton.UseVisualStyleBackColor = true;
+            this.scissorsRadioButton.CheckedChanged += new System.EventHandler(this.selectScissorsRadio);
+            // 
+            // paperRadioButton
+            // 
+            this.paperRadioButton.AutoSize = true;
+            this.paperRadioButton.Location = new System.Drawing.Point(42, 298);
+            this.paperRadioButton.Name = "paperRadioButton";
+            this.paperRadioButton.Size = new System.Drawing.Size(69, 24);
+            this.paperRadioButton.TabIndex = 1;
+            this.paperRadioButton.TabStop = true;
+            this.paperRadioButton.Text = "Paper";
+            this.paperRadioButton.UseVisualStyleBackColor = true;
+            this.paperRadioButton.CheckedChanged += new System.EventHandler(this.selectPaperRadio);
+            // 
+            // rockRadioButton
+            // 
+            this.rockRadioButton.AutoCheck = false;
+            this.rockRadioButton.AutoSize = true;
+            this.rockRadioButton.Location = new System.Drawing.Point(42, 252);
+            this.rockRadioButton.Name = "rockRadioButton";
+            this.rockRadioButton.Size = new System.Drawing.Size(64, 24);
+            this.rockRadioButton.TabIndex = 0;
+            this.rockRadioButton.TabStop = true;
+            this.rockRadioButton.Text = "Rock";
+            this.rockRadioButton.UseVisualStyleBackColor = true;
+            this.rockRadioButton.CheckedChanged += new System.EventHandler(this.selectRockRadio);
+            // 
             // computerChoiceGroupBox
             // 
             this.computerChoiceGroupBox.Controls.Add(this.playButton);
@@ -75,6 +121,25 @@
             this.computerChoiceGroupBox.TabIndex = 1;
             this.computerChoiceGroupBox.TabStop = false;
             this.computerChoiceGroupBox.Text = "Computer Choice";
+            // 
+            // playButton
+            // 
+            this.playButton.Location = new System.Drawing.Point(13, 318);
+            this.playButton.Name = "playButton";
+            this.playButton.Size = new System.Drawing.Size(188, 71);
+            this.playButton.TabIndex = 5;
+            this.playButton.Text = "Play";
+            this.playButton.UseVisualStyleBackColor = true;
+            this.playButton.Click += new System.EventHandler(this.playGame);
+            // 
+            // computerPictureBox
+            // 
+            this.computerPictureBox.Location = new System.Drawing.Point(13, 41);
+            this.computerPictureBox.Name = "computerPictureBox";
+            this.computerPictureBox.Size = new System.Drawing.Size(190, 188);
+            this.computerPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.computerPictureBox.TabIndex = 4;
+            this.computerPictureBox.TabStop = false;
             // 
             // resultGroupBox
             // 
@@ -92,96 +157,21 @@
             this.resultGroupBox.TabStop = false;
             this.resultGroupBox.Text = "Result";
             // 
-            // rockRadioButton
+            // computerScoreLabel
             // 
-            this.rockRadioButton.AutoSize = true;
-            this.rockRadioButton.Location = new System.Drawing.Point(42, 252);
-            this.rockRadioButton.Name = "rockRadioButton";
-            this.rockRadioButton.Size = new System.Drawing.Size(64, 24);
-            this.rockRadioButton.TabIndex = 0;
-            this.rockRadioButton.TabStop = true;
-            this.rockRadioButton.Text = "Rock";
-            this.rockRadioButton.UseVisualStyleBackColor = true;
-            this.rockRadioButton.CheckedChanged += new System.EventHandler(this.selectRockRadio);
+            this.computerScoreLabel.AutoSize = true;
+            this.computerScoreLabel.Location = new System.Drawing.Point(17, 269);
+            this.computerScoreLabel.Name = "computerScoreLabel";
+            this.computerScoreLabel.Size = new System.Drawing.Size(0, 20);
+            this.computerScoreLabel.TabIndex = 11;
             // 
-            // paperRadioButton
+            // userScoreLabel
             // 
-            this.paperRadioButton.AutoSize = true;
-            this.paperRadioButton.Location = new System.Drawing.Point(42, 298);
-            this.paperRadioButton.Name = "paperRadioButton";
-            this.paperRadioButton.Size = new System.Drawing.Size(69, 24);
-            this.paperRadioButton.TabIndex = 1;
-            this.paperRadioButton.TabStop = true;
-            this.paperRadioButton.Text = "Paper";
-            this.paperRadioButton.UseVisualStyleBackColor = true;
-            this.paperRadioButton.CheckedChanged += new System.EventHandler(this.selectPaperRadio);
-            // 
-            // scissorsRadioButton
-            // 
-            this.scissorsRadioButton.AutoSize = true;
-            this.scissorsRadioButton.Location = new System.Drawing.Point(42, 341);
-            this.scissorsRadioButton.Name = "scissorsRadioButton";
-            this.scissorsRadioButton.Size = new System.Drawing.Size(87, 24);
-            this.scissorsRadioButton.TabIndex = 2;
-            this.scissorsRadioButton.TabStop = true;
-            this.scissorsRadioButton.Text = "Scissors";
-            this.scissorsRadioButton.UseVisualStyleBackColor = true;
-            this.scissorsRadioButton.CheckedChanged += new System.EventHandler(this.selectScissorsRadio);
-            // 
-            // userPictureBox
-            // 
-            this.userPictureBox.Location = new System.Drawing.Point(13, 41);
-            this.userPictureBox.Name = "userPictureBox";
-            this.userPictureBox.Size = new System.Drawing.Size(190, 188);
-            this.userPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.userPictureBox.TabIndex = 3;
-            this.userPictureBox.TabStop = false;
-            // 
-            // computerPictureBox
-            // 
-            this.computerPictureBox.Location = new System.Drawing.Point(13, 41);
-            this.computerPictureBox.Name = "computerPictureBox";
-            this.computerPictureBox.Size = new System.Drawing.Size(190, 188);
-            this.computerPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.computerPictureBox.TabIndex = 4;
-            this.computerPictureBox.TabStop = false;
-            // 
-            // playButton
-            // 
-            this.playButton.Location = new System.Drawing.Point(13, 318);
-            this.playButton.Name = "playButton";
-            this.playButton.Size = new System.Drawing.Size(188, 71);
-            this.playButton.TabIndex = 5;
-            this.playButton.Text = "Play";
-            this.playButton.UseVisualStyleBackColor = true;
-            this.playButton.Click += new System.EventHandler(this.playGame);
-            // 
-            // quitButton
-            // 
-            this.quitButton.Location = new System.Drawing.Point(14, 318);
-            this.quitButton.Name = "quitButton";
-            this.quitButton.Size = new System.Drawing.Size(188, 71);
-            this.quitButton.TabIndex = 6;
-            this.quitButton.Text = "Quit";
-            this.quitButton.UseVisualStyleBackColor = true;
-            this.quitButton.Click += new System.EventHandler(this.quitApplication);
-            // 
-            // resultLabel
-            // 
-            this.resultLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.resultLabel.Location = new System.Drawing.Point(14, 45);
-            this.resultLabel.Name = "resultLabel";
-            this.resultLabel.Size = new System.Drawing.Size(188, 119);
-            this.resultLabel.TabIndex = 7;
-            // 
-            // userScoreTextLabel
-            // 
-            this.userScoreTextLabel.AutoSize = true;
-            this.userScoreTextLabel.Location = new System.Drawing.Point(16, 183);
-            this.userScoreTextLabel.Name = "userScoreTextLabel";
-            this.userScoreTextLabel.Size = new System.Drawing.Size(97, 20);
-            this.userScoreTextLabel.TabIndex = 8;
-            this.userScoreTextLabel.Text = "User Score: ";
+            this.userScoreLabel.AutoSize = true;
+            this.userScoreLabel.Location = new System.Drawing.Point(17, 209);
+            this.userScoreLabel.Name = "userScoreLabel";
+            this.userScoreLabel.Size = new System.Drawing.Size(0, 20);
+            this.userScoreLabel.TabIndex = 10;
             // 
             // computerScoreTextLabel
             // 
@@ -192,21 +182,32 @@
             this.computerScoreTextLabel.TabIndex = 9;
             this.computerScoreTextLabel.Text = "Computer Score: ";
             // 
-            // userScoreLabel
+            // userScoreTextLabel
             // 
-            this.userScoreLabel.AutoSize = true;
-            this.userScoreLabel.Location = new System.Drawing.Point(17, 209);
-            this.userScoreLabel.Name = "userScoreLabel";
-            this.userScoreLabel.Size = new System.Drawing.Size(0, 20);
-            this.userScoreLabel.TabIndex = 10;
+            this.userScoreTextLabel.AutoSize = true;
+            this.userScoreTextLabel.Location = new System.Drawing.Point(16, 183);
+            this.userScoreTextLabel.Name = "userScoreTextLabel";
+            this.userScoreTextLabel.Size = new System.Drawing.Size(97, 20);
+            this.userScoreTextLabel.TabIndex = 8;
+            this.userScoreTextLabel.Text = "User Score: ";
             // 
-            // computerScoreLabel
+            // resultLabel
             // 
-            this.computerScoreLabel.AutoSize = true;
-            this.computerScoreLabel.Location = new System.Drawing.Point(17, 269);
-            this.computerScoreLabel.Name = "computerScoreLabel";
-            this.computerScoreLabel.Size = new System.Drawing.Size(0, 20);
-            this.computerScoreLabel.TabIndex = 11;
+            this.resultLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
+            this.resultLabel.Location = new System.Drawing.Point(14, 45);
+            this.resultLabel.Name = "resultLabel";
+            this.resultLabel.Size = new System.Drawing.Size(188, 119);
+            this.resultLabel.TabIndex = 7;
+            // 
+            // quitButton
+            // 
+            this.quitButton.Location = new System.Drawing.Point(14, 318);
+            this.quitButton.Name = "quitButton";
+            this.quitButton.Size = new System.Drawing.Size(188, 71);
+            this.quitButton.TabIndex = 6;
+            this.quitButton.Text = "Quit";
+            this.quitButton.UseVisualStyleBackColor = true;
+            this.quitButton.Click += new System.EventHandler(this.quitApplication);
             // 
             // RPSForm
             // 
@@ -223,11 +224,11 @@
             this.Load += new System.EventHandler(this.loadRPSForm);
             this.userChoiceGroupBox.ResumeLayout(false);
             this.userChoiceGroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.userPictureBox)).EndInit();
             this.computerChoiceGroupBox.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.computerPictureBox)).EndInit();
             this.resultGroupBox.ResumeLayout(false);
             this.resultGroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.userPictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.computerPictureBox)).EndInit();
             this.ResumeLayout(false);
 
         }

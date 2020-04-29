@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             this.pizzaSizeGroupBox = new System.Windows.Forms.GroupBox();
-            this.largeRadioButton = new System.Windows.Forms.RadioButton();
-            this.mediumRadioButton = new System.Windows.Forms.RadioButton();
             this.smallRadioButton = new System.Windows.Forms.RadioButton();
+            this.mediumRadioButton = new System.Windows.Forms.RadioButton();
+            this.largeRadioButton = new System.Windows.Forms.RadioButton();
             this.pizzaCostGroupBox = new System.Windows.Forms.GroupBox();
             this.pizzaCostLabel = new System.Windows.Forms.Label();
             this.quitButton = new System.Windows.Forms.Button();
             this.toppingsGroupBox = new System.Windows.Forms.GroupBox();
-            this.pineappleCheckBox = new System.Windows.Forms.CheckBox();
-            this.rhubarbCheckBox = new System.Windows.Forms.CheckBox();
-            this.pepperoniCheckBox = new System.Windows.Forms.CheckBox();
             this.chocolateCheckBox = new System.Windows.Forms.CheckBox();
+            this.pepperoniCheckBox = new System.Windows.Forms.CheckBox();
+            this.rhubarbCheckBox = new System.Windows.Forms.CheckBox();
+            this.pineappleCheckBox = new System.Windows.Forms.CheckBox();
             this.pizzaSizeGroupBox.SuspendLayout();
             this.pizzaCostGroupBox.SuspendLayout();
             this.toppingsGroupBox.SuspendLayout();
@@ -57,17 +57,17 @@
             this.pizzaSizeGroupBox.TabStop = false;
             this.pizzaSizeGroupBox.Text = "Pizza Size";
             // 
-            // largeRadioButton
+            // smallRadioButton
             // 
-            this.largeRadioButton.AutoSize = true;
-            this.largeRadioButton.Location = new System.Drawing.Point(25, 39);
-            this.largeRadioButton.Name = "largeRadioButton";
-            this.largeRadioButton.Size = new System.Drawing.Size(52, 17);
-            this.largeRadioButton.TabIndex = 0;
-            this.largeRadioButton.TabStop = true;
-            this.largeRadioButton.Text = "Large";
-            this.largeRadioButton.UseVisualStyleBackColor = true;
-            this.largeRadioButton.CheckedChanged += new System.EventHandler(this.chooseLargePizza);
+            this.smallRadioButton.AutoSize = true;
+            this.smallRadioButton.Location = new System.Drawing.Point(27, 106);
+            this.smallRadioButton.Name = "smallRadioButton";
+            this.smallRadioButton.Size = new System.Drawing.Size(50, 17);
+            this.smallRadioButton.TabIndex = 2;
+            this.smallRadioButton.TabStop = true;
+            this.smallRadioButton.Text = "Small";
+            this.smallRadioButton.UseVisualStyleBackColor = true;
+            this.smallRadioButton.CheckedChanged += new System.EventHandler(this.chooseSmallPizza);
             // 
             // mediumRadioButton
             // 
@@ -81,17 +81,18 @@
             this.mediumRadioButton.UseVisualStyleBackColor = true;
             this.mediumRadioButton.CheckedChanged += new System.EventHandler(this.chooseMediumPizza);
             // 
-            // smallRadioButton
+            // largeRadioButton
             // 
-            this.smallRadioButton.AutoSize = true;
-            this.smallRadioButton.Location = new System.Drawing.Point(27, 106);
-            this.smallRadioButton.Name = "smallRadioButton";
-            this.smallRadioButton.Size = new System.Drawing.Size(50, 17);
-            this.smallRadioButton.TabIndex = 2;
-            this.smallRadioButton.TabStop = true;
-            this.smallRadioButton.Text = "Small";
-            this.smallRadioButton.UseVisualStyleBackColor = true;
-            this.smallRadioButton.CheckedChanged += new System.EventHandler(this.chooseSmallPizza);
+            this.largeRadioButton.AutoCheck = false;
+            this.largeRadioButton.AutoSize = true;
+            this.largeRadioButton.Location = new System.Drawing.Point(25, 39);
+            this.largeRadioButton.Name = "largeRadioButton";
+            this.largeRadioButton.Size = new System.Drawing.Size(52, 17);
+            this.largeRadioButton.TabIndex = 0;
+            this.largeRadioButton.TabStop = true;
+            this.largeRadioButton.Text = "Large";
+            this.largeRadioButton.UseVisualStyleBackColor = true;
+            this.largeRadioButton.CheckedChanged += new System.EventHandler(this.chooseLargePizza);
             // 
             // pizzaCostGroupBox
             // 
@@ -133,27 +134,16 @@
             this.toppingsGroupBox.TabStop = false;
             this.toppingsGroupBox.Text = "Toppings";
             // 
-            // pineappleCheckBox
+            // chocolateCheckBox
             // 
-            this.pineappleCheckBox.AutoSize = true;
-            this.pineappleCheckBox.Location = new System.Drawing.Point(60, 24);
-            this.pineappleCheckBox.Name = "pineappleCheckBox";
-            this.pineappleCheckBox.Size = new System.Drawing.Size(73, 17);
-            this.pineappleCheckBox.TabIndex = 0;
-            this.pineappleCheckBox.Text = "Pineapple";
-            this.pineappleCheckBox.UseVisualStyleBackColor = true;
-            this.pineappleCheckBox.CheckedChanged += new System.EventHandler(this.pickPineappleTopping);
-            // 
-            // rhubarbCheckBox
-            // 
-            this.rhubarbCheckBox.AutoSize = true;
-            this.rhubarbCheckBox.Location = new System.Drawing.Point(60, 56);
-            this.rhubarbCheckBox.Name = "rhubarbCheckBox";
-            this.rhubarbCheckBox.Size = new System.Drawing.Size(67, 17);
-            this.rhubarbCheckBox.TabIndex = 1;
-            this.rhubarbCheckBox.Text = "Rhubarb";
-            this.rhubarbCheckBox.UseVisualStyleBackColor = true;
-            this.rhubarbCheckBox.CheckedChanged += new System.EventHandler(this.pickRhubarbTopping);
+            this.chocolateCheckBox.AutoSize = true;
+            this.chocolateCheckBox.Location = new System.Drawing.Point(60, 121);
+            this.chocolateCheckBox.Name = "chocolateCheckBox";
+            this.chocolateCheckBox.Size = new System.Drawing.Size(74, 17);
+            this.chocolateCheckBox.TabIndex = 3;
+            this.chocolateCheckBox.Text = "Chocolate";
+            this.chocolateCheckBox.UseVisualStyleBackColor = true;
+            this.chocolateCheckBox.CheckedChanged += new System.EventHandler(this.pickChocolateTopping);
             // 
             // pepperoniCheckBox
             // 
@@ -166,16 +156,27 @@
             this.pepperoniCheckBox.UseVisualStyleBackColor = true;
             this.pepperoniCheckBox.CheckedChanged += new System.EventHandler(this.pickPepperoniTopping);
             // 
-            // chocolateCheckBox
+            // rhubarbCheckBox
             // 
-            this.chocolateCheckBox.AutoSize = true;
-            this.chocolateCheckBox.Location = new System.Drawing.Point(60, 121);
-            this.chocolateCheckBox.Name = "chocolateCheckBox";
-            this.chocolateCheckBox.Size = new System.Drawing.Size(74, 17);
-            this.chocolateCheckBox.TabIndex = 3;
-            this.chocolateCheckBox.Text = "Chocolate";
-            this.chocolateCheckBox.UseVisualStyleBackColor = true;
-            this.chocolateCheckBox.CheckedChanged += new System.EventHandler(this.pickChocolateTopping);
+            this.rhubarbCheckBox.AutoSize = true;
+            this.rhubarbCheckBox.Location = new System.Drawing.Point(60, 56);
+            this.rhubarbCheckBox.Name = "rhubarbCheckBox";
+            this.rhubarbCheckBox.Size = new System.Drawing.Size(67, 17);
+            this.rhubarbCheckBox.TabIndex = 1;
+            this.rhubarbCheckBox.Text = "Rhubarb";
+            this.rhubarbCheckBox.UseVisualStyleBackColor = true;
+            this.rhubarbCheckBox.CheckedChanged += new System.EventHandler(this.pickRhubarbTopping);
+            // 
+            // pineappleCheckBox
+            // 
+            this.pineappleCheckBox.AutoSize = true;
+            this.pineappleCheckBox.Location = new System.Drawing.Point(60, 24);
+            this.pineappleCheckBox.Name = "pineappleCheckBox";
+            this.pineappleCheckBox.Size = new System.Drawing.Size(73, 17);
+            this.pineappleCheckBox.TabIndex = 0;
+            this.pineappleCheckBox.Text = "Pineapple";
+            this.pineappleCheckBox.UseVisualStyleBackColor = true;
+            this.pineappleCheckBox.CheckedChanged += new System.EventHandler(this.pickPineappleTopping);
             // 
             // PizzaOrderForm
             // 
