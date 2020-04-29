@@ -88,8 +88,8 @@ namespace WindowsForms.Unit3
                 scoreMessageLbel.Text = "White Rings";
             }
 
-            MessageBox.Show(distance.ToString());
-            scoreLabel.Text = playerScore.ToString();
+            scoreLabel.Text = "Score:" + playerScore.ToString("#.##");
+            MessageBox.Show("Distance From Centre " + distance.ToString("#.##"));
         }
         private void clickTarget(object sender, EventArgs e)
         {
