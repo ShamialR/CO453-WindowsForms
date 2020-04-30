@@ -149,6 +149,7 @@
             this.Controls.Add(this.eachPaysLabel);
             this.Controls.Add(this.billDetailsGroupBox);
             this.Name = "ResultsForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Results";
             this.billDetailsGroupBox.ResumeLayout(false);
             this.billDetailsGroupBox.PerformLayout();

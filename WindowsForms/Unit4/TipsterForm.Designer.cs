@@ -193,6 +193,7 @@
             this.Controls.Add(this.numberOfPeopleLabel);
             this.Controls.Add(this.billLabel);
             this.Name = "TipsterForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tipster Data Entry";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.tipGroupBox.ResumeLayout(false);
